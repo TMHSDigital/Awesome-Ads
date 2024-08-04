@@ -77,4 +77,3 @@ Effective budgeting and planning are essential for maximizing the ROI of your ad
 - [AdEspresso](https://adespresso.com/) ![AdEspresso](https://adespresso.com/wp-content/themes/adespresso/assets/images/adespresso-logo.svg)
 - [Marin Software](https://www.marinsoftware.com/) ![Marin Software](https://upload.wikimedia.org/wikipedia/commons/4/46/Marin_Software_Logo.png)
 - [Kenshoo](https://kenshoo.com/) ![Kenshoo](https://upload.wikimedia.org/wikipedia/commons/5/52/Kenshoo_Logo.png)
-
