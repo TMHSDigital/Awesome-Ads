@@ -41,6 +41,6 @@ Please review our [Community Guidelines](CONTRIBUTING.md#community-guidelines) t
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
 
 ![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)
