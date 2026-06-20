@@ -6,7 +6,7 @@ CI, deployment, and repository automation under `.github/`.
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
-| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint, internal link check, MkDocs build |
+| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint, repo hygiene, internal links, MkDocs build |
 | [workflows/pages.yml](workflows/pages.yml) | Push to `main` | Build MkDocs site and deploy to GitHub Pages |
 | [workflows/link-check-scheduled.yml](workflows/link-check-scheduled.yml) | Weekly + manual | External link check via Lychee |
 

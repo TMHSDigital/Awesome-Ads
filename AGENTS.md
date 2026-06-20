@@ -46,6 +46,7 @@ Run before opening a PR:
 
 ```bash
 npx markdownlint-cli2 "**/*.md"
+python scripts/check-public-repo-hygiene.py
 python scripts/check-internal-links.py
 python scripts/prepare-mkdocs.py
 mkdocs build --strict
@@ -59,10 +60,14 @@ Site config lives in [mkdocs.yml](mkdocs.yml). The [Deploy GitHub Pages](.github
 
 ## Do not
 
-- Commit secrets or credentials.
+- Commit secrets, credentials, API keys, tokens, or private keys.
+- Commit local-only paths: `research/`, `site/`, `docs/CONTRIBUTING.md`, `.env`, or other generated build output.
+- Commit draft research, internal notes, or machine-local paths unless the user explicitly asks to publish them.
+- Use `git add -A` or `git add .` without reviewing the staged file list first.
 - Add unrelated tooling (frameworks, package.json, etc.) without explicit request.
 - Break relative links or leave orphaned files out of the table of contents.
 - Run destructive git commands unless the user explicitly asks.
+- Push to the remote unless the user explicitly asks.
 
 ## Related files
 

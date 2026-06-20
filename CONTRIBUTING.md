@@ -32,6 +32,7 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
 5. **Verify locally**
    ```bash
    npx markdownlint-cli2 "**/*.md"
+   python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py
    python scripts/prepare-mkdocs.py
    mkdocs build --strict
@@ -53,7 +54,7 @@ python scripts/prepare-mkdocs.py
 mkdocs serve
 ```
 
-Open [http://127.0.0.1:8000/Awesome-Ads/](http://127.0.0.1:8000/Awesome-Ads/) in your browser.
+Open the local URL printed by `mkdocs serve` (typically port 8000).
 
 ## Standards
 

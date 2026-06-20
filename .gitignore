@@ -4,3 +4,11 @@ research/
 # MkDocs build output and generated site files
 site/
 docs/CONTRIBUTING.md
+
+# Secrets and local environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx

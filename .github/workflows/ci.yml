@@ -35,6 +35,13 @@ jobs:
           python-version: "3.12"
       - run: python scripts/check-internal-links.py
 
+  repo-hygiene:
+    name: Public repo hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python scripts/check-public-repo-hygiene.py
+
   mkdocs:
     name: MkDocs build
     runs-on: ubuntu-latest
