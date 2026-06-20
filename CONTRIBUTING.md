@@ -53,7 +53,7 @@ python scripts/prepare-mkdocs.py
 mkdocs serve
 ```
 
-Open http://127.0.0.1:8000/Awesome-Ads/ in your browser.
+Open [http://127.0.0.1:8000/Awesome-Ads/](http://127.0.0.1:8000/Awesome-Ads/) in your browser.
 
 ## Standards
 

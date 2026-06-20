@@ -15,6 +15,7 @@ Maintenance utilities for repository quality checks.
 - Resolves relative link targets from the containing file's directory.
 - Skips `http://`, `https://`, `mailto:`, `#`, and `ftp://` URLs.
 - Exit code `0` on success, `1` when broken links are found.
+- Runs `prepare-mkdocs.py` first so generated files such as `docs/CONTRIBUTING.md` exist before link resolution.
 
 Run from the repository root:
 

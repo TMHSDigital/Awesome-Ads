@@ -1,0 +1,7 @@
+{
+  "config": ".markdownlint.json",
+  "ignores": [
+    "docs/CONTRIBUTING.md",
+    "research/**"
+  ]
+}

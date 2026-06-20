@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -39,6 +40,10 @@ def collect_errors(root: Path) -> list[str]:
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
+    prepare_script = root / "scripts" / "prepare-mkdocs.py"
+    if prepare_script.exists():
+        subprocess.run([sys.executable, str(prepare_script)], check=True)
+
     errors = collect_errors(root)
 
     if errors:
