@@ -1,0 +1,32 @@
+# Agents: Scripts
+
+Maintenance utilities for repository quality checks.
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `check-internal-links.py` | Validates that relative `markdown` links resolve to existing files |
+
+## check-internal-links.py
+
+- Scans all `*.md` files under the repo root (skips `.git`).
+- Resolves relative link targets from the containing file's directory.
+- Skips `http://`, `https://`, `mailto:`, `#`, and `ftp://` URLs.
+- Exit code `0` on success, `1` when broken links are found.
+
+Run from the repository root:
+
+```bash
+python scripts/check-internal-links.py
+```
+
+## When modifying
+
+- Keep the script dependency-free (stdlib only) so CI can run it with `actions/setup-python` and no `pip install`.
+- If link syntax rules change, update this script and [.github/workflows/ci.yml](../.github/workflows/ci.yml) together.
+- Do not use this script for external URL validation; that is handled by the scheduled Lychee workflow.
+
+## Parent context
+
+[../AGENTS.md](../AGENTS.md)

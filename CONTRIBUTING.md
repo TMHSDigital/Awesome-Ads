@@ -2,79 +2,66 @@
 
 We welcome contributions from the community! Follow these guidelines to help us improve the Awesome Ads repository.
 
-## How to Contribute
+## Repository structure
 
-1. **Fork the Repository**
-   - Go to the [Awesome Ads repository](https://github.com/TMHSDigital/awesome-ads) and click the "Fork" button.
+```
+├── docs/
+│   ├── channels/     # One guide per advertising channel
+│   ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
+│   ├── templates/    # Template and design resources
+│   └── meta/         # Repo documentation
+├── .github/          # CI, Dependabot, issue/PR templates
+└── scripts/          # Maintenance scripts (link checker)
+```
 
-2. **Clone Your Fork**
-   - Clone your forked repository to your local machine:
-     ```bash
-     git clone https://github.com/your-username/awesome-ads.git
-     ```
+Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. Update [docs/README.md](docs/README.md) and the root [README.md](README.md) when adding pages.
 
-3. **Create a Branch**
-   - Create a new branch for your changes:
-     ```bash
-     git checkout -b your-branch-name
-     ```
+## How to contribute
 
-4. **Make Your Changes**
-   - Make your changes or additions to the repository. Ensure your code follows our coding standards and guidelines.
+1. **Fork the repository** — [TMHSDigital/Awesome-Ads](https://github.com/TMHSDigital/Awesome-Ads)
+2. **Clone your fork**
+   ```bash
+   git clone https://github.com/your-username/Awesome-Ads.git
+   cd Awesome-Ads
+   ```
+3. **Create a branch**
+   ```bash
+   git checkout -b your-branch-name
+   ```
+4. **Make your changes** — follow existing markdown style; keep links relative.
+5. **Verify locally**
+   ```bash
+   npx markdownlint-cli2 "**/*.md"
+   python scripts/check-internal-links.py
+   ```
+6. **Commit and push**
+   ```bash
+   git commit -m "Description of your changes"
+   git push origin your-branch-name
+   ```
+7. **Open a pull request** against `main`.
 
-5. **Commit Your Changes**
-   - Commit your changes with a clear and descriptive commit message:
-     ```bash
-     git add .
-     git commit -m "Description of your changes"
-     ```
+## Standards
 
-6. **Push to Your Fork**
-   - Push your changes to your forked repository:
-     ```bash
-     git push origin your-branch-name
-     ```
+- Write clear, accurate prose aimed at small-business readers.
+- Use relative links so pages work on GitHub and GitHub Pages.
+- End markdown files with a single trailing newline.
+- Update the table of contents when adding or renaming pages.
 
-7. **Create a Pull Request**
-   - Go to the original repository and click on "New Pull Request." Select your branch and submit the pull request.
+## Issues and bug reports
 
-## Coding Standards
+Use [Issues](https://github.com/TMHSDigital/Awesome-Ads/issues) for bugs and content gaps. Reference issue numbers in commits when fixing them:
 
-1. **Code Quality**
-   - Ensure your code is clean, well-documented, and follows best practices.
+```bash
+git commit -m "Fixes #123: Description of the fix"
+```
 
-2. **Testing**
-   - Test your changes thoroughly before submitting a pull request.
+## Community guidelines
 
-3. **Documentation**
-   - Update documentation and comments as necessary to reflect your changes.
-
-## Issues and Bug Reports
-
-1. **Reporting Issues**
-   - Use the [Issues](https://github.com/TMHSDigital/awesome-ads/issues) section to report any bugs or issues.
-   - Provide detailed information, including steps to reproduce the issue and any relevant screenshots.
-
-2. **Fixing Issues**
-   - If you are fixing an issue, reference the issue number in your commit message:
-     ```bash
-     git commit -m "Fixes #issue-number: Description of the fix"
-     ```
-
-## Community Guidelines
-
-1. **Be Respectful**
-   - Treat others with respect and kindness. Constructive criticism is welcome, but personal attacks or harassment will not be tolerated.
-
-2. **Stay on Topic**
-   - Keep discussions relevant to the repository and its contents.
-
-3. **Collaboration**
-   - Work together to create the best possible resource for the community. Share knowledge and help others where possible.
+Follow our [Community Guidelines](docs/meta/COMMUNITY_GUIDELINES.md).
 
 ## Resources
+
 - [GitHub Guides](https://guides.github.com/)
 - [Open Source Guides](https://opensource.guide/)
 - [Markdown Guide](https://www.markdownguide.org/)
-
-![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)

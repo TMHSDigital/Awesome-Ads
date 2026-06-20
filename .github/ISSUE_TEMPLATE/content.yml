@@ -1,0 +1,20 @@
+---
+name: Content issue
+description: Report incorrect, outdated, or missing documentation
+title: "[Content]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to change?
+      description: Describe the issue and where it appears (file path or URL).
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: Optional — how would you improve it?
+    validations:
+      required: false

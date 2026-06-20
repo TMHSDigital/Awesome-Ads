@@ -15,12 +15,14 @@ relative_links:
   collections: true
 
 include:
-  - "*.md"
-  - TEMPLATES
+  - docs
 
 exclude:
   - README.md
   - LICENSE
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - AGENTS.md
   - scripts
   - .github
   - Gemfile

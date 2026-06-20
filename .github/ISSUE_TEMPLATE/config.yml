@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Documentation
+    url: https://github.com/TMHSDigital/Awesome-Ads/tree/main/docs
+    about: Browse the advertising guides and resources
+  - name: Community guidelines
+    url: https://github.com/TMHSDigital/Awesome-Ads/blob/main/docs/meta/COMMUNITY_GUIDELINES.md
+    about: Read our community guidelines before contributing
