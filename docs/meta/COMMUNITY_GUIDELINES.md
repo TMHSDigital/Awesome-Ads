@@ -17,7 +17,7 @@ To ensure a positive and respectful environment, please follow these community g
 
 ## Reporting Issues
 - Report any inappropriate behavior or violations of these guidelines to the repository maintainers.
-- Use the [Issues](https://github.com/TMHSDigital/awesome-ads/issues) section to report any problems with the content or conduct within the community.
+- Use the [Issues](https://github.com/TMHSDigital/Awesome-Ads/issues) section to report any problems with the content or conduct within the community.
 
 ## Consequences
 - Violations of these guidelines may result in being banned from contributing to the repository.
