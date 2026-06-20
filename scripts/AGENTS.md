@@ -7,6 +7,7 @@ Maintenance utilities for repository quality checks.
 | File | Purpose |
 |------|---------|
 | `check-internal-links.py` | Validates that relative `markdown` links resolve to existing files |
+| `prepare-mkdocs.py` | Generates `docs/CONTRIBUTING.md` with site-relative links for MkDocs builds |
 
 ## check-internal-links.py
 

@@ -4,7 +4,7 @@ Instructions for AI coding agents working in the Awesome Ads repository.
 
 ## Purpose
 
-This repository is a **markdown documentation project**. There is no application runtime, package manager, or deployable service beyond GitHub Pages (Jekyll). Your job is usually to edit, add, or reorganize guides and keep links, CI, and navigation consistent.
+This repository is a **markdown documentation project**. There is no application runtime beyond GitHub Pages (MkDocs Material). Your job is usually to edit, add, or reorganize guides and keep links, CI, and navigation consistent.
 
 ## Repository layout
 
@@ -12,7 +12,7 @@ This repository is a **markdown documentation project**. There is no application
 docs/
 ├── channels/     # One guide per advertising channel (SEA, SOCIAL, …)
 ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
-├── templates/    # Template and design resources
+├── ad-templates/    # Template and design resources
 └── meta/         # Repo documentation and community policy
 .github/          # CI workflows, Dependabot, issue/PR templates
 scripts/          # Maintenance scripts (internal link checker)
@@ -32,8 +32,10 @@ Each directory has its own `AGENTS.md` with scope-specific rules. Read the neare
 - **Links:** Use relative paths only so pages work on GitHub and GitHub Pages.
 - **Filenames:** Keep existing UPPERCASE names for channel/resource files (e.g. `SEA.md`, `BUDGETING.md`).
 - **Navigation:** When adding or renaming a page, update:
+  - [mkdocs.yml](mkdocs.yml) (site sidebar navigation)
   - [docs/README.md](docs/README.md)
   - [README.md](README.md) (if the page is linked from the landing page)
+  - [docs/index.md](docs/index.md) (if the page should appear on the site home page)
   - [docs/meta/REPO_OUTLINE.md](docs/meta/REPO_OUTLINE.md) when structure changes
 - **Style:** No emojis in prose unless already present in a file you are not rewriting. Prefer complete sentences. Avoid em dashes in new copy; use commas, periods, or hyphens instead.
 - **Scope:** Do not expand scope into code, apps, or infrastructure unless explicitly requested.
@@ -45,13 +47,15 @@ Run before opening a PR:
 ```bash
 npx markdownlint-cli2 "**/*.md"
 python scripts/check-internal-links.py
+python scripts/prepare-mkdocs.py
+mkdocs build --strict
 ```
 
 CI runs the same checks on pull requests. External link checking runs on a weekly schedule.
 
 ## GitHub Pages
 
-Site config lives in [_config.yml](_config.yml). The [Deploy GitHub Pages](.github/workflows/pages.yml) workflow builds with Jekyll and publishes from `main`. Content under `docs/` is included in the site; root policy files and `AGENTS.md` files are excluded.
+Site config lives in [mkdocs.yml](mkdocs.yml). The [Deploy GitHub Pages](.github/workflows/pages.yml) workflow builds with MkDocs Material and publishes from `main`. Content under `docs/` is the site source; `AGENTS.md` files are excluded from the build. Root [CONTRIBUTING.md](CONTRIBUTING.md) is copied into `docs/` at build time.
 
 ## Do not
 

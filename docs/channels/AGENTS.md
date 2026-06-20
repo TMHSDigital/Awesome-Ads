@@ -36,7 +36,7 @@ You may add sections when the channel warrants it, but keep the same tone and de
 
 - Preserve filename casing (`SEA.md`, not `sea.md`).
 - Link to related **resources** with relative paths: `../resources/BUDGETING.md`, `../resources/LEGAL.md`.
-- Link to **templates** when relevant: `../templates/TEMPLATES.md`.
+- Link to **ad-templates** when relevant: `../ad-templates/TEMPLATES.md`.
 - Do not move channel files out of this directory without updating all indexes and CI.
 
 ## When adding a new channel

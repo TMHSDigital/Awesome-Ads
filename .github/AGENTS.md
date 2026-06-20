@@ -6,8 +6,8 @@ CI, deployment, and repository automation under `.github/`.
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
-| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint + internal link check |
-| [workflows/pages.yml](workflows/pages.yml) | Push to `main` | Build Jekyll site and deploy to GitHub Pages |
+| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint, internal link check, MkDocs build |
+| [workflows/pages.yml](workflows/pages.yml) | Push to `main` | Build MkDocs site and deploy to GitHub Pages |
 | [workflows/link-check-scheduled.yml](workflows/link-check-scheduled.yml) | Weekly + manual | External link check via Lychee |
 
 ## Key config
@@ -23,7 +23,7 @@ CI, deployment, and repository automation under `.github/`.
 
 - Pin actions to major version tags (e.g. `@v7`), consistent with existing files.
 - CI must stay fast: this repo is markdown-only.
-- Pages workflow generates `index.md` from root `README.md` at build time; do not commit `index.md`.
+- Pages workflow runs `scripts/prepare-mkdocs.py` before building; do not commit `docs/CONTRIBUTING.md`.
 - Required permissions: `contents: read` for CI; add `pages: write` and `id-token: write` for Pages deploy.
 
 ## Dependabot PRs

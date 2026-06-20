@@ -22,11 +22,11 @@
 2. [Ad Budgeting and Planning](resources/BUDGETING.md)
 3. [Legal and Ethical Considerations](resources/LEGAL.md)
 4. [Examples of Successful Ad Campaigns](resources/EXAMPLES.md)
-5. [Ad Templates and Design Resources](templates/TEMPLATES.md)
-   - [Social Media Ad Templates](templates/SOCIAL_MEDIA.md)
-   - [Display Ad Templates](templates/DISPLAY_ADS.md)
-   - [Video Ad Templates](templates/VIDEO_ADS.md)
-   - [Email Marketing Templates](templates/EMAIL_MARKETING.md)
+5. [Ad Templates and Design Resources](ad-templates/TEMPLATES.md)
+   - [Social Media Ad Templates](ad-templates/SOCIAL_MEDIA.md)
+   - [Display Ad Templates](ad-templates/DISPLAY_ADS.md)
+   - [Video Ad Templates](ad-templates/VIDEO_ADS.md)
+   - [Email Marketing Templates](ad-templates/EMAIL_MARKETING.md)
 6. [FAQ and Troubleshooting](resources/FAQ.md)
 
 ## Meta

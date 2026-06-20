@@ -1,0 +1,89 @@
+site_name: Awesome Ads
+site_url: https://tmhsdigital.github.io/Awesome-Ads/
+site_description: A practical advertising playbook for small businesses
+site_author: TMHSDigital
+repo_url: https://github.com/TMHSDigital/Awesome-Ads
+repo_name: TMHSDigital/Awesome-Ads
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Channels:
+      - Search Engine Advertising (SEA): channels/SEA.md
+      - Social Media Advertising: channels/SOCIAL.md
+      - Display Advertising: channels/DISPLAY.md
+      - Video Advertising: channels/VIDEO.md
+      - Email Marketing: channels/EMAIL.md
+      - Native Advertising: channels/NATIVE.md
+      - Affiliate Marketing: channels/AFFILIATE.md
+      - Influencer Marketing: channels/INFLUENCER.md
+      - Print Advertising: channels/PRINT.md
+      - Broadcast Advertising: channels/BROADCAST.md
+      - Out-of-Home (OOH): channels/OOH.md
+      - Direct Mail: channels/DIRECT_MAIL.md
+      - Event Sponsorship: channels/EVENT.md
+  - Resources:
+      - Analytics and Reporting: resources/ANALYTICS.md
+      - Ad Budgeting and Planning: resources/BUDGETING.md
+      - Legal and Ethical Considerations: resources/LEGAL.md
+      - Campaign Examples: resources/EXAMPLES.md
+      - FAQ and Troubleshooting: resources/FAQ.md
+  - Templates:
+      - Overview: ad-templates/TEMPLATES.md
+      - Social Media Ad Templates: ad-templates/SOCIAL_MEDIA.md
+      - Display Ad Templates: ad-templates/DISPLAY_ADS.md
+      - Video Ad Templates: ad-templates/VIDEO_ADS.md
+      - Email Marketing Templates: ad-templates/EMAIL_MARKETING.md
+  - Meta:
+      - Repository Outline: meta/REPO_OUTLINE.md
+      - Community Guidelines: meta/COMMUNITY_GUIDELINES.md
+  - Contributing: CONTRIBUTING.md
+
+exclude_docs: |
+  **/AGENTS.md
+  README.md
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets

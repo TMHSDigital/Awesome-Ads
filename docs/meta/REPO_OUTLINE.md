@@ -8,7 +8,7 @@ Overview of the repository structure and content.
 docs/
 ├── channels/     # Per-channel advertising guides
 ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
-├── templates/    # Ad template and design resources
+├── ad-templates/    # Ad template and design resources
 └── meta/         # Repo documentation
 ```
 
@@ -34,16 +34,16 @@ docs/
 - [BUDGETING.md](../resources/BUDGETING.md) — Budgeting strategies and tools
 - [LEGAL.md](../resources/LEGAL.md) — Regulations and ethical advertising
 - [EXAMPLES.md](../resources/EXAMPLES.md) — Successful campaign case studies
-- [TEMPLATES.md](../templates/TEMPLATES.md) — Ad templates and design resources
-  - [SOCIAL_MEDIA.md](../templates/SOCIAL_MEDIA.md)
-  - [DISPLAY_ADS.md](../templates/DISPLAY_ADS.md)
-  - [VIDEO_ADS.md](../templates/VIDEO_ADS.md)
-  - [EMAIL_MARKETING.md](../templates/EMAIL_MARKETING.md)
+- [TEMPLATES.md](../ad-templates/TEMPLATES.md) — Ad templates and design resources
+  - [SOCIAL_MEDIA.md](../ad-templates/SOCIAL_MEDIA.md)
+  - [DISPLAY_ADS.md](../ad-templates/DISPLAY_ADS.md)
+  - [VIDEO_ADS.md](../ad-templates/VIDEO_ADS.md)
+  - [EMAIL_MARKETING.md](../ad-templates/EMAIL_MARKETING.md)
 - [FAQ.md](../resources/FAQ.md) — Common questions and troubleshooting
 
 ## Contributing
 
-See [Contributing Guidelines](../../CONTRIBUTING.md).
+See [Contributing Guidelines](https://github.com/TMHSDigital/Awesome-Ads/blob/main/CONTRIBUTING.md).
 
 ## Community guidelines
 
@@ -51,4 +51,4 @@ See [Community Guidelines](COMMUNITY_GUIDELINES.md).
 
 ## License
 
-Apache License 2.0 — see [LICENSE](../../LICENSE).
+Apache License 2.0 — see [LICENSE](https://github.com/TMHSDigital/Awesome-Ads/blob/main/LICENSE).

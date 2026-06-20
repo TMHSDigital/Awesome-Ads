@@ -15,34 +15,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    name: Build documentation site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
 
-      - name: Prepare Jekyll home page
-        run: |
-          {
-            echo "---"
-            echo "layout: default"
-            echo "title: Awesome Ads"
-            echo "permalink: /"
-            echo "---"
-            cat README.md
-          } > index.md
-
-      - uses: actions/configure-pages@v6
-
-      - uses: actions/jekyll-build-pages@v1
+      - uses: actions/setup-python@v6
         with:
-          source: ./
-          destination: ./_site
+          python-version: "3.12"
+
+      - name: Install MkDocs Material
+        run: pip install -r requirements-docs.txt
+
+      - name: Prepare MkDocs inputs
+        run: python scripts/prepare-mkdocs.py
+
+      - name: Build site
+        run: mkdocs build --strict
 
       - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/
 
-      - name: Deploy to GitHub Pages
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v5
         id: deployment
-        uses: actions/deploy-pages@v5

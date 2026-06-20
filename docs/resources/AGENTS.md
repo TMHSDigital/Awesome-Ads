@@ -22,7 +22,7 @@ Cross-cutting guides that apply across multiple advertising channels. These file
 ## When editing
 
 - Link to channel guides when mentioning a specific medium: `[Social Media Advertising](../channels/SOCIAL.md)`.
-- Link to templates for creative help: `../templates/TEMPLATES.md`.
+- Link to ad-templates for creative help: `../ad-templates/TEMPLATES.md`.
 - Keep infographics and image URLs valid; flag placeholder URLs (e.g. `example.com`) if you see them.
 
 ## When adding a new resource

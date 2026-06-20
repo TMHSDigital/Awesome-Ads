@@ -37,7 +37,7 @@ Cross-cutting topics that apply across channels.
 | Legal and ethical considerations | [LEGAL](docs/resources/LEGAL.md) |
 | Campaign examples | [EXAMPLES](docs/resources/EXAMPLES.md) |
 | FAQ and troubleshooting | [FAQ](docs/resources/FAQ.md) |
-| Templates and design | [TEMPLATES](docs/templates/TEMPLATES.md) |
+| Templates and design | [TEMPLATES](docs/ad-templates/TEMPLATES.md) |
 
 ## For contributors and agents
 

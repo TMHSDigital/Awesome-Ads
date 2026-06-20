@@ -1,2 +1,6 @@
 # Local research and drafts (not published with the repo)
 research/
+
+# MkDocs build output and generated site files
+site/
+docs/CONTRIBUTING.md

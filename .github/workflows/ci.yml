@@ -34,3 +34,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/check-internal-links.py
+
+  mkdocs:
+    name: MkDocs build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-docs.txt
+      - run: python scripts/prepare-mkdocs.py
+      - run: mkdocs build --strict

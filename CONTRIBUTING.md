@@ -8,7 +8,7 @@ We welcome contributions from the community! Follow these guidelines to help us 
 ├── docs/
 │   ├── channels/     # One guide per advertising channel
 │   ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
-│   ├── templates/    # Template and design resources
+│   ├── ad-templates/    # Template and design resources
 │   └── meta/         # Repo documentation
 ├── .github/          # CI, Dependabot, issue/PR templates
 └── scripts/          # Maintenance scripts (link checker)
@@ -33,6 +33,8 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
    ```bash
    npx markdownlint-cli2 "**/*.md"
    python scripts/check-internal-links.py
+   python scripts/prepare-mkdocs.py
+   mkdocs build --strict
    ```
 6. **Commit and push**
    ```bash
@@ -40,6 +42,18 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
    git push origin your-branch-name
    ```
 7. **Open a pull request** against `main`.
+
+## Preview the site locally
+
+Install MkDocs Material and serve the docs site:
+
+```bash
+pip install -r requirements-docs.txt
+python scripts/prepare-mkdocs.py
+mkdocs serve
+```
+
+Open http://127.0.0.1:8000/Awesome-Ads/ in your browser.
 
 ## Standards
 

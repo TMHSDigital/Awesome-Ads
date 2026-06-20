@@ -26,7 +26,7 @@ Ad template overviews and format-specific companion pages. The hub is [TEMPLATES
 ## When adding a template category
 
 1. Add `NEW_FORMAT.md` in this directory.
-2. Add a bullet under templates in [../README.md](../README.md) and the root [README.md](../../README.md).
+2. Add a bullet under ad-templates in [../README.md](../README.md), [mkdocs.yml](../../mkdocs.yml), and the root [README.md](../../README.md).
 3. Cross-link from [TEMPLATES.md](TEMPLATES.md).
 
 ## Parent context
