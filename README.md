@@ -1,5 +1,7 @@
 # Awesome Ads
 
+[![CI](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/ci.yml/badge.svg)](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/ci.yml)
+
 Welcome to the Awesome Ads repository! This guide is designed to help small businesses navigate the world of advertising with comprehensive information on various ad options. Each section is broken down into its own file for easy navigation and updates.
 
 ## Sections

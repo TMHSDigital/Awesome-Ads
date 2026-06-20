@@ -1,0 +1,28 @@
+title: Awesome Ads
+description: A comprehensive advertising guide for small businesses
+theme: jekyll-theme-slate
+baseurl: /Awesome-Ads
+url: https://tmhsdigital.github.io
+
+markdown: kramdown
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - "*.md"
+  - TEMPLATES
+
+exclude:
+  - README.md
+  - LICENSE
+  - scripts
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,11 @@
+verbose = "warn"
+no_progress = true
+exclude_all_private = true
+max_retries = 2
+max_concurrency = 8
+timeout = 20
+user_agent = "Awesome-Ads-Link-Checker/1.0"
+
+exclude = [
+  "https://adespresso.com/wp-content/*",
+]
