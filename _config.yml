@@ -22,6 +22,7 @@ exclude:
   - LICENSE
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md
+  - AGENTS.md
   - scripts
   - .github
   - Gemfile
