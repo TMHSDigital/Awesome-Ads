@@ -6,38 +6,8 @@ repo_url: https://github.com/TMHSDigital/Awesome-Ads
 repo_name: TMHSDigital/Awesome-Ads
 edit_uri: edit/main/docs/
 
-nav:
-  - Home: index.md
-  - Channels:
-      - Search Engine Advertising (SEA): channels/SEA.md
-      - Social Media Advertising: channels/SOCIAL.md
-      - Display Advertising: channels/DISPLAY.md
-      - Video Advertising: channels/VIDEO.md
-      - Email Marketing: channels/EMAIL.md
-      - Native Advertising: channels/NATIVE.md
-      - Affiliate Marketing: channels/AFFILIATE.md
-      - Influencer Marketing: channels/INFLUENCER.md
-      - Print Advertising: channels/PRINT.md
-      - Broadcast Advertising: channels/BROADCAST.md
-      - Out-of-Home (OOH): channels/OOH.md
-      - Direct Mail: channels/DIRECT_MAIL.md
-      - Event Sponsorship: channels/EVENT.md
-  - Resources:
-      - Analytics and Reporting: resources/ANALYTICS.md
-      - Ad Budgeting and Planning: resources/BUDGETING.md
-      - Legal and Ethical Considerations: resources/LEGAL.md
-      - Campaign Examples: resources/EXAMPLES.md
-      - FAQ and Troubleshooting: resources/FAQ.md
-  - Templates:
-      - Overview: ad-templates/TEMPLATES.md
-      - Social Media Ad Templates: ad-templates/SOCIAL_MEDIA.md
-      - Display Ad Templates: ad-templates/DISPLAY_ADS.md
-      - Video Ad Templates: ad-templates/VIDEO_ADS.md
-      - Email Marketing Templates: ad-templates/EMAIL_MARKETING.md
-  - Meta:
-      - Repository Outline: meta/REPO_OUTLINE.md
-      - Community Guidelines: meta/COMMUNITY_GUIDELINES.md
-  - Contributing: CONTRIBUTING.md
+hooks:
+  - scripts/mkdocs_hooks.py
 
 exclude_docs: |
   **/AGENTS.md
@@ -62,11 +32,30 @@ theme:
     - navigation.instant
     - navigation.sections
     - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    - navigation.tracking
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      enable_git_follow: false
+      strict: false
+      exclude:
+        - index.md
+        - CONTRIBUTING.md
+        - channels/index.md
+        - resources/index.md
+        - ad-templates/index.md
+        - meta/index.md
 
 markdown_extensions:
   - admonition

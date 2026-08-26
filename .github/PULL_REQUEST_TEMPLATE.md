@@ -8,4 +8,4 @@
 
 - [ ] Links are relative and resolve (`python scripts/check-internal-links.py`)
 - [ ] Markdown lint passes (`npx markdownlint-cli2 "**/*.md"`)
-- [ ] Updated `docs/README.md` / root `README.md` if pages were added or moved
+- [ ] New pages have an H1 (optional `nav_order` comment). Do not edit `mkdocs.yml` nav.

@@ -1,4 +1,5 @@
 # Community Guidelines
+<!-- nav_order: 20 -->
 
 To ensure a positive and respectful environment, please follow these community guidelines when contributing to the Awesome Ads repository.
 
@@ -16,13 +17,11 @@ To ensure a positive and respectful environment, please follow these community g
 - Be open to feedback and willing to learn from others.
 
 ## Reporting Issues
-- Report any inappropriate behavior or violations of these guidelines to the repository maintainers.
-- Use the [Issues](https://github.com/TMHSDigital/Awesome-Ads/issues) section to report any problems with the content or conduct within the community.
+- Report content problems via [GitHub Issues](https://github.com/TMHSDigital/Awesome-Ads/issues).
+- Report conduct or harassment privately. Do not file a public Issue for that. Contact the repository owner through their GitHub profile, or use GitHub's report-abuse tools.
 
 ## Consequences
 - Violations of these guidelines may result in being banned from contributing to the repository.
 - Repeated offenses or severe violations will lead to further action as deemed necessary by the repository maintainers.
 
-Thank you for helping us maintain a welcoming and collaborative environment!
-
-![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)
+Thank you for helping us maintain a welcoming and collaborative environment.

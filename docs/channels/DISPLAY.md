@@ -1,4 +1,5 @@
 # Display Advertising
+<!-- nav_order: 30 -->
 
 Display advertising uses visual ads — banners, graphics, and rich media — shown across websites, apps, and ad networks. Traditional display faces reduced conversion stability due to browser-level cookie blocking; the channel is undergoing a structural pivot toward contextual and first-party audience targeting.
 
@@ -63,3 +64,9 @@ Display maintains cheap cost-per-click relative to high-intent search, making it
 - [AdRoll](https://www.adroll.com/)
 - [StackAdapt](https://www.stackadapt.com/)
 - [Media.net](https://www.media.net/)
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

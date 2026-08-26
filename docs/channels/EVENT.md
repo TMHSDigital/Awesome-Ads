@@ -1,4 +1,5 @@
 # Event Sponsorship
+<!-- nav_order: 130 -->
 
 Event sponsorship involves supporting events financially or through in-kind contributions in exchange for brand exposure and audience access. The model has shifted from passive logo placement to **value-driven, experiential partnerships** with verified attendee profiles. Nearly **60% of event organizers** still evaluate sponsorship ROI inconsistently — creating both a challenge and an opportunity for sponsors who demand clear deliverables upfront.
 
@@ -89,3 +90,9 @@ Use unique promo codes, dedicated landing page URLs, or QR codes at your booth t
 - [SponsorMyEvent](https://www.sponsormyevent.com/) — sponsorship marketplace
 - [Bizzabo](https://www.bizzabo.com/) — event management with attendee analytics
 - [Local Chambers of Commerce] — introductions to community events
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

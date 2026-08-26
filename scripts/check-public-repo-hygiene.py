@@ -14,6 +14,11 @@ FORBIDDEN_TRACKED_PATHS = (
     "research/",
     "site/",
     "docs/CONTRIBUTING.md",
+    "docs/index.md",
+    "docs/channels/index.md",
+    "docs/resources/index.md",
+    "docs/ad-templates/index.md",
+    "docs/meta/index.md",
 )
 
 FORBIDDEN_TRACKED_SUFFIXES = (

@@ -1,4 +1,5 @@
 # Video Advertising
+<!-- nav_order: 40 -->
 
 Video advertising promotes products and services through video content across streaming, social, and connected TV surfaces. The landscape has consolidated into three primary viewing contexts: **mobile/desktop in-stream**, **vertical short-form** (YouTube Shorts, TikTok, Reels), and **Connected TV (CTV)**.
 
@@ -70,6 +71,12 @@ CTV is now a viable channel for small businesses running local awareness and geo
 - [Adwave (CTV self-serve)](https://adwave.com/)
 - [Roku Ads Manager](https://advertising.roku.com/)
 - [Spotify Advertising](https://ads.spotify.com/)
-- [Meta Video Ads](https://www.facebook.com/business/ads/video)
-- [LinkedIn Video Ads](https://business.linkedin.com/marketing-solutions/ads/video-ads)
+- [Meta Ads](https://www.facebook.com/business/ads)
+- [LinkedIn Ads](https://business.linkedin.com/advertise/ads)
 - [TikTok Ads](https://www.tiktok.com/business/en-US/ads)
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

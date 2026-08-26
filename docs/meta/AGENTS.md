@@ -6,12 +6,12 @@ Repository documentation and community policy. These files describe the project 
 
 | File | Purpose |
 |------|---------|
-| `REPO_OUTLINE.md` | Structure map and brief description of every content file |
+| `REPO_OUTLINE.md` | Folder layout and how the site catalog is generated |
 | `COMMUNITY_GUIDELINES.md` | Conduct expectations for contributors and discussions |
 
 ## When editing
 
-- **REPO_OUTLINE.md:** Update whenever files move, rename, or are added under `docs/channels/`, `docs/resources/`, or `docs/ad-templates/`. Paths in this file are relative to `docs/meta/` (use `../channels/SEA.md`, etc.).
+- **REPO_OUTLINE.md:** Describe folder layout and catalog generation. Do not maintain a per-file bullet list.
 - **COMMUNITY_GUIDELINES.md:** Keep aligned with [../../CODE_OF_CONDUCT.md](../../CODE_OF_CONDUCT.md), which points here. Use the canonical repo URL: `https://github.com/TMHSDigital/Awesome-Ads`.
 
 ## Tone

@@ -1,4 +1,5 @@
 # Affiliate Marketing
+<!-- nav_order: 70 -->
 
 Affiliate marketing partners with third-party publishers who promote your products or services in exchange for a commission tied to specific outcomes. The model has evolved significantly: **payment structures are shifting to recurring and tiered models**, and traditional 30-day last-click attribution has become largely obsolete.
 
@@ -28,7 +29,7 @@ Traditional 30-day last-click attribution relied on browser cookies to credit th
 
 **Impact:** Affiliates with long consideration cycles (editorial reviewers, comparison sites) are being undercredited, while coupon and cashback browser extensions that intercept buyers at checkout are being over-credited.
 
-**Solution — Tiered Commission Structures:** Modern networks like [Impact](https://impact.com/) and [ShareASale](https://www.shareasale.com/) support tiered commission structures. This allows you to reward mid-funnel content creators who drive early consideration at a higher rate while reducing payouts to last-touch coupon interceptors.
+**Solution: tiered commissions.** Modern networks like [Impact](https://impact.com/) and [Awin](https://www.awin.com/) (ShareASale now redirects here) support tiered commission structures. Reward mid-funnel creators who drive consideration at a higher rate and reduce payouts to last-touch coupon interceptors.
 
 ---
 
@@ -63,8 +64,13 @@ Traditional 30-day last-click attribution relied on browser cookies to credit th
 ## Tools and Resources
 
 - [Impact](https://impact.com/) — advanced attribution and tiered commission support
-- [ShareASale](https://www.shareasale.com/)
 - [CJ Affiliate](https://www.cj.com/)
 - [Rakuten Advertising](https://rakutenadvertising.com/)
 - [Awin](https://www.awin.com/)
 - [Amazon Associates](https://affiliate-program.amazon.com/)
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

@@ -1,4 +1,5 @@
 # Search Engine Advertising (SEA)
+<!-- nav_order: 10 -->
 
 Search Engine Advertising (SEA) involves placing ads on search engine results pages (SERPs). This method allows businesses to target users actively searching for specific keywords.
 
@@ -61,3 +62,9 @@ AI Max achieves efficiency through three coordinated layers:
 - [Microsoft Advertising](https://ads.microsoft.com/)
 - [Google AI Max documentation](https://support.google.com/google-ads/answer/15910187)
 - [WordStream PPC Benchmarks](https://www.wordstream.com/ppc-benchmarks)
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

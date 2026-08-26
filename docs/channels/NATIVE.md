@@ -1,38 +1,57 @@
 # Native Advertising
+<!-- nav_order: 60 -->
 
-Native advertising involves creating ads that blend seamlessly with the content on the platform where they appear, providing a non-disruptive user experience.
+Native ads match the look of the surrounding content so they feel like part of the page or feed. That is also why they are a compliance risk. If a reader cannot tell it is paid, you are offside of FTC native advertising rules. Label it "Sponsored" or "Advertisement" in the unit itself, not only in a footer.
+
+Promoted product listings on Amazon are a different channel. See [Amazon Ads](AMAZON.md).
 
 ## Types of Native Advertising
 
-### 1. Sponsored Content
-- **Articles:** Branded content published on news sites or blogs.
-- **Videos:** Branded videos that appear in the feed of social media platforms.
+### 1. Sponsored content
+- Branded articles or videos on publisher sites.
+- Must not mimic an independent editorial if the commercial relationship is hidden.
 
-### 2. In-Feed Ads
-- **Social Media Feeds:** Ads that appear in the feed of social platforms like Facebook, Twitter, Instagram, and LinkedIn.
+### 2. In-feed ads
+- Units inside social or content feeds. Treat Meta, LinkedIn, and similar placements as native in-feed, but run them from those platforms' ad managers. See [Social Media Advertising](SOCIAL.md).
 
-### 3. Recommendation Widgets
-- **Content Recommendations:** Appear at the end of articles or within the content, suggesting related content.
+### 3. Recommendation widgets
+- "Around the web" modules from Taboola, Outbrain, and similar networks.
+- Traffic quality varies. Start with a tight allowlist of publishers and watch bounce rate.
 
-### 4. Search and Promoted Listings
-- **Search Ads:** Ads that appear at the top of search engine results pages.
-- **Promoted Listings:** Ads that appear on e-commerce platforms like Amazon or Etsy.
+### 4. Search and promoted listings
+- Retail media and marketplace listings. Amazon, Etsy, and similar surfaces belong with those product catalogs, not a generic native buy.
+
+## Disclosure
+
+- Use unambiguous labels: Sponsored, Advertisement, or Paid content.
+- Platform UI badges are not enough if the body copy still reads as independent journalism.
+- Influencer-style native posts follow the same FTC rules as [Influencer Marketing](INFLUENCER.md).
 
 ## Benefits
-- **Non-Disruptive:** Ads blend with the content, enhancing user experience.
-- **Higher Engagement:** Users interact more with native ads compared to traditional ads.
-- **Trust Building:** Provides value through informative content.
+
+- Higher engagement than banner inventory when the content is actually useful.
+- Less interruptive than interstitials.
+- Useful for education-heavy offers (B2B, health, home services) if disclosure is clean.
 
 ## Setting Up Native Ads
-1. **Choose the Platform:** Select platforms that align with your audience.
-2. **Create Relevant Content:** Develop content that matches the platform’s style and user expectations.
-3. **Define Target Audience:** Use targeting options to reach the right audience.
-4. **Monitor and Optimize:** Track performance and refine the ads for better results.
+
+1. **Pick the surface:** publisher network vs in-feed social vs marketplace.
+2. **Write to the host format**, then add the paid label before the first scroll.
+3. **Send traffic to a matching landing page.** A clickbait headline into an unrelated offer wastes the click.
+4. **Cap frequency** and kill placements with high bounce and zero conversion.
+5. **Track with UTMs** and, where possible, server-side events. See [Analytics and Reporting](../resources/ANALYTICS.md).
 
 ## Tools and Resources
+
 - [Taboola](https://www.taboola.com/)
 - [Outbrain](https://www.outbrain.com/)
-- [Nativo](https://www.nativo.com/)
 - [Sharethrough](https://www.sharethrough.com/)
 - [Revcontent](https://www.revcontent.com/)
+- [FTC advertising and marketing guidance](https://www.ftc.gov/business-guidance/advertising-marketing)
 
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)
+- [Amazon Ads](AMAZON.md)

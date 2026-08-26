@@ -4,7 +4,7 @@ Instructions for AI coding agents working in the Awesome Ads repository.
 
 ## Purpose
 
-This repository is a **markdown documentation project**. There is no application runtime beyond GitHub Pages (MkDocs Material). Your job is usually to edit, add, or reorganize guides and keep links, CI, and navigation consistent.
+This repository is a **markdown documentation project**. There is no application runtime beyond GitHub Pages (MkDocs Material). Your job is usually to edit, add, or reorganize guides. Keep links valid. Site navigation is generated from the docs folders at build time.
 
 ## Repository layout
 
@@ -31,12 +31,7 @@ Each directory has its own `AGENTS.md` with scope-specific rules. Read the neare
 - **Audience:** Small-business owners and marketers. Write clearly; avoid jargon without explanation.
 - **Links:** Use relative paths only so pages work on GitHub and GitHub Pages.
 - **Filenames:** Keep existing UPPERCASE names for channel/resource files (e.g. `SEA.md`, `BUDGETING.md`).
-- **Navigation:** When adding or renaming a page, update:
-  - [mkdocs.yml](mkdocs.yml) (site sidebar navigation)
-  - [docs/README.md](docs/README.md)
-  - [README.md](README.md) (if the page is linked from the landing page)
-  - [docs/index.md](docs/index.md) (if the page should appear on the site home page)
-  - [docs/meta/REPO_OUTLINE.md](docs/meta/REPO_OUTLINE.md) when structure changes
+- **Navigation:** Add or rename a page by placing a markdown file in the right folder with an H1. Optional `<!-- nav_order: 20 -->` on the line after the H1 controls sidebar order. The GitHub Pages nav and indexes are generated at build time. Do not edit a page list in [mkdocs.yml](mkdocs.yml).
 - **Style:** No emojis in prose unless already present in a file you are not rewriting. Prefer complete sentences. Avoid em dashes in new copy; use commas, periods, or hyphens instead.
 - **Scope:** Do not expand scope into code, apps, or infrastructure unless explicitly requested.
 
@@ -46,6 +41,7 @@ Run before opening a PR:
 
 ```bash
 npx markdownlint-cli2 "**/*.md"
+python -m unittest scripts.test_catalog
 python scripts/check-public-repo-hygiene.py
 python scripts/check-internal-links.py
 python scripts/prepare-mkdocs.py
@@ -61,11 +57,11 @@ Site config lives in [mkdocs.yml](mkdocs.yml). The [Deploy GitHub Pages](.github
 ## Do not
 
 - Commit secrets, credentials, API keys, tokens, or private keys.
-- Commit local-only paths: `research/`, `site/`, `docs/CONTRIBUTING.md`, `.env`, or other generated build output.
+- Commit local-only paths: `research/`, `site/`, `docs/CONTRIBUTING.md`, generated `docs/index.md` and `docs/*/index.md`, `.env`, or other generated build output.
 - Commit draft research, internal notes, or machine-local paths unless the user explicitly asks to publish them.
 - Use `git add -A` or `git add .` without reviewing the staged file list first.
 - Add unrelated tooling (frameworks, package.json, etc.) without explicit request.
-- Break relative links or leave orphaned files out of the table of contents.
+- Break relative links.
 - Run destructive git commands unless the user explicitly asks.
 - Push to the remote unless the user explicitly asks.
 

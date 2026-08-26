@@ -13,7 +13,7 @@ You are working inside the `docs/` tree. All user-facing guides live here.
 
 ## Index
 
-[README.md](README.md) is the canonical table of contents for this folder. Keep it in sync when adding or removing pages. Also update [mkdocs.yml](../mkdocs.yml) navigation and [index.md](index.md) when the change affects the published site.
+[README.md](README.md) points at the published site. Home and section indexes are generated at build time from the markdown files in each subdirectory. Do not hand-edit `index.md` files under `docs/`.
 
 ## Link conventions
 
@@ -21,18 +21,15 @@ Links between docs should be **relative to the current file**:
 
 - From `docs/README.md` to a channel: `channels/SEA.md`
 - From `docs/channels/SEA.md` to a resource: `../resources/ANALYTICS.md`
-- From `docs/ad-templates/SOCIAL_MEDIA.md` to the hub: `TEMPLATES.md`
+- From `docs/ad-templates/TEMPLATES.md` to a channel: `../channels/SOCIAL.md`
 
 Links from the root [README.md](../README.md) use the `docs/` prefix (e.g. `docs/channels/SEA.md`).
 
 ## Adding a new page
 
 1. Place the file in the correct subdirectory (`channels/`, `resources/`, or `ad-templates/`).
-2. Add an entry to [README.md](README.md) and [mkdocs.yml](../mkdocs.yml).
-3. Update the root [README.md](../README.md) if the page should appear on the landing page.
-4. Update [index.md](index.md) if the page should appear on the site home page.
-5. Update [meta/REPO_OUTLINE.md](meta/REPO_OUTLINE.md) for structural changes.
-6. Run validation from the repo root (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
+2. Start the file with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
+3. Run validation from the repo root (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## Content standards
 

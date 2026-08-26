@@ -2,6 +2,11 @@
   "config": ".markdownlint.json",
   "ignores": [
     "docs/CONTRIBUTING.md",
+    "docs/index.md",
+    "docs/channels/index.md",
+    "docs/resources/index.md",
+    "docs/ad-templates/index.md",
+    "docs/meta/index.md",
     "research/**"
   ]
 }

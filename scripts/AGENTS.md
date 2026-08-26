@@ -6,9 +6,12 @@ Maintenance utilities for repository quality checks.
 
 | File | Purpose |
 |------|---------|
+| `catalog.py` | Scans `docs/` folders, titles, and `nav_order` comments for nav and indexes |
+| `mkdocs_hooks.py` | MkDocs `on_config` hook that sets `nav` from `catalog.py` |
+| `test_catalog.py` | Stdlib unit tests for the catalog |
 | `check-internal-links.py` | Validates that relative `markdown` links resolve to existing files |
 | `check-public-repo-hygiene.py` | Fails if local-only paths or secret-like content are tracked in git |
-| `prepare-mkdocs.py` | Generates `docs/CONTRIBUTING.md` with site-relative links for MkDocs builds |
+| `prepare-mkdocs.py` | Generates `docs/CONTRIBUTING.md` and section/home indexes for MkDocs |
 
 ## check-internal-links.py
 
@@ -16,7 +19,7 @@ Maintenance utilities for repository quality checks.
 - Resolves relative link targets from the containing file's directory.
 - Skips `http://`, `https://`, `mailto:`, `#`, and `ftp://` URLs.
 - Exit code `0` on success, `1` when broken links are found.
-- Runs `prepare-mkdocs.py` first so generated files such as `docs/CONTRIBUTING.md` exist before link resolution.
+- Runs `prepare-mkdocs.py` first so generated files such as `docs/CONTRIBUTING.md` and section indexes exist before link resolution.
 
 Run from the repository root:
 

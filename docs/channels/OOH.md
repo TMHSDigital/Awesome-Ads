@@ -1,4 +1,5 @@
 # Out-of-Home (OOH) Advertising
+<!-- nav_order: 110 -->
 
 Out-of-Home (OOH) advertising reaches consumers in physical locations during their daily activities. The channel has been transformed by **programmatic Digital OOH (DOOH)**, which allows small businesses to bid on digital screen inventory in specific contexts with flexible budgets — eliminating the traditional requirement for long-term static billboard contracts.
 
@@ -84,3 +85,9 @@ The most viable OOH entry point for small businesses is **programmatic DOOH** vi
 - [Geopath](https://geopath.org/) — OOH audience measurement
 - [Nielsen](https://www.nielsen.com/) — OOH reach and frequency data
 - [Canva](https://www.canva.com/) / [Adobe Creative Cloud](https://www.adobe.com/) — creative production
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)
