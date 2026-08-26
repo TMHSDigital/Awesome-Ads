@@ -4,6 +4,15 @@ research/
 # MkDocs build output and generated site files
 site/
 docs/CONTRIBUTING.md
+docs/index.md
+docs/channels/index.md
+docs/resources/index.md
+docs/ad-templates/index.md
+docs/meta/index.md
+
+# Python
+__pycache__/
+*.py[cod]
 
 # Secrets and local environment files
 .env

@@ -2,23 +2,7 @@
 
 This directory contains **one guide per advertising channel**. Each file is a standalone reference for small businesses evaluating or running that channel.
 
-## Files
-
-| File | Topic |
-|------|-------|
-| `SEA.md` | Search engine advertising (Google Ads, Bing Ads) |
-| `SOCIAL.md` | Social media advertising |
-| `DISPLAY.md` | Display and banner advertising |
-| `VIDEO.md` | Video advertising |
-| `EMAIL.md` | Email marketing |
-| `NATIVE.md` | Native advertising |
-| `AFFILIATE.md` | Affiliate marketing |
-| `INFLUENCER.md` | Influencer marketing |
-| `PRINT.md` | Print advertising |
-| `BROADCAST.md` | Television and radio |
-| `OOH.md` | Out-of-home advertising |
-| `DIRECT_MAIL.md` | Direct mail |
-| `EVENT.md` | Event sponsorship |
+The markdown files in this directory are the catalog. Site nav is generated from them at build time. Keep UPPERCASE names (`SEA.md`, `SOCIAL.md`).
 
 ## Expected structure
 
@@ -37,13 +21,14 @@ You may add sections when the channel warrants it, but keep the same tone and de
 - Preserve filename casing (`SEA.md`, not `sea.md`).
 - Link to related **resources** with relative paths: `../resources/BUDGETING.md`, `../resources/LEGAL.md`.
 - Link to **ad-templates** when relevant: `../ad-templates/TEMPLATES.md`.
-- Do not move channel files out of this directory without updating all indexes and CI.
+- Do not move channel files out of this directory without updating links that point here.
 
 ## When adding a new channel
 
-1. Create `NEWCHANNEL.md` in this directory.
-2. Update [../README.md](../README.md), [../../README.md](../../README.md), and [../meta/REPO_OUTLINE.md](../meta/REPO_OUTLINE.md).
-3. Run the internal link checker.
+1. Create `NEWCHANNEL.md` in this directory with an H1 on line 1.
+2. Optional: `<!-- nav_order: 20 -->` on the next line. Omit it to sort last in the section.
+3. Link to [BUDGETING.md](../resources/BUDGETING.md), [ANALYTICS.md](../resources/ANALYTICS.md), and [LEGAL.md](../resources/LEGAL.md).
+4. Run the validation commands in [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Parent context
 

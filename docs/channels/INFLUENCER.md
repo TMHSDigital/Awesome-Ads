@@ -1,4 +1,5 @@
 # Influencer Marketing
+<!-- nav_order: 80 -->
 
 Influencer marketing involves partnering with individuals who have established audiences on social platforms to promote your products or services. The industry has matured significantly — pricing now reflects format complexity and engagement quality over follower counts, and compliance enforcement has intensified.
 
@@ -90,3 +91,9 @@ Small businesses running influencer campaigns must maintain a written disclosure
 4. **Set terms in writing:** Deliverables, timeline, usage rights (especially for repurposing as paid ads), and disclosure requirements.
 5. **Brief but don't script:** Provide talking points, key claims, and brand guidelines — over-scripting kills authenticity.
 6. **Track performance:** Use unique UTM links or discount codes; request creator analytics screenshots post-campaign.
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

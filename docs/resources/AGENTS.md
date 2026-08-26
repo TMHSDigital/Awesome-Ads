@@ -23,13 +23,13 @@ Cross-cutting guides that apply across multiple advertising channels. These file
 
 - Link to channel guides when mentioning a specific medium: `[Social Media Advertising](../channels/SOCIAL.md)`.
 - Link to ad-templates for creative help: `../ad-templates/TEMPLATES.md`.
-- Keep infographics and image URLs valid; flag placeholder URLs (e.g. `example.com`) if you see them.
+- Keep image URLs valid. Do not use placeholder hosts like example.com.
 
 ## When adding a new resource
 
 1. Add the file here, not under `channels/`, unless the topic is truly single-channel.
-2. Update [../README.md](../README.md), [../../README.md](../../README.md), and [../meta/REPO_OUTLINE.md](../meta/REPO_OUTLINE.md).
-3. Run `python scripts/check-internal-links.py`.
+2. Start with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls order.
+3. Run `python scripts/check-internal-links.py` from the repo root.
 
 ## Parent context
 

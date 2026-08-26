@@ -1,4 +1,5 @@
 # Ad Budgeting and Planning
+<!-- nav_order: 20 -->
 
 Effective budgeting maximizes return on limited ad spend. For small businesses under **$5,000/month**, the core principle is **concentration over coverage**: feed a small number of campaigns enough conversion volume to exit algorithmic learning phases rather than spreading thinly across every channel.
 

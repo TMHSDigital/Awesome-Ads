@@ -8,36 +8,11 @@ Awesome Ads is an open reference for planning, launching, and refining campaigns
 
 | | |
 |---|---|
-| **Full index** | [docs/README.md](docs/README.md) |
 | **Published site** | [tmhsdigital.github.io/Awesome-Ads](https://tmhsdigital.github.io/Awesome-Ads/) |
+| **Source** | [docs/](docs/) |
 | **Contributing** | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
-## Channels
-
-Guides for each major advertising channel, from setup through optimization.
-
-| Channel | Guide | Channel | Guide |
-|---------|-------|---------|-------|
-| Search (SEA) | [SEA](docs/channels/SEA.md) | Social | [SOCIAL](docs/channels/SOCIAL.md) |
-| Display | [DISPLAY](docs/channels/DISPLAY.md) | Video | [VIDEO](docs/channels/VIDEO.md) |
-| Email | [EMAIL](docs/channels/EMAIL.md) | Native | [NATIVE](docs/channels/NATIVE.md) |
-| Affiliate | [AFFILIATE](docs/channels/AFFILIATE.md) | Influencer | [INFLUENCER](docs/channels/INFLUENCER.md) |
-| Print | [PRINT](docs/channels/PRINT.md) | Broadcast | [BROADCAST](docs/channels/BROADCAST.md) |
-| Out-of-home | [OOH](docs/channels/OOH.md) | Direct mail | [DIRECT_MAIL](docs/channels/DIRECT_MAIL.md) |
-| Event sponsorship | [EVENT](docs/channels/EVENT.md) | | |
-
-## Resources
-
-Cross-cutting topics that apply across channels.
-
-| Topic | Guide |
-|-------|-------|
-| Analytics and reporting | [ANALYTICS](docs/resources/ANALYTICS.md) |
-| Budgeting and planning | [BUDGETING](docs/resources/BUDGETING.md) |
-| Legal and ethical considerations | [LEGAL](docs/resources/LEGAL.md) |
-| Campaign examples | [EXAMPLES](docs/resources/EXAMPLES.md) |
-| FAQ and troubleshooting | [FAQ](docs/resources/FAQ.md) |
-| Templates and design | [TEMPLATES](docs/ad-templates/TEMPLATES.md) |
+The GitHub Pages sidebar, home page, and section indexes are generated at build time from the markdown files under `docs/channels/`, `docs/resources/`, `docs/ad-templates/`, and `docs/meta/`. Add a file with an H1 and it appears on the next deploy.
 
 ## For contributors and agents
 

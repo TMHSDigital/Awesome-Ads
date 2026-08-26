@@ -1,4 +1,5 @@
 # Broadcast Advertising
+<!-- nav_order: 100 -->
 
 Broadcast advertising covers television and radio. Linear broadcast has seen persistent budget redirection as small businesses shift toward measurable, programmatic alternatives. The most important development for SMBs: **Connected TV (CTV) has become a performance channel accessible from $50**, fundamentally changing what "TV advertising" means for small businesses.
 
@@ -29,6 +30,8 @@ Programmatic CTV has crossed a critical structural milestone:
 - **[Adwave](https://adwave.com/):** Self-serve CTV; local business focus; AI-assisted ad creation.
 - **[Roku Ads Manager](https://advertising.roku.com/):** Access to Roku's streaming inventory.
 - **[Tatari](https://www.tatari.tv/):** TV buying and measurement for growth-stage brands.
+
+YouTube in-stream, Shorts, and shoppable CTV units are covered in [Video Advertising](VIDEO.md).
 
 ---
 
@@ -94,3 +97,10 @@ See [Spotify Advertising](https://ads.spotify.com/) for self-serve audio options
 - [Spotify Advertising](https://ads.spotify.com/)
 - [Ad Agencies: Ogilvy, Wieden+Kennedy] — for linear broadcast production
 - [Production Services: Fiverr, Upwork] — for affordable local radio and video spots
+
+## Related guides
+
+- [Video Advertising](VIDEO.md)
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

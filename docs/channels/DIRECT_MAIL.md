@@ -1,4 +1,5 @@
 # Direct Mail Advertising
+<!-- nav_order: 120 -->
 
 Direct mail involves sending physical promotional materials to potential or existing customers. The channel has evolved in two directions: **programmatic retargeting** (automated physical mail triggered by digital behavior) and **traditional bulk mail** (geographic saturation via EDDM). Programmatic direct mail in particular has demonstrated strong ROI in high-ticket service categories.
 
@@ -91,3 +92,9 @@ Most programmatic mail platforms handle NCOA/CASS automatically. For self-manage
 - [Vistaprint](https://www.vistaprint.com/) / [Moo](https://www.moo.com/) — print design and production
 - [PostcardMania](https://www.postcardmania.com/) — full-service direct mail campaigns
 - [Adobe InDesign](https://www.adobe.com/products/indesign.html) / [Canva](https://www.canva.com/) — design tools
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

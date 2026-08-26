@@ -14,7 +14,7 @@ We welcome contributions from the community! Follow these guidelines to help us 
 └── scripts/          # Maintenance scripts (link checker)
 ```
 
-Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. Update [docs/README.md](docs/README.md) and the root [README.md](README.md) when adding pages.
+Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. The site nav is generated at build time from those folders. Start each page with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
 
 ## How to contribute
 
@@ -32,6 +32,7 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
 5. **Verify locally**
    ```bash
    npx markdownlint-cli2 "**/*.md"
+   python -m unittest scripts.test_catalog
    python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py
    python scripts/prepare-mkdocs.py
@@ -61,7 +62,7 @@ Open the local URL printed by `mkdocs serve` (typically port 8000).
 - Write clear, accurate prose aimed at small-business readers.
 - Use relative links so pages work on GitHub and GitHub Pages.
 - End markdown files with a single trailing newline.
-- Update the table of contents when adding or renaming pages.
+- The published site catalog is generated from the docs folders. Do not maintain a second page list.
 
 ## Issues and bug reports
 

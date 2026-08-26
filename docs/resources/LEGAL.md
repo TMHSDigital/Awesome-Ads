@@ -1,4 +1,5 @@
 # Legal and Ethical Considerations
+<!-- nav_order: 30 -->
 
 Advertising compliance has become significantly more complex and higher-stakes. FTC penalties have increased, browser privacy protections have proliferated, and state-level consumer protection laws have expanded. This guide covers the critical requirements as of 2026.
 
@@ -37,7 +38,7 @@ The FTC has civil penalty authority to target:
 - Undisclosed employee testimonials.
 - Review suppression (hiding or blocking negative reviews).
 
-[FTC Advertising Guidelines](https://www.ftc.gov/tips-advice/business-center/advertising-and-marketing)
+[FTC Advertising Guidelines](https://www.ftc.gov/business-guidance/advertising-marketing)
 
 ---
 
@@ -78,7 +79,7 @@ The FTC has civil penalty authority to target:
 - **Opt-out mechanism:** Every commercial email must include a functioning unsubscribe link that processes requests within 10 business days.
 - **Physical address:** Commercial emails must include your current physical postal address.
 
-[CAN-SPAM Compliance Guide](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
+[CAN-SPAM Compliance Guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 
 ---
 
@@ -121,8 +122,8 @@ This applies to any advertiser promoting subscription-based products or services
 
 ## Tools and Resources
 
-- [FTC Advertising Guidelines](https://www.ftc.gov/tips-advice/business-center/advertising-and-marketing)
+- [FTC Advertising Guidelines](https://www.ftc.gov/business-guidance/advertising-marketing)
 - [GDPR.eu Overview](https://gdpr.eu/)
-- [CAN-SPAM Act Compliance Guide](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
+- [CAN-SPAM Act Compliance Guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [IAB Legal Guidelines](https://www.iab.com/guidelines/)
 - [Google Consent Mode documentation](https://support.google.com/google-ads/answer/10000067)

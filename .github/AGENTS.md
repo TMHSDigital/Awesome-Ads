@@ -14,7 +14,7 @@ CI, deployment, and repository automation under `.github/`.
 
 | File | Purpose |
 |------|---------|
-| [dependabot.yml](dependabot.yml) | Weekly GitHub Actions version updates |
+| [dependabot.yml](dependabot.yml) | Weekly GitHub Actions and pip (requirements-docs.txt) updates |
 | [lychee.toml](lychee.toml) | External link checker settings |
 | [ISSUE_TEMPLATE/](ISSUE_TEMPLATE/) | Issue form for content problems |
 | [PULL_REQUEST_TEMPLATE.md](PULL_REQUEST_TEMPLATE.md) | PR checklist for contributors |
@@ -23,7 +23,7 @@ CI, deployment, and repository automation under `.github/`.
 
 - Pin actions to major version tags (e.g. `@v7`), consistent with existing files.
 - CI must stay fast: this repo is markdown-only.
-- Pages workflow runs `scripts/prepare-mkdocs.py` before building; do not commit `docs/CONTRIBUTING.md`.
+- Pages workflow runs `scripts/prepare-mkdocs.py` before building; do not commit `docs/CONTRIBUTING.md`, `docs/index.md`, or `docs/*/index.md`.
 - Required permissions: `contents: read` for CI; add `pages: write` and `id-token: write` for Pages deploy.
 
 ## Dependabot PRs

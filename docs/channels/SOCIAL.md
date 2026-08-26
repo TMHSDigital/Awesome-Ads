@@ -1,4 +1,5 @@
 # Social Media Advertising
+<!-- nav_order: 20 -->
 
 Social media advertising leverages various platforms to target specific audiences with tailored ads. The landscape has shifted from detailed interest-based targeting to autonomous AI optimization driven by conversion signals.
 
@@ -115,7 +116,13 @@ Bluesky surpassed 41 million users in 2025 but **does not support paid advertisi
 
 - [Meta Ads Manager](https://www.facebook.com/business/ads)
 - [TikTok Ads](https://www.tiktok.com/business/en-US/ads)
-- [LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads)
-- [Pinterest Ads](https://business.pinterest.com/ads)
-- [X Ads](https://ads.twitter.com/)
+- [LinkedIn Campaign Manager](https://business.linkedin.com/advertise/ads)
+- [Pinterest Ads](https://business.pinterest.com/ads/)
+- [X Ads](https://ads.x.com/)
 - [Reddit Ads](https://www.reddit.com/advertising/)
+
+## Related guides
+
+- [Analytics and Reporting](../resources/ANALYTICS.md)
+- [Ad Budgeting and Planning](../resources/BUDGETING.md)
+- [Legal and Ethical Considerations](../resources/LEGAL.md)

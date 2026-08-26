@@ -8,4 +8,9 @@ user_agent = "Awesome-Ads-Link-Checker/1.0"
 
 exclude = [
   "https://adespresso.com/wp-content/*",
+  "https://upload.wikimedia.org/*",
+  "https://www.canva.com/*",
+  "https://www.pexels.com/*",
+  "https://www.adobe.com/*",
+  "https://unsplash.com/*",
 ]
