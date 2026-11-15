@@ -62,7 +62,7 @@ Open the local URL printed by `mkdocs serve` (typically port 8000).
 - Write clear, accurate prose aimed at small-business readers.
 - Use relative links so pages work on GitHub and GitHub Pages.
 - End markdown files with a single trailing newline.
-- The published site catalog is generated from the docs folders. Do not maintain a second page list.
+- The published site catalog is generated from the docs folders. Do not maintain another page list. The one exception is the guide tables in the root README, which a unit test keeps in sync: add a row there when you add a guide.
 
 ## Issues and bug reports
 

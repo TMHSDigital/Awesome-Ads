@@ -158,6 +158,26 @@ class GuideListTests(unittest.TestCase):
             self.assertLess(home.index("## Where to start"), home.index("## Channels"))
 
 
+class ReadmeTests(unittest.TestCase):
+    """The root README lists every reader-facing guide."""
+
+    def test_every_guide_is_linked_from_readme(self) -> None:
+        root = Path(__file__).resolve().parent.parent
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        scanned = scan_docs(root / "docs")
+        missing = [
+            page.rel
+            for folder in ("channels", "resources", "ad-templates")
+            for page in scanned[folder]
+            if f"](docs/{page.rel})" not in readme
+        ]
+        self.assertEqual(
+            missing,
+            [],
+            "Add these guides to the tables in README.md",
+        )
+
+
 class SummaryTests(unittest.TestCase):
     def test_skips_heading_and_nav_comment(self) -> None:
         text = "# Title\n<!-- nav_order: 10 -->\n\nFirst **bold** [link](a.md) line.\n\nSecond.\n"
