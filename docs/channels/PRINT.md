@@ -8,14 +8,17 @@ For physical mail that is triggered by digital behavior, use [Direct Mail](DIREC
 ## Types of Print Advertising
 
 ### 1. Newspaper ads
+
 - **Classifieds:** Small, local, and cheap. Useful for hiring and hyperlocal services.
 - **Display ads:** Larger placements. Demand a unique phone number, URL, or QR so you can see if anyone responded.
 
 ### 2. Magazine ads
+
 - Full page, half page, or advertorials in a niche title whose readers match your buyer.
 - Advertorials must be labeled. See native disclosure rules in [Legal and Ethical Considerations](../resources/LEGAL.md).
 
 ### 3. Brochures and flyers
+
 - In-store, trade shows, and door drops. Pair with [Event Sponsorship](EVENT.md) or [Out-of-Home](OOH.md) when the same audience is already in the venue.
 
 ## When print is worth it

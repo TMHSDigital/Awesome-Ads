@@ -68,22 +68,26 @@ CPC and CPM costs have risen across most major auctions due to increased adverti
 ## Setting Your Budget
 
 ### 1. Assess Financial Capacity
+
 - Review your total marketing budget; advertising should represent a defined percentage (typically 5–15% of revenue for growth-stage businesses).
 - Keep 3–6 months of data before judging channel ROI — auctions need time to learn and optimize.
 
 ### 2. The Learning Phase Problem
 Platform algorithms require a minimum number of conversions per week to exit the learning phase and optimize bidding effectively:
+
 - **Meta:** ~50 conversion events per week per ad set.
 - **Google:** ~30–50 conversions per campaign per month minimum.
 
 If your budget can't generate those volumes, consolidate into fewer campaigns. Running too many underfunded campaigns starves every algorithm simultaneously.
 
 ### 3. Allocate by Channel Performance
+
 - Start with proven, high-intent channels (search, retargeting).
 - Add new channels only once baseline performance is established.
 - Track cost per acquisition (CPA) and lifetime value (LTV) per channel, not just CTR.
 
 ### 4. Fixed vs. Flexible Budgets
+
 - **Fixed budgets:** Predictable planning; easier for small businesses.
 - **Flexible (campaign-level optimization):** Allows Meta/Google to shift spend toward better-performing periods. Recommended once you have sufficient conversion data.
 

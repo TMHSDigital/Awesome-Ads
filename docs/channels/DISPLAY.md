@@ -6,16 +6,20 @@ Display advertising uses visual ads — banners, graphics, and rich media — sh
 ## Types of Display Ads
 
 ### 1. Banner Ads
+
 - **Static Banners:** Fixed images in standard IAB sizes (728×90 leaderboard, 300×250 medium rectangle, 160×600 wide skyscraper).
 - **Animated Banners:** HTML5 or GIF-based motion to attract attention.
 
 ### 2. Rich Media Ads
+
 - **Interactive Elements:** Embedded video, expandable panels, or interactive overlays.
 
 ### 3. Interstitial Ads
+
 - **Full-Screen Ads:** Appear between content pages or during app transitions.
 
 ### 4. Responsive Display Ads
+
 - Google's automated format: upload headlines, descriptions, images, and logos; the system assembles and tests combinations across the GDN automatically.
 
 ## Targeting Approaches

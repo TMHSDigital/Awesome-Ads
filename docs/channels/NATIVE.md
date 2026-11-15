@@ -8,17 +8,21 @@ Promoted product listings on Amazon are a different channel. See [Amazon Ads](AM
 ## Types of Native Advertising
 
 ### 1. Sponsored content
+
 - Branded articles or videos on publisher sites.
 - Must not mimic an independent editorial if the commercial relationship is hidden.
 
 ### 2. In-feed ads
+
 - Units inside social or content feeds. Treat Meta, LinkedIn, and similar placements as native in-feed, but run them from those platforms' ad managers. See [Social Media Advertising](SOCIAL.md).
 
 ### 3. Recommendation widgets
+
 - "Around the web" modules from Taboola, Outbrain, and similar networks.
 - Traffic quality varies. Start with a tight allowlist of publishers and watch bounce rate.
 
 ### 4. Search and promoted listings
+
 - Retail media and marketplace listings. Amazon, Etsy, and similar surfaces belong with those product catalogs, not a generic native buy.
 
 ## Disclosure

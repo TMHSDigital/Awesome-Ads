@@ -8,6 +8,7 @@ Advertising compliance has become significantly more complex and higher-stakes. 
 ## FTC Guidelines and Enforcement
 
 ### Truth in Advertising
+
 - Ads must be truthful, non-deceptive, and substantiated with evidence.
 - Unsubstantiated claims — particularly in health, finance, and performance categories — are a primary enforcement target.
 
@@ -16,12 +17,14 @@ Advertising compliance has become significantly more complex and higher-stakes. 
 The FTC has escalated enforcement significantly. **Civil penalties now reach $53,088 per violation**.
 
 **"Clear and conspicuous" standards:**
+
 - Disclosures must appear **above the fold**, before any "read more" click or scroll is required.
 - Vague hashtags (`#partner`, `#collab`, `#ambassador`, `#gifted`) **do not satisfy** the standard.
 - **Required language:** `#ad` or `Sponsored by [Brand]` — unambiguous, explicit.
 
 **Video content — dual disclosure requirement:**
 Any sponsored video on YouTube, TikTok, Instagram Reels, or similar platforms requires:
+
 1. A **verbal callout** within the first 30 seconds (e.g., "This video is sponsored by [Brand]").
 2. A **prominent, readable on-screen text overlay** displayed during the sponsored segment.
 
@@ -34,6 +37,7 @@ The FTC Native Advertising Guidelines require that sponsored editorial and adver
 
 ### FTC Consumer Review Rule
 The FTC has civil penalty authority to target:
+
 - Fake or incentivized reviews not disclosed as such.
 - Undisclosed employee testimonials.
 - Review suppression (hiding or blocking negative reviews).
@@ -45,6 +49,7 @@ The FTC has civil penalty authority to target:
 ## GDPR and International Data Privacy
 
 ### EU — GDPR
+
 - **Data Protection:** Safeguard all personal data collected via ads or web analytics.
 - **User Consent:** Obtain explicit, informed consent before data collection.
 - **Google Consent Mode v2 (mandatory for EU traffic):** Any advertiser using Google Ads or GA4 with EU traffic must implement a certified **Consent Management Platform (CMP)** to pass two consent signals: `ad_user_data` and `ad_personalization`. Failure to pass these signals disables algorithmic bidding, remarketing, and audience modeling for EU users.
@@ -53,6 +58,7 @@ The FTC has civil penalty authority to target:
 [GDPR Overview](https://gdpr.eu/)
 
 ### Third-Party Cookie Status
+
 - Google has maintained third-party cookies in Chrome under a **user-choice model** (not deprecating them outright), but Safari and Firefox continue to block cross-site tracking by default.
 - A significant share of web traffic is already effectively cookieless. Campaigns relying on cookie-based behavioral retargeting will see reduced scale.
 - **Mitigation:** First-party data strategies, server-side tracking, and contextual targeting. See [Analytics and Reporting](ANALYTICS.md).
@@ -62,11 +68,13 @@ The FTC has civil penalty authority to target:
 ## iOS and Android Privacy Protections
 
 ### Apple (iOS / Safari 26)
+
 - **Advanced Fingerprinting Protection (AFP):** Enabled by default across all Safari browsing modes. Injects "noise" into device characteristics to block fingerprint-based user profiling.
 - **Link Tracking Protection (LTP):** Enabled by default in Private Browsing, Apple Mail, and Apple Messages. Strips user-identifiable click parameters — `gclid`, `fbclid`, and similar — from URLs. **Standard UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`) are not affected.**
 - **Impact:** Advertisers lose click-level attribution for a portion of iOS traffic. Server-side conversion APIs (Meta CAPI, Google Tag Gateway) are the mitigation.
 
 ### Android (Android 17+)
+
 - Google officially discontinued the **Android Privacy Sandbox** initiative.
 - Android 17 implements strict **memory isolation** to prevent SDK data leakage between apps.
 - **Google's Zeroes Policy:** If a user deletes their Advertising ID, or if an app fails to declare `com.google.android.gms.permission.AD_ID`, the advertising ID returns as a string of zeros, disabling personalized targeting.
@@ -87,6 +95,7 @@ The FTC has civil penalty authority to target:
 
 ### California Automatic Renewal Law (ARL) — Updated
 Requires:
+
 - Explicit **affirmative consent** for any subscription or auto-renewal signup (pre-checked boxes are insufficient).
 - A simple, accessible **click-to-cancel** mechanism.
 - Clear disclosure of recurring charge terms before the purchase is finalized.
@@ -98,14 +107,17 @@ This applies to any advertiser promoting subscription-based products or services
 ## Ethical Advertising
 
 ### Transparency
+
 - Clearly disclose all sponsored content, affiliate relationships, and paid endorsements.
 - Sponsored articles and native ad placements must be labeled conspicuously.
 
 ### Privacy
+
 - Collect only the data you need; use it only for stated purposes.
 - Respect user opt-outs and deletion requests under applicable regulations.
 
 ### Fairness
+
 - Do not use dark patterns, false urgency, or deceptive framing.
 - Ads targeting vulnerable populations (children, elderly) face heightened scrutiny.
 

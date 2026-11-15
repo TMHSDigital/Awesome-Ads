@@ -16,6 +16,7 @@ Programmatic direct mail automatically triggers physical mail drops based on rea
 **Performance:** Campaigns in high-ticket verticals (home services, automotive, real estate) have demonstrated up to **15x ROI**. Physical mail cuts through digital ad fatigue; a physical coupon has an average household lifespan of over **7 days** — far longer than a digital banner impression.
 
 **Platforms:**
+
 - [PostPilot](https://www.postpilot.com/) — Shopify-native retargeting postcards
 - [Postalytics](https://www.postalytics.com/) — CRM-triggered direct mail automation
 - [Lob](https://www.lob.com/) — API-driven programmatic mail for developers

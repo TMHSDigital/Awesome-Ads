@@ -8,18 +8,22 @@ Commercial email is regulated. Read [Legal and Ethical Considerations](../resour
 ## Types of Email Marketing
 
 ### 1. Newsletters
+
 - Regular updates, tips, and education that keep the list warm.
 - Best cadence is one you can sustain. Weekly is not required.
 
 ### 2. Promotional Emails
+
 - Offers, launches, and seasonal campaigns.
 - Segment by purchase history and recency. Do not send the same discount to everyone.
 
 ### 3. Lifecycle and transactional
+
 - Welcome series, abandoned cart or quote follow-up, post-purchase, win-back.
 - Transactional messages (order and shipping) convert well when they stay useful and still include a clear unsubscribe on any marketing add-on.
 
 ### 4. SMS as a companion
+
 - If you collect mobile numbers with separate consent, use SMS for time-sensitive offers. Keep email as the long-form channel. Budget 5 to 10 percent of a small media mix for email and SMS tools combined.
 
 ## 2026 operating notes

@@ -6,17 +6,21 @@ Affiliate marketing partners with third-party publishers who promote your produc
 ## Types of Affiliate Marketing
 
 ### 1. Pay-Per-Sale
+
 - **Commission-based:** Affiliates earn a percentage of the sale they generate. Most common model for e-commerce.
 - **2026 benchmark:** Average ecommerce affiliate commission has stabilized at **~8.4% of order value**.
 
 ### 2. Pay-Per-Lead
+
 - **Lead generation:** Affiliates earn a flat fee per qualified lead or sign-up. Common in finance, insurance, and SaaS.
 
 ### 3. Pay-Per-Click
+
 - **Traffic-based:** Affiliates earn per click generated. Lower trust, lower conversion accountability — less common now.
 
 ### 4. Recurring / SaaS Commission Structures
 SaaS affiliate programs have shifted to recurring models tied to subscriber retention:
+
 - Year 1: ~**22.5% of monthly recurring revenue (MRR)**
 - Year 2: ~**14.2% of MRR**
 - Year 3+: ~**8.1% of MRR**

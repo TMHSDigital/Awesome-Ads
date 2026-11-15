@@ -19,6 +19,7 @@ DOOH allows advertisers to buy digital screen inventory in real time, targeting 
 **How it works:** Advertisers set targeting parameters (location, time, context), set a CPM bid, and ads run on relevant nearby screens. Unlike static billboards, DOOH campaigns can be started, paused, and adjusted in real time.
 
 **Platforms:**
+
 - [StackAdapt](https://www.stackadapt.com/) — DSP with strong DOOH inventory
 - [Vistar Media](https://www.vistarmedia.com/) — programmatic DOOH specialist
 - [Place Exchange](https://www.placeexchange.com/) — omnichannel DOOH buying

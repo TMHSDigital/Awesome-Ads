@@ -48,10 +48,12 @@ For businesses with the budget and scale where linear TV is viable:
 ## Radio
 
 ### Traditional Radio
+
 - **Local Radio Ads:** Targeted to local commuter audiences; cost-effective in specific markets.
 - **Live Reads:** Host-delivered ads carry high trust; effective for local service businesses.
 
 ### Programmatic Audio (Streaming)
+
 - **Spotify Audience Network:** Programmatic audio ads across Spotify and third-party podcast apps. Demographic and interest targeting available. Self-serve buying accessible to small businesses.
 - **Podcast Host-Read Sponsorships:** High listener trust; rates scale with show download volume. Best for niche audience alignment.
 
@@ -62,12 +64,14 @@ See [Spotify Advertising](https://ads.spotify.com/) for self-serve audio options
 ## Benefits
 
 **CTV:**
+
 - Premium TV inventory at SMB-friendly minimums
 - Precise geo and demographic targeting
 - High completion rates and measurable outcomes
 - AI-assisted production removes the creative barrier
 
 **Linear Broadcast:**
+
 - Mass reach for broad awareness campaigns
 - Established viewer trust in traditional TV environments
 
@@ -76,12 +80,14 @@ See [Spotify Advertising](https://ads.spotify.com/) for self-serve audio options
 ## Setting Up Broadcast Ads
 
 ### CTV (Recommended for Most SMBs)
+
 1. **Choose a self-serve platform:** Adwave or Roku Ads Manager for simplicity.
 2. **Create or generate your video asset:** 15 or 30 seconds; use AI generation tools if you lack production resources.
 3. **Define geo and audience targeting:** Start with a radius around your business location or a ZIP code cluster.
 4. **Set budget and flight dates:** Start with the minimum to test; scale based on measurable web or foot traffic lift.
 
 ### Linear TV / Radio
+
 1. **Choose channels/stations:** Select stations whose demographics align with your audience.
 2. **Develop creative:** Engage a production team or agency; scripts and spots must be broadcast-quality.
 3. **Negotiate ad slots:** Define time slots and run-of-schedule vs. fixed placement.

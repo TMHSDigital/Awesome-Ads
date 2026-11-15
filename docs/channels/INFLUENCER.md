@@ -6,23 +6,29 @@ Influencer marketing involves partnering with individuals who have established a
 ## Types of Influencer Collaboration
 
 ### 1. Sponsored Posts
+
 - **Feed Posts:** Influencers share static or video content featuring your product.
 - **Stories / Ephemeral Content:** 24-hour placements; lower cost, but no permanent record.
 
 ### 2. Short-Form Video
+
 - **TikTok Videos / Instagram Reels:** High-reach vertical video. Most effective format for product discovery with younger demographics.
 - **YouTube Shorts:** Growing inventory; lower rates than long-form integrations.
 
 ### 3. Long-Form Integrations
+
 - **YouTube Dedicated Videos or Mid-Roll Mentions:** Higher trust and retention; significantly higher rates.
 
 ### 4. Product Reviews and Unboxing
+
 - **Organic-feeling demos:** Showcase features, first impressions, or comparisons.
 
 ### 5. Giveaways and Contests
+
 - **Engagement campaigns:** Influencers host contests to distribute your products, boosting followers and visibility.
 
 ### 6. Product Seeding
+
 - Send free product to nano/micro influencers without a paid contract. Up to **83% of nano/micro influencers** are willing to create content for gifted product alone if the brand-product alignment is genuine — the most cost-efficient strategy available to small businesses.
 
 ---
@@ -43,11 +49,13 @@ Pricing has moved away from follower counts toward format complexity, engagement
 ## Platforms for Finding and Managing Influencers
 
 ### Budget-Friendly Options
+
 - **[Elev8or](https://www.elev8or.io/):** Free starter tier; paid plans from $49/month (no annual contract). Includes creator discovery, fake follower audits, and automated campaign workflows.
 - **[Collabstr](https://collabstr.com/):** Marketplace model — no monthly fee, flat 15% transaction fee. Optimal for one-off or occasional campaigns.
 - **[Skeepers](https://skeepers.io/):** Designed for high-volume product seeding; enables small teams to coordinate hundreds of nano-creator gifted campaigns.
 
 ### Enterprise Options
+
 - [Influencity](https://www.influencity.com/)
 - [AspireIQ](https://www.aspireiq.com/)
 - [Traackr](https://www.traackr.com/)

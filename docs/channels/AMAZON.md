@@ -8,18 +8,22 @@ This is retail media, not a general awareness buy. Pair it with [Search Engine A
 ## Ad types
 
 ### Sponsored Products
+
 - Keyword-targeted placements on search and product pages.
 - Start with exact and phrase match on converting queries. Add negatives weekly.
 
 ### Sponsored Brands
+
 - Headline search and detail-page custom images for the brand, not a single SKU.
 - Use when you have several related ASINs and a storefront.
 
 ### Sponsored Display
+
 - Audience and product-targeting on and off Amazon.
 - Useful for retargeting detail-page viewers. Do not treat it as cheap display.
 
 ### Amazon DSP
+
 - Programmatic audiences across Amazon properties. Minimums and complexity are higher. Most SMBs should master Sponsored Products first.
 
 ## Listing and search hygiene

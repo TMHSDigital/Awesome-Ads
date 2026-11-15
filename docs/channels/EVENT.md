@@ -6,18 +6,22 @@ Event sponsorship involves supporting events financially or through in-kind cont
 ## Types of Event Sponsorship
 
 ### 1. Local Events
+
 - **Community Festivals and Fairs:** Local brand awareness; strong community goodwill.
 - **Charity and Fundraiser Events:** PR value, community engagement.
 
 ### 2. Industry Conferences and Trade Shows
+
 - **Trade Shows:** Direct access to industry buyers; lead-capture via booth.
 - **Conferences and Seminars:** Thought leadership through session sponsorship.
 
 ### 3. Sports Events
+
 - **Local Sports Teams:** Cost-effective; sustained visibility with a loyal local audience.
 - **Professional and Amateur Leagues:** Broader reach; higher entry cost.
 
 ### 4. Cultural Events
+
 - **Music Festivals and Concerts:** High engagement; strong brand-lifestyle association.
 - **Theater and Arts:** Niche but loyal audiences; premium perception.
 
