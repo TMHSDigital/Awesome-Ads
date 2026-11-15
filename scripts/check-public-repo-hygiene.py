@@ -8,17 +8,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+from catalog import generated_doc_paths
+
 ROOT = Path(__file__).resolve().parent.parent
 
-FORBIDDEN_TRACKED_PATHS = (
+FORBIDDEN_TRACKED_PREFIXES = (
     "research/",
     "site/",
-    "docs/CONTRIBUTING.md",
-    "docs/index.md",
-    "docs/channels/index.md",
-    "docs/resources/index.md",
-    "docs/ad-templates/index.md",
-    "docs/meta/index.md",
 )
 
 FORBIDDEN_TRACKED_SUFFIXES = (
@@ -50,9 +46,10 @@ def tracked_files() -> list[str]:
 
 def main() -> int:
     errors: list[str] = []
+    generated_paths = set(generated_doc_paths())
 
     for path in tracked_files():
-        if path.startswith(FORBIDDEN_TRACKED_PATHS) or path in FORBIDDEN_TRACKED_PATHS:
+        if path.startswith(FORBIDDEN_TRACKED_PREFIXES) or path in generated_paths:
             errors.append(f"Tracked local-only path must not be committed: {path}")
             continue
 

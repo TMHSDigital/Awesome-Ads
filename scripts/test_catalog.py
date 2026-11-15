@@ -4,16 +4,23 @@
 from __future__ import annotations
 
 import importlib.util
-from pathlib import Path
+import io
+import json
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stderr
+from itertools import takewhile
+from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import catalog
 from catalog import (
     first_paragraph,
     first_sentence,
+    generated_doc_paths,
     mkdocs_nav,
     parse_page,
     render_home_markdown,
@@ -209,9 +216,9 @@ class SummaryTests(unittest.TestCase):
         self.assertTrue(result.endswith("word..."))
 
 
-def _load_prepare_mkdocs():
-    path = Path(__file__).resolve().parent / "prepare-mkdocs.py"
-    spec = importlib.util.spec_from_file_location("prepare_mkdocs", path)
+def _load_script(filename: str):
+    path = Path(__file__).resolve().parent / filename
+    spec = importlib.util.spec_from_file_location(path.stem, path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
@@ -219,12 +226,12 @@ def _load_prepare_mkdocs():
 
 class PrepareContributingTests(unittest.TestCase):
     def test_folder_names_are_not_rewritten(self) -> None:
-        rewrite = _load_prepare_mkdocs().rewrite_contributing
+        rewrite = _load_script("prepare-mkdocs.py").rewrite_contributing
         text = "│   ├── ad-templates/    # Template and design resources\n"
         self.assertEqual(rewrite(text), text)
 
     def test_root_links_point_into_docs(self) -> None:
-        rewrite = _load_prepare_mkdocs().rewrite_contributing
+        rewrite = _load_script("prepare-mkdocs.py").rewrite_contributing
         rewritten = rewrite(
             "[Docs](docs/README.md) [Guide](docs/meta/COMMUNITY_GUIDELINES.md)"
         )
@@ -232,6 +239,51 @@ class PrepareContributingTests(unittest.TestCase):
             rewritten,
             "[Docs](index.md) [Guide](meta/COMMUNITY_GUIDELINES.md)",
         )
+
+
+class GeneratedDocsTests(unittest.TestCase):
+    def test_hygiene_rejects_tracked_index_for_new_section(self) -> None:
+        index = "docs/new-section/index.md"
+        stderr = io.StringIO()
+        sections = (*catalog.SECTIONS, ("new-section", "New Section"))
+        with patch.object(catalog, "SECTIONS", sections), redirect_stderr(stderr):
+            hygiene = _load_script("check-public-repo-hygiene.py")
+            with patch.object(hygiene, "tracked_files", return_value=[index]):
+                result = hygiene.main()
+
+        self.assertEqual(result, 1)
+        self.assertIn(index, stderr.getvalue())
+
+    def test_configs_exclude_generated_docs(self) -> None:
+        root = Path(__file__).resolve().parent.parent
+        gitignore = (root / ".gitignore").read_text(encoding="utf-8")
+        lint_config = json.loads(
+            (root / ".markdownlint-cli2.jsonc").read_text(encoding="utf-8")
+        )
+
+        # Read the literal entries under the git revision plugin's exclude key
+        # without requiring MkDocs in the stdlib test suite.
+        mkdocs = (root / "mkdocs.yml").read_text(encoding="utf-8")
+        plugin_lines = mkdocs.partition("  - git-revision-date-localized:\n")[2].splitlines()
+        option_lines = takewhile(
+            lambda line: line.startswith("      "),
+            (line for line in plugin_lines if line.strip() and not line.lstrip().startswith("#")),
+        )
+        exclude_lines = "\n".join(option_lines).partition("      exclude:\n")[2].splitlines()
+        git_date_paths = {
+            f"docs/{line.strip().removeprefix('- ')}"
+            for line in takewhile(lambda line: line.startswith("        - "), exclude_lines)
+        }
+
+        expected = set(generated_doc_paths())
+        for filename, exclusions in (
+            (".gitignore", {line.strip().removeprefix("/") for line in gitignore.splitlines()}),
+            (".markdownlint-cli2.jsonc", set(lint_config["ignores"])),
+            ("mkdocs.yml (git-revision-date-localized.exclude)", git_date_paths),
+        ):
+            with self.subTest(config=filename):
+                missing = ", ".join(sorted(expected - exclusions))
+                self.assertFalse(missing, f"{filename} must exclude generated paths: {missing}")
 
 
 if __name__ == "__main__":

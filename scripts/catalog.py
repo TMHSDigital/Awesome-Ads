@@ -139,6 +139,15 @@ def scan_docs(docs: Path) -> dict[str, list[Page]]:
     return {folder: list_section(docs, folder) for folder, _title in SECTIONS}
 
 
+def generated_doc_paths() -> tuple[str, ...]:
+    """Return the repo-relative paths written by prepare-mkdocs.py."""
+    return (
+        "docs/index.md",
+        "docs/CONTRIBUTING.md",
+        *(f"docs/{folder}/index.md" for folder, _title in SECTIONS),
+    )
+
+
 def render_index_markdown(
     title: str,
     intro: str,
