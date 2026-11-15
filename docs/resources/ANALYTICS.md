@@ -37,7 +37,7 @@ Cookieless platforms often record visits that GA4 misses in browsers and setups 
 
 - **Google Analytics 4 (GA4)** is the current and only Google Analytics product. UA data is no longer processed.
 - GA4 uses an event-based data model (replacing session-based UA).
-- GA4 requires a Consent Management Platform (CMP) to comply with GDPR's Google Consent Mode v2 requirement for European traffic. Without proper consent signals, algorithmic bidding, remarketing, and audience modeling are disabled.
+- For visitors in the EEA, the UK, and Switzerland, GA4 and Google Ads need consent signals from Google's consent mode, usually sent by a consent management platform (CMP). Without them, remarketing, personalized ads, and conversion measurement for those visitors are limited. See [Legal and Ethical Considerations](LEGAL.md).
 - For advertisers running Google Ads, GA4 remains the recommended tool due to direct integration with Smart Bidding and conversion import.
 
 ---
@@ -46,9 +46,9 @@ Cookieless platforms often record visits that GA4 misses in browsers and setups 
 
 As browser-side identifiers erode, small businesses must build structured first-party data collection:
 
-1. **Server-Side Tracking:** Send conversion events directly from your server to ad platforms (Meta Conversions API, Google Tag Gateway via server-side Google Tag Manager). This bypasses browser privacy restrictions and maintains signal quality regardless of cookie or fingerprint blocking.
+1. **Server-Side Tracking:** Send conversion events directly from your server to ad platforms (Meta Conversions API, Google Tag Gateway via server-side Google Tag Manager). It is less affected by browser blocking than a browser pixel, but it still needs the visitor's consent where the law requires it.
 
-2. **Consent Mode v2:** Required for all EU-targeted Google Ads. Implement a certified Consent Management Platform (CMP) to pass `ad_user_data` and `ad_personalization` consent signals. Without these signals, Google's bidding algorithms lose conversion modeling capability.
+2. **Consent mode:** If you advertise to visitors in the EEA, the UK, or Switzerland, pass the `ad_user_data` and `ad_personalization` consent signals through Google's consent mode, usually with a consent management platform (CMP). Without them, conversion measurement and modeling for those visitors are limited.
 
 3. **First-Party Gated Content:** Exchange premium content (downloadable guides, video walkthroughs, calculators) for direct user email/consent. Builds an owned audience independent of platform algorithms.
 

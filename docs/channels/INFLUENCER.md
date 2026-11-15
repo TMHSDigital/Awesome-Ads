@@ -59,21 +59,21 @@ There is no reliable public rate card, so we do not list prices. Ask each creato
 
 ---
 
-## FTC Disclosure Requirements (2026)
+## FTC Disclosure Requirements
 
 Civil penalties for violating FTC rules can reach [$53,088 per violation](https://www.federalregister.gov/documents/2025/01/17/2025-01361/adjustments-to-civil-penalty-amounts) (the 2025 inflation-adjusted maximum, which the FTC kept for 2026).
 
-### What's required
+### What the FTC asks for
 
-- **Above the fold:** Disclosures must appear before any "read more" click or swipe.
-- **Unambiguous language:** `#ad` or `Sponsored by [Brand]` — explicitly. Vague tags like `#partner`, `#collab`, or `#ambassador` do **not** satisfy the standard.
-- **Video dual disclosure:** Any video integration on YouTube, TikTok, or Instagram Reels requires:
-  1. A **verbal callout** within the first 30 seconds.
-  2. A **prominent on-screen text overlay** visible during the sponsored segment.
-- **Platform labels are insufficient:** Instagram's "Paid Partnership" tag and TikTok's branded content toggle do not satisfy FTC requirements on their own. Creators must include their own written and verbal disclosure.
+From the FTC's [Disclosures 101 for Social Media Influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers):
+
+- **Hard to miss:** The disclosure goes with the endorsement itself, not only in a profile, at the end, or behind a "more" link.
+- **Plain words:** "Ad", "advertisement", "sponsored", `#ad`, or `#sponsored`. Avoid `#sp`, `#spon`, `#collab`, and stand-alone "thanks" or "ambassador".
+- **Video:** Put the disclosure in the video, not just the description; saying it and showing it on screen is most noticeable. Repeat it during livestreams.
+- **Platform labels:** Use tools like Instagram's "Paid partnership" label in addition to, not instead of, the creator's own disclosure.
 
 ### Written disclosure policy
-Small businesses running influencer campaigns must maintain a written disclosure policy and provide it to every creator prior to campaign launch. This creates a documented compliance record.
+Give every creator a short written disclosure policy before the campaign starts, and check their posts. See [Legal and Ethical Considerations](../resources/LEGAL.md) for the wider rules.
 
 ---
 

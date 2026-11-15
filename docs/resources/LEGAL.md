@@ -1,7 +1,7 @@
 # Legal and Ethical Considerations
 <!-- nav_order: 30 -->
 
-Advertising compliance has become significantly more complex and higher-stakes. FTC penalties have increased, browser privacy protections have proliferated, and state-level consumer protection laws have expanded. This guide covers the critical requirements as of 2026.
+Advertising compliance has become more complex and higher-stakes: FTC enforcement covers endorsements and reviews, browsers block more tracking, and state consumer protection laws keep expanding. This guide covers the main requirements as of 2026. It is an overview, not legal advice.
 
 ---
 
@@ -10,37 +10,32 @@ Advertising compliance has become significantly more complex and higher-stakes. 
 ### Truth in Advertising
 
 - Ads must be truthful, non-deceptive, and substantiated with evidence.
-- Unsubstantiated claims — particularly in health, finance, and performance categories — are a primary enforcement target.
+- Unsubstantiated claims, particularly in health, finance, and performance categories, are a primary enforcement target.
 
 ### Endorsement and Influencer Disclosure Rules
 
 Civil penalties for violating FTC rules can reach [$53,088 per violation](https://www.federalregister.gov/documents/2025/01/17/2025-01361/adjustments-to-civil-penalty-amounts) (the 2025 inflation-adjusted maximum, which the FTC kept for 2026).
 
-**"Clear and conspicuous" standards:**
+What the FTC's [Disclosures 101 for Social Media Influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers) asks for:
 
-- Disclosures must appear **above the fold**, before any "read more" click or scroll is required.
-- Vague hashtags (`#partner`, `#collab`, `#ambassador`, `#gifted`) **do not satisfy** the standard.
-- **Required language:** `#ad` or `Sponsored by [Brand]` — unambiguous, explicit.
+- **Hard to miss:** Put the disclosure with the endorsement itself, not only on a profile page, at the end of a post, or behind a "more" link.
+- **Plain words:** Terms like "ad", "advertisement", "sponsored", `#ad`, or `#sponsored` work, and so does a plain statement such as "Thanks to [Brand] for the free product". Avoid vague or shorthand tags such as `#sp`, `#spon`, or `#collab`, and stand-alone words like "thanks" or "ambassador".
+- **In the video, not just the description:** For a video endorsement, the disclosure belongs in the video itself. Viewers are more likely to notice it when it is both spoken and shown on screen. In a livestream, repeat it periodically.
+- **Platform tools are not enough on their own:** Do not assume a platform's built-in label (such as Instagram's "Paid partnership") is good enough. Use it in addition to the creator's own clear disclosure.
 
-**Video content — dual disclosure requirement:**
-Any sponsored video on YouTube, TikTok, Instagram Reels, or similar platforms requires:
-
-1. A **verbal callout** within the first 30 seconds (e.g., "This video is sponsored by [Brand]").
-2. A **prominent, readable on-screen text overlay** displayed during the sponsored segment.
-
-Platform-native disclosure tools (Instagram's "Paid Partnership" label, TikTok's branded content toggle) are legally insufficient on their own. Creators must include their own written and verbal disclosures within the content itself.
-
-**Written disclosure policy:** Maintain a written influencer disclosure policy and provide it to every creator before their campaign begins. This creates a documented compliance trail.
+**Written disclosure policy:** Give every creator a short written disclosure policy before the campaign starts, and check their posts. It gives you a record that you took disclosure seriously.
 
 ### Native Advertising
 The FTC Native Advertising Guidelines require that sponsored editorial and advertorial placements cannot mislead consumers by mimicking organic editorial formats. Sponsored articles, in-feed placements, and recommendation widget content must be conspicuously labeled with "Sponsored" or "Advertisement."
 
 ### FTC Consumer Review Rule
-The FTC has civil penalty authority to target:
+The FTC's [final rule on fake reviews and testimonials](https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials), in effect since October 2024, lets it seek civil penalties for:
 
-- Fake or incentivized reviews not disclosed as such.
-- Undisclosed employee testimonials.
-- Review suppression (hiding or blocking negative reviews).
+- Fake reviews and testimonials, including buying or selling them.
+- Paying or rewarding customers for reviews that must be positive (or negative).
+- Reviews by company insiders that do not disclose the connection.
+- Suppressing negative reviews through threats, intimidation, or false accusations.
+- Buying or selling fake followers or views.
 
 [FTC Advertising Guidelines](https://www.ftc.gov/business-guidance/advertising-marketing)
 
@@ -51,15 +46,15 @@ The FTC has civil penalty authority to target:
 ### EU — GDPR
 
 - **Data Protection:** Safeguard all personal data collected via ads or web analytics.
-- **User Consent:** Obtain explicit, informed consent before data collection.
-- **Google Consent Mode v2 (mandatory for EU traffic):** Any advertiser using Google Ads or GA4 with EU traffic must implement a certified **Consent Management Platform (CMP)** to pass two consent signals: `ad_user_data` and `ad_personalization`. Failure to pass these signals disables algorithmic bidding, remarketing, and audience modeling for EU users.
-- **Data Breach Notification:** Notify users and supervisory authorities within 72 hours of discovering a breach.
+- **Consent and a lawful basis:** You need a lawful basis for any personal data you process, and EU rules require consent before setting advertising cookies or similar trackers.
+- **Google consent mode:** Advertisers using Google Ads or GA4 with visitors in the EEA, the UK, or Switzerland should pass consent signals through Google's [consent mode](https://support.google.com/google-ads/answer/10000067), including `ad_user_data` and `ad_personalization`. Without them, remarketing, personalized ads, and conversion measurement for those visitors are limited. A consent management platform (CMP) that supports consent mode is the simplest way to do this.
+- **Data breach notification:** Report a personal data breach to the supervisory authority within 72 hours of becoming aware of it, and tell the affected people directly when the breach is likely to put them at high risk.
 
 [GDPR Overview](https://gdpr.eu/)
 
 ### Third-Party Cookie Status
 
-- Google has maintained third-party cookies in Chrome under a **user-choice model** (not deprecating them outright), but Safari and Firefox continue to block cross-site tracking by default.
+- Chrome still allows third-party cookies by default. In 2025 Google dropped its plan to phase them out and retired most of its Privacy Sandbox replacement technologies. Safari and Firefox continue to block cross-site tracking by default.
 - A significant share of web traffic is already effectively cookieless. Campaigns relying on cookie-based behavioral retargeting will see reduced scale.
 - **Mitigation:** First-party data strategies, server-side tracking, and contextual targeting. See [Analytics and Reporting](ANALYTICS.md).
 
@@ -69,15 +64,14 @@ The FTC has civil penalty authority to target:
 
 ### Apple (iOS / Safari 26)
 
-- **Advanced Fingerprinting Protection (AFP):** Enabled by default across all Safari browsing modes. Injects "noise" into device characteristics to block fingerprint-based user profiling.
-- **Link Tracking Protection (LTP):** Enabled by default in Private Browsing, Apple Mail, and Apple Messages. Strips user-identifiable click parameters — `gclid`, `fbclid`, and similar — from URLs. **Standard UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`) are not affected.**
+- **Advanced Fingerprinting Protection:** Since Safari 26 it is on by default for all browsing, not only Private Browsing. It obscures the browser and device details that fingerprinting scripts use to recognize a visitor.
+- **Link Tracking Protection:** On by default in Private Browsing, Mail, and Messages. Tests report that it strips click IDs such as `gclid`, `fbclid`, and `msclkid` from links (Apple does not publish the list). **Standard UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`) are kept.**
 - **Impact:** Advertisers lose click-level attribution for a portion of iOS traffic. Server-side conversion APIs (Meta CAPI, Google Tag Gateway) are the mitigation.
 
-### Android (Android 17+)
+### Android
 
-- Google officially discontinued the **Android Privacy Sandbox** initiative.
-- Android 17 implements strict **memory isolation** to prevent SDK data leakage between apps.
-- **Google's Zeroes Policy:** If a user deletes their Advertising ID, or if an app fails to declare `com.google.android.gms.permission.AD_ID`, the advertising ID returns as a string of zeros, disabling personalized targeting.
+- In October 2025 Google retired the Privacy Sandbox technologies it had been building for Android, along with those for Chrome.
+- **Advertising ID:** If a user deletes their advertising ID, or an app does not declare the `com.google.android.gms.permission.AD_ID` permission, the app receives a string of zeros instead of the ID, so the user cannot be targeted or measured with it.
 
 ---
 
@@ -93,8 +87,8 @@ The FTC has civil penalty authority to target:
 
 ## State-Level Laws
 
-### California Automatic Renewal Law (ARL) — Updated
-Requires:
+### California Automatic Renewal Law (ARL)
+Amendments that took effect on July 1, 2025 require:
 
 - Explicit **affirmative consent** for any subscription or auto-renewal signup (pre-checked boxes are insufficient).
 - A simple, accessible **click-to-cancel** mechanism.
@@ -128,13 +122,14 @@ This applies to any advertiser promoting subscription-based products or services
 1. **Regular compliance audits:** Review all active influencer and affiliate partnerships quarterly for disclosure compliance.
 2. **Legal consultation:** For campaigns with significant influencer, native, or cross-border components, consult an advertising attorney.
 3. **Stay updated:** FTC guidance and state privacy laws are actively evolving. Subscribe to FTC press releases and IAB legal updates.
-4. **Accessibility:** Ensure ad landing pages meet WCAG 2.1 AA accessibility standards.
+4. **Accessibility:** Make ad landing pages meet WCAG 2.2 AA, the current version of the accessibility standard.
 
 ---
 
 ## Tools and Resources
 
 - [FTC Advertising Guidelines](https://www.ftc.gov/business-guidance/advertising-marketing)
+- [Disclosures 101 for Social Media Influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers)
 - [GDPR.eu Overview](https://gdpr.eu/)
 - [CAN-SPAM Act Compliance Guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [IAB Legal Guidelines](https://www.iab.com/guidelines/)

@@ -29,7 +29,7 @@ Enough to exit learning. Fragmented $10/day campaigns across five ad sets usuall
 
 ### How do I stay legal with creators and affiliates?
 
-Written disclosure policy, `#ad` or `Sponsored by [Brand]`, and dual disclosure on video. Platform partnership tags are not enough. See [Legal and Ethical Considerations](LEGAL.md) and [Influencer Marketing](../channels/INFLUENCER.md).
+Give creators a written disclosure policy. Disclosures should use plain words like "ad" or "sponsored", sit with the endorsement, and appear in the video itself for video content. Platform partnership labels help but are not enough on their own. See [Legal and Ethical Considerations](LEGAL.md) and [Influencer Marketing](../channels/INFLUENCER.md).
 
 ## Troubleshooting
 

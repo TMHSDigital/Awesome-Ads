@@ -25,7 +25,7 @@ Display advertising uses visual ads — banners, graphics, and rich media — sh
 ## Targeting Approaches
 
 ### Third-Party Cookie Status (2026)
-Google kept third-party cookies active in Chrome under a **user-choice model**, but Safari and Firefox continue to block cross-site tracking by default. Because a significant share of web traffic is already effectively cookieless, legacy browser-based retargeting pixels have lost meaningful accuracy.
+Chrome still allows third-party cookies by default; in 2025 Google dropped its plan to phase them out and retired most of its Privacy Sandbox replacements. Safari and Firefox continue to block cross-site tracking by default. Because a significant share of web traffic is already effectively cookieless, legacy browser-based retargeting pixels have lost meaningful accuracy.
 
 **Implication:** Audience segments built on third-party cookie pools are shrinking. Campaigns relying purely on cookie-based behavioral retargeting will see reduced match rates and scale.
 
