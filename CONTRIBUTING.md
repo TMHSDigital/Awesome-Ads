@@ -32,7 +32,7 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
 5. **Verify locally**
    ```bash
    npx markdownlint-cli2 "**/*.md"
-   python -m unittest scripts.test_catalog
+   python -m unittest scripts.test_catalog scripts.test_check_internal_links
    python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py
    python scripts/prepare-mkdocs.py
