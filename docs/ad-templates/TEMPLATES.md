@@ -54,12 +54,11 @@ High-quality templates and design tools speed up ad production without requiring
 - **Layout consistency:** Same structure, swapped offers.
 
 ### Review Product Accuracy Before Export
+
 - **Keep a reference:** Compare each product image with one approved photograph, including its shape, material, labels, and functional details.
 - **Separate product and scene edits:** A new background or crop should not quietly change the item being advertised.
 - **Record a decision:** Mark each candidate as held, needing revision, approved for a named use, or rejected, with a specific reason.
 - **Recheck every format:** A crop can hide a changed label or cut through a handle. Keep rejected versions out of the final delivery folder.
-
-The free [Product Creative Review Field Guide](https://silentstorm290.github.io/queststudio-creative-handoff-kit/product-creative-review.html), published by QuestStudio, provides reference checks and a handoff checklist. It can be used without an account or the commercial product.
 
 ### Mobile Optimization
 - **Responsive design:** Check every size the platform actually serves.
