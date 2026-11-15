@@ -27,7 +27,7 @@ CI, deployment, and repository automation under `.github/`.
 
 ## Dependency updates
 
-Dependabot is turned off. Update pinned actions and `requirements-docs.txt` by hand, then run the validation checks before opening a PR.
+Dependabot is turned off. Update pinned actions and `requirements-docs.txt` by hand, then run the validation checks before opening a PR. After changing `requirements-docs.txt`, regenerate `constraints-docs.txt` from a clean Python 3.12 venv (the steps are in the file header); CI and the Pages deploy install with `-c constraints-docs.txt`.
 
 ## Parent context
 

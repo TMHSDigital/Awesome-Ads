@@ -26,7 +26,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install MkDocs Material
-        run: pip install -r requirements-docs.txt
+        run: pip install -r requirements-docs.txt -c constraints-docs.txt
 
       - name: Prepare MkDocs inputs
         run: python scripts/prepare-mkdocs.py
