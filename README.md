@@ -28,9 +28,9 @@ Then match the channel to the job. Search captures demand that already exists ([
 
 | Guide | What you will learn |
 | --- | --- |
-| [Search Engine Advertising (SEA)](docs/channels/SEA.md) | Search ad types, 2026 cost benchmarks, and campaign setup. |
-| [Social Media Advertising](docs/channels/SOCIAL.md) | 2026 benchmarks and ad types for each major platform, and how to set up campaigns. |
-| [Display Advertising](docs/channels/DISPLAY.md) | Display formats, targeting approaches, and 2026 cost benchmarks. |
+| [Search Engine Advertising (SEA)](docs/channels/SEA.md) | Search ad types, what search clicks and leads cost, and campaign setup. |
+| [Social Media Advertising](docs/channels/SOCIAL.md) | Which platform fits which audience, ad types for each, and how to set up campaigns. |
+| [Display Advertising](docs/channels/DISPLAY.md) | Display formats, targeting approaches, and how display is priced. |
 | [Video Advertising](docs/channels/VIDEO.md) | Video ad types across streaming, social, and connected TV, and how to set them up. |
 | [Amazon Ads](docs/channels/AMAZON.md) | Sponsored ad types, listing and search hygiene, and what Amazon ads cost in 2026. |
 | [Email Marketing](docs/channels/EMAIL.md) | Email program types, consent, and the list hygiene that keeps you out of spam folders. |
@@ -48,7 +48,7 @@ Then match the channel to the job. Search captures demand that already exists ([
 | Guide | What you will learn |
 | --- | --- |
 | [Analytics and Reporting](docs/resources/ANALYTICS.md) | Key metrics, analytics tools after Universal Analytics, and first-party data. |
-| [Ad Budgeting and Planning](docs/resources/BUDGETING.md) | 2026 platform costs and how to allocate a budget under $5,000 a month. |
+| [Ad Budgeting and Planning](docs/resources/BUDGETING.md) | Sourced 2026 ad costs and how to allocate a budget under $5,000 a month. |
 | [Legal and Ethical Considerations](docs/resources/LEGAL.md) | FTC rules, GDPR and app privacy changes, CAN-SPAM, and state laws. |
 | [Examples of Successful Ad Campaigns](docs/resources/EXAMPLES.md) | Patterns from well-known campaigns that still work on a small-business budget. |
 | [FAQ and Troubleshooting](docs/resources/FAQ.md) | Quick answers, plus fixes for low click-through rates, high costs, and other common problems. |

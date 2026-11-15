@@ -5,17 +5,19 @@ Social media advertising leverages various platforms to target specific audience
 
 Terms such as CTR, CPM, CPC, and CAPI are defined in the [Glossary](../resources/GLOSSARY.md).
 
-## 2026 Platform Benchmarks
+## Which Platform Fits
 
-| Platform | Avg. CTR | Avg. CPM | Avg. CPC | Best Fit |
-| :---- | :---- | :---- | :---- | :---- |
-| **Facebook** | 1.38% | $14.68 | $1.72 | Broad demographics, DTC catalogs |
-| **Instagram** | 1.80% | $15–$25 | $1.43 | Visual/lifestyle brands, DTC |
-| **TikTok** | 0.8–1.5% | $3–$10 | $0.50–$1.50 | Under-35 consumers, vertical video |
-| **LinkedIn** | 0.8–1.2% | $26.91 | $5.58 | B2B decision-makers, buying groups |
-| **Pinterest** | 1.0–1.8% | $4–$8 | $0.40–$1.20 | Home, fashion, food, visual categories |
-| **X / Twitter** | 1.5–3.0% | $5.80 | $0.50–$2.00 | Real-time, tech, SaaS, events |
-| **Threads** | 1.87% | $4.82 | $0.68 | Younger, text-driven conversational users |
+| Platform | Best fit |
+| :---- | :---- |
+| **Facebook** | Broad demographics, DTC catalogs |
+| **Instagram** | Visual and lifestyle brands, DTC |
+| **TikTok** | Under-35 consumers, vertical video |
+| **LinkedIn** | B2B decision-makers, buying groups |
+| **Pinterest** | Home, fashion, food, visual categories |
+| **X / Twitter** | Real-time, tech, SaaS, events |
+| **Threads** | Younger, text-driven conversational users |
+
+Sourced cost figures for Facebook and TikTok's minimum budgets are in [Ad Budgeting and Planning](../resources/BUDGETING.md#platform-cost-benchmarks). We do not publish costs for the other platforms because no current primary source exists; use each platform's own estimates when you plan.
 
 ---
 
@@ -25,7 +27,7 @@ Terms such as CTR, CPM, CPC, and CAPI are defined in the [Glossary](../resources
 
 Meta has established **Advantage+** as its default ad operations engine. All campaign types now run through this autonomous framework.
 
-- **Advantage+ Sales Campaigns (ASC):** Formerly "Advantage+ Shopping Campaigns," now expanded to support lead generation and app installs alongside e-commerce catalogs. Budget allocation shifts dynamically (up to 20%) between ad sets to maximize conversion probability in real time.
+- **Advantage+ Sales Campaigns (ASC):** Formerly "Advantage+ Shopping Campaigns," now expanded to support lead generation and app installs alongside e-commerce catalogs. Budget allocation shifts dynamically between ad sets to maximize conversion probability in real time.
 - **Photo/Video Ads:** Single images or videos in feed.
 - **Carousel Ads:** Multiple images or videos in a swipeable format.
 - **Stories Ads:** Full-screen vertical ads.

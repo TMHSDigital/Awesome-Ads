@@ -38,12 +38,9 @@ Upload your own customer lists (emails, phone numbers) or create website visitor
 ### Programmatic Display
 Real-time bidding (RTB) across publisher inventory via DSPs (Demand-Side Platforms). Networks are transitioning toward consent-based audience data and contextual signals.
 
-## 2026 Cost Benchmarks
+## Costs
 
-| Network | Pricing Model | Avg. CPC |
-| :---- | :---- | :---- |
-| Google Display Network | CPC | ~$0.63 |
-| Programmatic networks (general) | CPM | Varies widely |
+Display is bought by the click (CPC) on the Google Display Network or by the thousand impressions (CPM) on programmatic networks. We do not publish an average figure because no current primary benchmark exists. Use the estimates in Google Ads or your DSP when you plan, and see [Ad Budgeting and Planning](../resources/BUDGETING.md#platform-cost-benchmarks) for the sourced figures we do have.
 
 Display maintains cheap cost-per-click relative to high-intent search, making it effective for retargeting and brand awareness at scale — but conversion rates are inherently lower than search.
 

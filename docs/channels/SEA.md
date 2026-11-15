@@ -31,15 +31,9 @@ AI Max achieves efficiency through three coordinated layers:
 - **LinkedIn Profile Targeting:** Unique to Microsoft — layer company name, industry, or job function data over high-intent keywords for precise B2B reach.
 - **Import from Google Ads:** Microsoft supports importing Google PMax campaigns with NCA settings, automatically converting audience lists into equivalent rule-based remarketing assets.
 
-## 2026 Cost Benchmarks
+## Costs
 
-| Channel | Pricing Model | Avg. CPC |
-| :---- | :---- | :---- |
-| Google Search / AI Max | Cost-Per-Click (CPC) | ~$5.42 (cross-industry avg) |
-| Google Display Network | Cost-Per-Click (CPC) | ~$0.63 |
-| Microsoft / Bing Ads | Cost-Per-Click (CPC) | ~$1.54 |
-
-> CPCs vary widely by industry. Legal, finance, and insurance verticals can exceed $15–$50 per click on Google Search.
+In the 2026 search benchmarks from LocaliQ and WordStream, the average cost per click across industries was $5.42 and the average cost per lead was $66.69, for Google Ads and Microsoft Ads campaigns combined. Costs vary widely by industry, so check the figure for yours. Sources and other channels are in [Ad Budgeting and Planning](../resources/BUDGETING.md#platform-cost-benchmarks).
 
 ## Benefits
 

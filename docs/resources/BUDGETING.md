@@ -7,22 +7,18 @@ Terms such as CPC, CPM, CPV, CPL, and LTV are defined in the [Glossary](GLOSSARY
 
 ---
 
-## 2026 Platform Cost Benchmarks
+## Platform Cost Benchmarks
 
-| Channel / Format | Pricing Model | 2026 Avg. CPC | 2026 Avg. CPM | Notes |
-| :---- | :---- | :---- | :---- | :---- |
-| Google Search / AI Max | CPC | ~$5.42 | — | Varies widely by industry; legal/finance can exceed $50 |
-| Google Display Network | CPC | ~$0.63 | — | Low-cost reach; lower intent |
-| Microsoft / Bing Ads | CPC | ~$1.54 | — | Strong B2B arbitrage opportunity |
-| Facebook Ads | CPC | ~$1.72 | ~$14.68 | CPL for lead campaigns ~$27.66 |
-| Instagram Ads | CPC | ~$1.43 | $15–$25 | Strong for visual DTC |
-| TikTok Ads | CPC | $0.50–$1.50 | $3–$10 | Minimum $50/day campaign budget |
-| LinkedIn Ads | CPC | ~$5.58 | ~$26.91 | High CPCs justified for B2B high-LTV |
-| Pinterest Ads | CPC | $0.40–$1.20 | $4–$8 | Strong for home, fashion, food |
-| X / Twitter Ads | CPC | $0.50–$2.00 | ~$5.80 | Lower competition than Meta |
-| Threads Ads | CPC | ~$0.68 | ~$4.82 | Up to 60% lower CPC vs. Facebook |
-| YouTube In-Stream | CPV | $0.02–$0.10 | — | Cost-per-view |
-| CTV (programmatic) | CPM | — | Varies | Entry from $50 campaign min |
+This table lists only figures with a published primary source. Costs vary widely by industry, location, and season, so treat them as starting points and check the source for your industry. Figures were checked on 2026-11-15; if you find a newer report, [open a content issue](https://github.com/TMHSDigital/Awesome-Ads/issues/new/choose).
+
+| Channel / Format | Benchmark (all industries) | Source, as of |
+| :---- | :---- | :---- |
+| Google and Microsoft search ads | Avg. CPC $5.42; avg. cost per lead $66.69 | [LocaliQ / WordStream, Search Advertising Benchmarks 2026](https://localiq.com/blog/search-advertising-benchmarks/), May 2026 |
+| Facebook, traffic campaigns | Avg. CPC $0.60; avg. CTR 1.93% | [LocaliQ / WordStream, Facebook Advertising Benchmarks 2026](https://localiq.com/blog/facebook-advertising-benchmarks/), Sep 2026 |
+| Facebook, lead campaigns | Avg. CPC $1.80; avg. CTR 2.70%; avg. cost per lead $27.39 | [LocaliQ / WordStream, Facebook Advertising Benchmarks 2026](https://localiq.com/blog/facebook-advertising-benchmarks/), Sep 2026 |
+| TikTok minimum budget | Daily budget must exceed $50 per campaign and $20 per ad group | [TikTok Ads Manager Help Center, budgets](https://ads.tiktok.com/help/article/budget?lang=en), checked Nov 2026 |
+
+We do not publish cost figures for Google Display Network, Microsoft Ads on its own, Instagram, LinkedIn, Pinterest, X, Threads, YouTube, or connected TV, because we could not find a current primary source for them. For your own market, use each platform's planning tools, such as Google Keyword Planner, the estimated results in Meta Ads Manager, and forecasts in LinkedIn Campaign Manager.
 
 ---
 
@@ -55,15 +51,13 @@ This stack prioritizes immediate conversion and customer retention. Broad awaren
 
 ---
 
-## Cost Trends (2023–2026)
+## Recent Cost Trends
 
-CPC and CPM costs have risen across most major auctions due to increased advertiser competition and AI-driven targeting adoption:
+Costs move every year, and not always up. In the sources above:
 
-- **Google Search:** Average CPCs stable to slightly rising; highly industry-dependent.
-- **Meta (Facebook/Instagram):** Standard CPC up ~11% YoY; average CPL for lead campaigns crossed $27.66.
-- **TikTok:** Still lower CPMs than Meta, but rising as advertiser adoption grows.
-- **Threads:** Currently the most cost-efficient social placement — CPCs up to 60% lower and CPMs up to 58% lower than standard Facebook Feed. Ideal for creative testing.
-- **LinkedIn:** Expensive but justified for B2B with high customer LTV.
+- **Search ads:** The average CPC rose slightly from the previous year. Costs depend heavily on industry.
+- **Facebook:** Costs fell slightly. Traffic-campaign CPC went from $0.70 to $0.60, lead-campaign CPC from $1.92 to $1.80, and cost per lead from $27.66 to $27.39.
+- **LinkedIn:** Expensive per click, which tends to pay off only for B2B offers with a high customer LTV.
 
 ---
 
