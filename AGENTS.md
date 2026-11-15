@@ -14,7 +14,7 @@ docs/
 ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
 ├── ad-templates/    # Template and design resources
 └── meta/         # Repo documentation and community policy
-.github/          # CI workflows, Dependabot, issue/PR templates
+.github/          # CI workflows, issue/PR templates
 scripts/          # Maintenance scripts (internal link checker)
 ```
 

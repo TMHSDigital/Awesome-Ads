@@ -10,7 +10,7 @@ We welcome contributions from the community! Follow these guidelines to help us 
 │   ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
 │   ├── ad-templates/    # Template and design resources
 │   └── meta/         # Repo documentation
-├── .github/          # CI, Dependabot, issue/PR templates
+├── .github/          # CI, issue/PR templates
 └── scripts/          # Maintenance scripts (link checker)
 ```
 
