@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{#- The home page title is just the site name, not "Home - Awesome Ads". -#}
+{% block htmltitle %}
+  {%- if page and page.url == "" -%}
+    <title>{{ config.site_name }}</title>
+  {%- else -%}
+    {{ super() }}
+  {%- endif -%}
+{% endblock %}
+
 {#- Social preview tags. Descriptions come from the meta-descriptions plugin. -#}
 {#- Zensical does not set page.is_homepage; the home page is the one with an empty url. -#}
 {% block extrahead %}

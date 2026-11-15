@@ -1,0 +1,61 @@
+/* Awesome Ads site theme ("field guide").
+   Ink header, one warm accent for links, Source Serif headings over
+   Source Sans text, and a reading column sized for long guides. */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
+
+:root {
+  --aa-ink: #1f2a44;
+  --aa-ink-dark: #141c2f;
+  --md-primary-fg-color: var(--aa-ink);
+  --md-primary-fg-color--light: #34405e;
+  --md-primary-fg-color--dark: var(--aa-ink-dark);
+  --md-accent-fg-color: #b45f06;
+}
+
+/* Links: dark amber on white (6.0:1), light amber on the dark theme. */
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #9a4f00;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1a2236;
+  --md-accent-fg-color: #f0a24a;
+  --md-typeset-a-color: #f0b46e;
+  --md-default-bg-color: #15171c;
+  --md-default-bg-color--light: #1c1f26;
+}
+
+/* Solid ink header instead of the theme's translucent one. */
+.md-header,
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+  color: #ffffff;
+  backdrop-filter: none;
+}
+
+/* Headings in Source Serif; a rule above each section. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  border-top: 2px solid var(--md-default-fg-color--lightest);
+  padding-top: 0.8em;
+}
+
+/* Reading comfort: a little more line spacing and a capped line length. */
+.md-typeset {
+  line-height: 1.7;
+}
+
+.md-content__inner {
+  max-width: 46rem;
+}
