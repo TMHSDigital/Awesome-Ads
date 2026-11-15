@@ -32,9 +32,12 @@ def prepare_contributing() -> None:
         "](README.md)",
         "](https://github.com/TMHSDigital/Awesome-Ads/blob/main/README.md)",
     )
-    text = text.replace("templates/", "ad-templates/")
     CONTRIBUTING_DST.write_text(text, encoding="utf-8")
-    print(f"Wrote {CONTRIBUTING_DST.relative_to(ROOT)}")
+    try:
+        rel = CONTRIBUTING_DST.relative_to(ROOT)
+    except ValueError:
+        rel = CONTRIBUTING_DST
+    print(f"Wrote {rel}")
 
 
 def prepare_indexes() -> None:
