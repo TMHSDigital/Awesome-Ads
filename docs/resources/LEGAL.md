@@ -14,7 +14,7 @@ Advertising compliance has become significantly more complex and higher-stakes. 
 
 ### Endorsement and Influencer Disclosure Rules
 
-The FTC has escalated enforcement significantly. **Civil penalties now reach $53,088 per violation**.
+Civil penalties for violating FTC rules can reach [$53,088 per violation](https://www.federalregister.gov/documents/2025/01/17/2025-01361/adjustments-to-civil-penalty-amounts) (the 2025 inflation-adjusted maximum, which the FTC kept for 2026).
 
 **"Clear and conspicuous" standards:**
 

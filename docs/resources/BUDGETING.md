@@ -65,7 +65,7 @@ Costs move every year, and not always up. In the sources above:
 
 ### 1. Assess Financial Capacity
 
-- Review your total marketing budget; advertising should represent a defined percentage (typically 5–15% of revenue for growth-stage businesses).
+- Review your total marketing budget; decide in advance what share of revenue goes to advertising, and review it each quarter.
 - Keep 3–6 months of data before judging channel ROI — auctions need time to learn and optimize.
 
 ### 2. The Learning Phase Problem

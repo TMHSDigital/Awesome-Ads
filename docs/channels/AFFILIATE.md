@@ -8,7 +8,7 @@ Affiliate marketing partners with third-party publishers who promote your produc
 ### 1. Pay-Per-Sale
 
 - **Commission-based:** Affiliates earn a percentage of the sale they generate. Most common model for e-commerce.
-- **2026 benchmark:** Average ecommerce affiliate commission has stabilized at **~8.4% of order value**.
+- **Setting the rate:** Commission rates vary widely by product category and margin. Check what comparable programs on your affiliate network pay before you set yours.
 
 ### 2. Pay-Per-Lead
 
@@ -19,11 +19,7 @@ Affiliate marketing partners with third-party publishers who promote your produc
 - **Traffic-based:** Affiliates earn per click generated. Lower trust, lower conversion accountability — less common now.
 
 ### 4. Recurring / SaaS Commission Structures
-SaaS affiliate programs have shifted to recurring models tied to subscriber retention:
-
-- Year 1: ~**22.5% of monthly recurring revenue (MRR)**
-- Year 2: ~**14.2% of MRR**
-- Year 3+: ~**8.1% of MRR**
+SaaS affiliate programs have shifted to recurring models tied to subscriber retention. A common structure pays a share of monthly recurring revenue (MRR) for each customer the affiliate refers, with a higher share in the first year that steps down in later years, so affiliates are rewarded for customers who stay.
 
 ---
 

@@ -1,24 +1,23 @@
 # Broadcast Advertising
 <!-- nav_order: 100 -->
 
-Broadcast advertising covers television and radio. Linear broadcast has seen persistent budget redirection as small businesses shift toward measurable, programmatic alternatives. The most important development for SMBs: **Connected TV (CTV) has become a performance channel accessible from $50**, fundamentally changing what "TV advertising" means for small businesses.
+Broadcast advertising covers television and radio. Linear broadcast has seen persistent budget redirection as small businesses shift toward measurable, programmatic alternatives. The most important development for SMBs: **Connected TV (CTV) can now be bought self-serve with small budgets and measured like digital ads**, which changes what "TV advertising" means for small businesses.
 
 Terms such as CTV and CPM are defined in the [Glossary](../resources/GLOSSARY.md).
 
 ## The State of Linear Broadcast in 2026
 
-Approximately **24% of SMB advertisers** plan to decrease traditional media investments in 2026. Linear broadcast TV and traditional radio require long-term contracts and high minimum buys, making them increasingly inefficient compared to programmatic connected alternatives. For most small businesses, linear broadcast is not a viable primary channel.
+Many small businesses are moving budget away from traditional media. Linear broadcast TV and traditional radio require long-term contracts and high minimum buys, making them increasingly inefficient compared to programmatic connected alternatives. For most small businesses, linear broadcast is not a viable primary channel.
 
 ---
 
 ## Connected TV (CTV) — The New TV for SMBs
 
-Programmatic CTV has crossed a critical structural milestone:
+CTV works differently from traditional TV buying:
 
-- **75%+ of all transactional TV volume** is now programmatic.
-- CTV upfront commitments have exceeded primetime linear TV upfronts for the first time.
-- 30-second CTV ads average ~**96% completion rate**.
-- Self-serve platforms allow campaigns from **$50 minimum budget**.
+- Most CTV is bought programmatically, through platforms that place ads automatically instead of through negotiated contracts.
+- Ads usually play full screen on the main TV and often cannot be skipped, so most viewers see the whole ad.
+- Self-serve platforms such as Roku Ads Manager let small businesses start without an agency. Minimum budgets differ by platform, so check before you plan.
 
 ### What CTV Enables for Small Businesses
 

@@ -1,7 +1,7 @@
 # Event Sponsorship
 <!-- nav_order: 130 -->
 
-Event sponsorship involves supporting events financially or through in-kind contributions in exchange for brand exposure and audience access. The model has shifted from passive logo placement to **value-driven, experiential partnerships** with verified attendee profiles. Nearly **60% of event organizers** still evaluate sponsorship ROI inconsistently — creating both a challenge and an opportunity for sponsors who demand clear deliverables upfront.
+Event sponsorship involves supporting events financially or through in-kind contributions in exchange for brand exposure and audience access. The model has shifted from passive logo placement to **value-driven, experiential partnerships** with verified attendee profiles. Many organizers still report sponsorship results inconsistently, so sponsors who agree on clear deliverables up front get much more for their money.
 
 ## Types of Event Sponsorship
 
@@ -27,18 +27,16 @@ Event sponsorship involves supporting events financially or through in-kind cont
 
 ---
 
-## Sponsorship Tiers and Investment Ranges
+## Sponsorship Tiers
 
-Move beyond flat-rate "logo on a banner" packages. Structure sponsorships as tiered asset packages with clearly mapped deliverables.
+Move beyond flat-rate "logo on a banner" packages. Most organizers sell tiered packages; compare them by what you get, not by the tier name. Prices depend on event size, audience, local market, and exclusivity, so ask each organizer for its sponsor prospectus and past attendance figures.
 
-| Tier | Investment Range (US/UK Benchmark) | Audience Reach | Brand Placement | Core Deliverables |
-| :---- | :---- | :---- | :---- | :---- |
-| **Supporting / Associate** | $1,000–$5,000 | 500–2,000 attendees | Secondary branding and credits | Logo on promotional materials and program directories |
-| **Booth / Exhibition** | $3,000–$12,000 | 500–3,000 foot traffic | Branded display, direct interaction | Dedicated booth space, lead retrieval scanning access |
-| **Category Exclusive** | $5,000–$15,000 | 2,000–10,000 attendees | Sole industry rep in-event | Exclusive sector representation, dedicated signage sections |
-| **Title / Flagship Partner** | $15,000–$50,000+ | 5,000–50,000+ attendees | Primary positioning across all channels | Keynote introductions, custom program alignment, prominent digital placement |
-
-> UK figures are similar in GBP. Adjust based on event scale, local market, and exclusivity terms.
+| Tier | Brand placement | Typical deliverables |
+| :---- | :---- | :---- |
+| **Supporting / Associate** | Secondary branding and credits | Logo on promotional materials and program directories |
+| **Booth / Exhibition** | Branded display, direct interaction | Dedicated booth space, lead retrieval scanning access |
+| **Category Exclusive** | Sole company from your industry at the event | Exclusive sector representation, dedicated signage sections |
+| **Title / Flagship Partner** | Primary positioning across all channels | Keynote introductions, custom program alignment, prominent digital placement |
 
 **Key principle:** Demand attendee data quality over raw attendance numbers. Ask for verified attendee titles, company sizes, and firmographic breakdowns before committing.
 
@@ -57,7 +55,7 @@ Sponsorship formats now prioritize deep attendee interaction over passive visual
 
 ## ROI Measurement
 
-Measurement remains the weakest point in sponsorship — nearly 60% of organizers track it inconsistently. Protect your investment by requiring:
+Measurement is the weakest point in sponsorship, because many organizers track results inconsistently. Protect your investment by requiring:
 
 1. **Attendee data report:** Verified counts and demographics (not just ticket sales).
 2. **Lead retrieval access:** Badge scanning at your booth with exportable contact data.

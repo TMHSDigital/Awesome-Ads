@@ -36,12 +36,12 @@ Then match the channel to the job. Search captures demand that already exists ([
 | [Email Marketing](docs/channels/EMAIL.md) | Email program types, consent, and the list hygiene that keeps you out of spam folders. |
 | [Native Advertising](docs/channels/NATIVE.md) | Native ad formats and the disclosure rules that keep them legal. |
 | [Affiliate Marketing](docs/channels/AFFILIATE.md) | Commission models, shrinking cookie windows, and affiliate compliance. |
-| [Influencer Marketing](docs/channels/INFLUENCER.md) | Collaboration types, 2026 rate benchmarks, where to find creators, and FTC disclosure. |
+| [Influencer Marketing](docs/channels/INFLUENCER.md) | Collaboration types, how creators price their work, where to find creators, and FTC disclosure. |
 | [Print Advertising](docs/channels/PRINT.md) | Print formats and the narrow cases where print is still worth it. |
 | [Broadcast Advertising](docs/channels/BROADCAST.md) | TV and radio in 2026, and connected TV as the practical entry point for small businesses. |
 | [Out-of-Home (OOH) Advertising](docs/channels/OOH.md) | Billboard, transit, and programmatic digital OOH, and how a small business can buy it. |
 | [Direct Mail Advertising](docs/channels/DIRECT_MAIL.md) | Direct mail formats, mailing list hygiene, and campaign setup. |
-| [Event Sponsorship](docs/channels/EVENT.md) | Sponsorship types, tiers and investment ranges, and how to measure ROI. |
+| [Event Sponsorship](docs/channels/EVENT.md) | Sponsorship types and tiers, what to ask organizers for, and how to measure ROI. |
 
 ### Planning and compliance
 

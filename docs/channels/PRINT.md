@@ -1,7 +1,7 @@
 # Print Advertising
 <!-- nav_order: 90 -->
 
-Print still works in narrow cases: local trust, high-consideration purchases, and catalogs people keep. It is not a default channel. About a quarter of SMB advertisers planned to cut traditional media in 2026. Measure it or skip it.
+Print still works in narrow cases: local trust, high-consideration purchases, and catalogs people keep. It is not a default channel. Many small businesses are moving budget away from traditional media. Measure it or skip it.
 
 For physical mail that is triggered by digital behavior, use [Direct Mail](DIRECT_MAIL.md) instead of a newspaper insertion.
 

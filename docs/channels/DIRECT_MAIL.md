@@ -13,7 +13,7 @@ Programmatic direct mail automatically triggers physical mail drops based on rea
 - A visitor exits a high-ticket quote form → a letter with a tailored offer is triggered automatically.
 - A lapsed customer passes a re-engagement threshold in your CRM → a win-back mailer is dispatched.
 
-**Performance:** Campaigns in high-ticket verticals (home services, automotive, real estate) have demonstrated up to **15x ROI**. Physical mail cuts through digital ad fatigue; a physical coupon has an average household lifespan of over **7 days** — far longer than a digital banner impression.
+**Performance:** Triggered mail works best in high-ticket categories such as home services, automotive, and real estate, where one sale covers many mailers. Physical mail also stands apart from crowded digital feeds, and a coupon can stay on a counter or fridge for days, far longer than a banner impression.
 
 **Platforms:**
 
@@ -22,7 +22,7 @@ Programmatic direct mail automatically triggers physical mail drops based on rea
 - [Lob](https://www.lob.com/) — API-driven programmatic mail for developers
 - [DirectMail.io](https://directmail.io/) — multi-vendor comparison platform
 
-Starting cost: from ~**$0.81 per piece** depending on volume and format.
+Cost: priced per piece, depending on volume, format, and postage. Get quotes from two or three platforms before you commit.
 
 ### 2. Every Door Direct Mail (EDDM)
 

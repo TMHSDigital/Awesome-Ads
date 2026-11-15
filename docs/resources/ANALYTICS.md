@@ -1,7 +1,7 @@
 # Analytics and Reporting
 <!-- nav_order: 10 -->
 
-Accurate measurement is the foundation of every advertising decision. The collapse of third-party cookie-based tracking has forced a structural split in web analytics: **GA4 remains the default for Google-integrated stacks**, while a growing ecosystem of **cookieless, privacy-first alternatives** captures 40–50% more traffic data by bypassing browser-level restrictions entirely.
+Accurate measurement is the foundation of every advertising decision. The collapse of third-party cookie-based tracking has forced a structural split in web analytics: **GA4 remains the default for Google-integrated stacks**, while a growing set of **cookieless, privacy-first alternatives** counts visitors without relying on browser cookies.
 
 ---
 
@@ -20,18 +20,16 @@ Accurate measurement is the foundation of every advertising decision. The collap
 
 Universal Analytics was sunsetted in 2023. GA4 is the current Google standard, but significant adoption of cookieless alternatives has occurred as privacy restrictions erode cookie-based accuracy.
 
-| Tool | Audience | Starting Price | Consent Banner Required | Key Differentiators |
+| Tool | Audience | Pricing | Consent Banner Required | Key Differentiators |
 | :---- | :---- | :---- | :---- | :---- |
 | **Google Analytics 4 (GA4)** | Standard marketers, Google Ads users | Free | Yes (requires CMP) | Deep integration with Google Ads stack; event-based data model |
-| **Plausible Analytics** | Minimalist site owners | From $9/month | None (cookieless) | Single-page dashboard; lightweight script (<1KB); open source option |
-| **Fathom Analytics** | Marketing agencies | From $15/month | None (cookieless) | Unlimited sites; automatic EU/US server compliance routing |
-| **Swetrix** | Developers and growth teams | From $19/month | None (cookieless) | Combines traffic analytics, web experiments, and uptime monitoring |
+| **Plausible Analytics** | Minimalist site owners | Paid plans; self-hosted version available | None (cookieless) | Single-page dashboard; lightweight script (<1KB); open source option |
+| **Fathom Analytics** | Marketing agencies | Paid plans | None (cookieless) | Unlimited sites; automatic EU/US server compliance routing |
+| **Swetrix** | Developers and growth teams | Paid plans | None (cookieless) | Combines traffic analytics, web experiments, and uptime monitoring |
 | **Matomo** | Compliance-driven brands | Free (self-hosted) | None (if CNIL-configured) | Full data ownership; GA4-depth analytics; GDPR-ready by design |
-| **PostHog** | Product and engineering teams | Free (up to 1M events) | None (cookieless) | Product analytics, session replays, feature flags, and A/B testing |
+| **PostHog** | Product and engineering teams | Free tier, then usage-based | None (cookieless) | Product analytics, session replays, feature flags, and A/B testing |
 
-> **Note:** Matomo sunsetted its free Matomo Core hosted plan in February 2026, forcing smaller users to self-host or switch to a paid tier.
-
-Cookieless platforms typically capture **40–50% more traffic** than GA4 in heavily restricted environments (Safari, Firefox, ad-blocker users) because they don't rely on browser-stored identifiers.
+Cookieless platforms often record visits that GA4 misses in browsers and setups that block cookies or trackers, such as Safari, Firefox, and ad blockers, because they do not rely on browser-stored identifiers. Check each vendor's pricing page for current plans.
 
 ---
 

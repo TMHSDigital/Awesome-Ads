@@ -9,7 +9,7 @@ Video advertising promotes products and services through video content across st
 
 YouTube campaigns operate on a human–AI partnership model: AI handles placement timing, bidding, and creative variant testing; advertisers provide strategic direction and creative assets.
 
-- **Skippable In-Stream Ads:** Play before, during, or after videos. Viewers can skip after 5 seconds. Deliver your hook within the first 5 seconds. Cost: $0.02–$0.10 CPV.
+- **Skippable In-Stream Ads:** Play before, during, or after videos. Viewers can skip after 5 seconds. Deliver your hook within the first 5 seconds. Usually priced per view (CPV).
 - **Non-Skippable In-Stream Ads:** Up to 15 seconds. Guaranteed completion; priced on CPM.
 - **Bumper Ads:** 6-second non-skippable. High-frequency recall format; best used as remarketing follow-ups to in-stream viewers.
 - **YouTube Shorts Ads:** Vertical, full-screen ads in the Shorts feed. Growing inventory as Shorts views surpassed traditional in-stream in time-on-platform.
@@ -20,21 +20,23 @@ YouTube campaigns operate on a human–AI partnership model: AI handles placemen
 
 Google's **Peak Points** feature uses Gemini models to analyze the emotional arc of a video and dynamically serve ads during peak emotional transitions, when viewer attention is highest. Replaces rigid time-interval ad insertion with intent-aware placement.
 
-#### YouTube Cost Benchmarks
+#### How YouTube Formats Are Priced
 
-| Format | Pricing Model | Benchmark |
-| :---- | :---- | :---- |
-| Skippable In-Stream | Cost-Per-View (CPV) | $0.02–$0.10 |
-| Non-Skippable In-Stream | CPM | Varies by targeting |
-| Bumper Ads | CPM | Varies by targeting |
+| Format | Pricing model |
+| :---- | :---- |
+| Skippable In-Stream | Cost per view (CPV) |
+| Non-Skippable In-Stream | Cost per thousand impressions (CPM) |
+| Bumper Ads | Cost per thousand impressions (CPM) |
+
+Costs vary with targeting, season, and competition, and Google does not publish averages. Use the reach and cost estimates in Google Ads when you plan a campaign.
 
 ### 2. Connected TV (CTV)
 
-CTV has crossed a structural milestone: programmatic CTV now accounts for over **75% of all transactional TV volume**, and CTV upfront commitments have exceeded primetime linear TV upfronts for the first time.
+Connected TV is now bought much like digital ads: through self-serve platforms, with targeting by area and household, and with reporting on who saw the ad.
 
-- **Self-serve entry:** Campaigns available from **$50** via platforms like Adwave and Roku.
+- **Self-serve entry:** Platforms such as Roku Ads Manager let small businesses buy CTV without an agency. Minimum budgets differ by platform, so check before you plan.
 - **Targeting:** Household, ZIP code, and driving-radius level geo-targeting.
-- **Completion rates:** 30-second CTV ads average ~96% completion.
+- **Completion rates:** CTV ads usually play on the main screen and often cannot be skipped, so most viewers see the whole ad.
 - **AI production:** AI tools can generate a professional 15–30 second commercial by scanning your website or social profiles, removing traditional production barriers.
 
 CTV is now a viable channel for small businesses running local awareness and geo-targeted promotions. See [Broadcast Advertising](BROADCAST.md) for fuller coverage.

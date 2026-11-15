@@ -29,20 +29,15 @@ Influencer marketing involves partnering with individuals who have established a
 
 ### 6. Product Seeding
 
-- Send free product to nano/micro influencers without a paid contract. Up to **83% of nano/micro influencers** are willing to create content for gifted product alone if the brand-product alignment is genuine — the most cost-efficient strategy available to small businesses.
+- Send free product to nano/micro influencers without a paid contract. Many smaller creators will post about a gifted product when it genuinely fits their audience, which makes seeding one of the cheapest ways for a small business to start.
 
 ---
 
-## 2026 Rate Benchmarks
+## How Creators Price Their Work
 
-Pricing has moved away from follower counts toward format complexity, engagement rate, and audience geography.
+Creator rates depend on the format (a video costs more than a story), engagement rate, audience location, niche, and any exclusivity or usage rights you ask for, not just follower count. Creators are usually grouped as nano (1,000 to 10,000 followers) or micro (10,000 to 100,000).
 
-| Tier | Followers | Instagram Post | Instagram Story / Reel | TikTok Video | YouTube Integration |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| **Nano** | 1,000–10,000 | $20–$200 | $25–$300 / Story; $100–$500 / Reel | $20–$500 | $100–$500 (video); $50–$120 (Shorts) |
-| **Micro** | 10,000–100,000 | $150–$1,500 | $200–$2,500 | $150–$1,500 | $500–$5,000 (video); $120–$600 (Shorts) |
-
-> Rates vary substantially by niche (finance and tech pay more), geo (US creators command premiums), and exclusivity terms.
+There is no reliable public rate card, so we do not list prices. Ask each creator for a media kit with recent reach and engagement, request quotes from several creators in the same tier, and agree in writing on deliverables, usage rights, and disclosure before you pay.
 
 ---
 
@@ -50,8 +45,8 @@ Pricing has moved away from follower counts toward format complexity, engagement
 
 ### Budget-Friendly Options
 
-- **[Elev8or](https://www.elev8or.io/):** Free starter tier; paid plans from $49/month (no annual contract). Includes creator discovery, fake follower audits, and automated campaign workflows.
-- **[Collabstr](https://collabstr.com/):** Marketplace model — no monthly fee, flat 15% transaction fee. Optimal for one-off or occasional campaigns.
+- **[Elev8or](https://www.elev8or.io/):** Free starter tier and paid monthly plans. Includes creator discovery, fake follower audits, and automated campaign workflows.
+- **[Collabstr](https://collabstr.com/):** Marketplace model with no monthly subscription; it charges a fee on each transaction. Optimal for one-off or occasional campaigns.
 - **[Skeepers](https://skeepers.io/):** Designed for high-volume product seeding; enables small teams to coordinate hundreds of nano-creator gifted campaigns.
 
 ### Enterprise Options
@@ -66,7 +61,7 @@ Pricing has moved away from follower counts toward format complexity, engagement
 
 ## FTC Disclosure Requirements (2026)
 
-Enforcement has escalated significantly. Civil penalties now reach **$53,088 per violation**.
+Civil penalties for violating FTC rules can reach [$53,088 per violation](https://www.federalregister.gov/documents/2025/01/17/2025-01361/adjustments-to-civil-penalty-amounts) (the 2025 inflation-adjusted maximum, which the FTC kept for 2026).
 
 ### What's required
 
