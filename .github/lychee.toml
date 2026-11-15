@@ -15,6 +15,11 @@ exclude = [
   # ftc.gov returns 404 to every non-browser client, including its home page.
   # Its links were checked by hand in a browser on 2026-11-15.
   '^https://www\.ftc\.gov/',
+  # businesswire.com drops automated clients with an HTTP/2 protocol error.
+  # The Reddit 2025 results release was checked in a browser on 2026-11-15.
+  '^https://www\.businesswire\.com/',
+  # Seller Central is a sign-in portal that returns 503 to automated clients.
+  '^https://sellercentral\.amazon\.com/',
   # This repo's own pages are covered by scripts/check-internal-links.py.
   '^https://github\.com/TMHSDigital/Awesome-Ads/',
   "https://adespresso.com/wp-content/*",
