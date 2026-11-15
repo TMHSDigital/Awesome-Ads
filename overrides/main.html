@@ -18,7 +18,13 @@
   {%- if page and page.canonical_url %}
   <meta property="og:url" content="{{ page.canonical_url }}">
   {%- endif %}
-  <meta name="twitter:card" content="summary">
+  {%- set og_image = config.site_url ~ "assets/social-card.png" %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Awesome Ads: a practical advertising playbook for small businesses">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_description }}">
+  <meta name="twitter:image" content="{{ og_image }}">
 {% endblock %}
