@@ -4,7 +4,7 @@ Instructions for AI coding agents working in the Awesome Ads repository.
 
 ## Purpose
 
-This repository is a **markdown documentation project**. There is no application runtime beyond GitHub Pages (MkDocs Material). Your job is usually to edit, add, or reorganize guides. Keep links valid. Site navigation is generated from the docs folders at build time.
+This repository is a **markdown documentation project**. There is no application runtime beyond GitHub Pages (built with Zensical). Your job is usually to edit, add, or reorganize guides. Keep links valid. Site navigation is generated from the docs folders at build time.
 
 ## Repository layout
 
@@ -15,8 +15,8 @@ docs/
 ├── ad-templates/    # Template and design resources
 └── meta/         # Repo documentation and community policy
 .github/          # CI workflows, issue/PR templates
-scripts/          # Maintenance scripts (internal link checker)
-overrides/        # MkDocs Material template overrides (social preview tags)
+scripts/          # Build and validation scripts
+overrides/        # Theme template overrides (social preview tags)
 ```
 
 Each directory has its own `AGENTS.md` with scope-specific rules. Read the nearest `AGENTS.md` to the files you are editing.
@@ -32,7 +32,7 @@ Each directory has its own `AGENTS.md` with scope-specific rules. Read the neare
 - **Audience:** Small-business owners and marketers. Write clearly; avoid jargon without explanation.
 - **Links:** Use relative paths only so pages work on GitHub and GitHub Pages.
 - **Filenames:** Keep existing UPPERCASE names for channel/resource files (e.g. `SEA.md`, `BUDGETING.md`).
-- **Navigation:** Add or rename a page by placing a markdown file in the right folder with an H1. Optional `<!-- nav_order: 20 -->` on the line after the H1 controls sidebar order. The GitHub Pages nav and indexes are generated at build time. Do not edit a page list in [mkdocs.yml](mkdocs.yml).
+- **Navigation:** Add or rename a page by placing a markdown file in the right folder with an H1. Optional `<!-- nav_order: 20 -->` on the line after the H1 controls sidebar order. The GitHub Pages nav and indexes are generated at build time. Do not add a page list to [mkdocs.yml](mkdocs.yml); the build reads a generated `mkdocs.gen.yml`.
 - **Style:** No emojis in prose unless already present in a file you are not rewriting. Prefer complete sentences. Avoid em dashes in new copy; use commas, periods, or hyphens instead.
 - **Scope:** Do not expand scope into code, apps, or infrastructure unless explicitly requested.
 
@@ -42,23 +42,23 @@ Run before opening a PR:
 
 ```bash
 npx markdownlint-cli2 "**/*.md"
-python -m unittest scripts.test_catalog
+python -m unittest scripts.test_catalog scripts.test_check_internal_links
 python scripts/check-public-repo-hygiene.py
 python scripts/check-internal-links.py
 python scripts/prepare-mkdocs.py
-mkdocs build --strict
+zensical build --strict -f mkdocs.gen.yml
 ```
 
 CI runs the same checks on pull requests. External link checking runs on a weekly schedule.
 
 ## GitHub Pages
 
-Site config lives in [mkdocs.yml](mkdocs.yml). The [Deploy GitHub Pages](.github/workflows/pages.yml) workflow builds with MkDocs Material and publishes from `main`. Content under `docs/` is the site source; `AGENTS.md` files are excluded from the build. Root [CONTRIBUTING.md](CONTRIBUTING.md) is copied into `docs/` at build time.
+Site config lives in [mkdocs.yml](mkdocs.yml). `scripts/prepare-mkdocs.py` writes `mkdocs.gen.yml` (that config plus the generated sidebar), and the [Deploy GitHub Pages](.github/workflows/pages.yml) workflow builds it with [Zensical](https://zensical.org/) and publishes from `main`. Content under `docs/` is the site source; `AGENTS.md` files are excluded from the build. Root [CONTRIBUTING.md](CONTRIBUTING.md) is copied into `docs/` at build time.
 
 ## Do not
 
 - Commit secrets, credentials, API keys, tokens, or private keys.
-- Commit local-only paths: `research/`, `site/`, `docs/CONTRIBUTING.md`, generated `docs/index.md` and `docs/*/index.md`, `.env`, or other generated build output.
+- Commit local-only paths: `research/`, `site/`, `mkdocs.gen.yml`, `docs/CONTRIBUTING.md`, generated `docs/index.md` and `docs/*/index.md`, `.env`, or other generated build output.
 - Commit draft research, internal notes, or machine-local paths unless the user explicitly asks to publish them.
 - Use `git add -A` or `git add .` without reviewing the staged file list first.
 - Add unrelated tooling (frameworks, package.json, etc.) without explicit request.

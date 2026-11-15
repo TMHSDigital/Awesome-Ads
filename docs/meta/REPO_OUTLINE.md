@@ -18,14 +18,14 @@ Each user-facing guide is a markdown file in one of those folders. `AGENTS.md` f
 
 ## How the site catalog is built
 
-MkDocs does not keep a handwritten page list. At build time:
+The site is built with [Zensical](https://zensical.org/), and there is no handwritten page list. Before each build, `scripts/prepare-mkdocs.py` scans the folders above and writes:
 
-1. `scripts/prepare-mkdocs.py` scans the folders above and writes home and section indexes.
-2. `scripts/mkdocs_hooks.py` builds the sidebar from the same scan.
+1. The home and section index pages.
+2. `mkdocs.gen.yml`, which is `mkdocs.yml` plus the sidebar built from the same scan. The build reads this file.
 
 Title comes from the first H1. Optional `<!-- nav_order: 20 -->` on the line after the H1 controls order. Files without `nav_order` sort last, then by title.
 
-Adding a guide means adding the markdown file. Do not edit `mkdocs.yml` nav or regenerate indexes by hand.
+Adding a guide means adding the markdown file. Do not add a nav to `mkdocs.yml`, edit `mkdocs.gen.yml`, or regenerate indexes by hand.
 
 ## Contributing
 

@@ -45,7 +45,7 @@ To run the checks in step 5 you need:
    python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py
    python scripts/prepare-mkdocs.py
-   mkdocs build --strict
+   zensical build --strict -f mkdocs.gen.yml
    ```
 6. **Commit and push**
    ```bash
@@ -56,15 +56,15 @@ To run the checks in step 5 you need:
 
 ## Preview the site locally
 
-Install MkDocs Material and serve the docs site:
+The site is built with [Zensical](https://zensical.org/). Install it and serve the docs site:
 
 ```bash
-pip install -r requirements-docs.txt
+pip install -r requirements-docs.txt -c constraints-docs.txt
 python scripts/prepare-mkdocs.py
-mkdocs serve
+zensical serve -f mkdocs.gen.yml
 ```
 
-Open the local URL printed by `mkdocs serve` (typically port 8000).
+Open the local URL printed by `zensical serve` (typically port 8000). Run `prepare-mkdocs.py` again after you add or rename a guide.
 
 ## Standards
 

@@ -6,15 +6,15 @@ repo_url: https://github.com/TMHSDigital/Awesome-Ads
 repo_name: TMHSDigital/Awesome-Ads
 edit_uri: edit/main/docs/
 
-hooks:
-  - scripts/mkdocs_hooks.py
-
 exclude_docs: |
   **/AGENTS.md
   README.md
 
+# Built with Zensical. The build reads mkdocs.gen.yml, which
+# scripts/prepare-mkdocs.py writes from this file plus the sidebar nav.
 theme:
   name: material
+  variant: classic
   custom_dir: overrides
   palette:
     - scheme: slate
@@ -45,18 +45,10 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: false
-      fallback_to_build_date: true
-      enable_git_follow: false
-      strict: false
-      exclude:
-        - index.md
-        - CONTRIBUTING.md
-        - channels/index.md
-        - resources/index.md
-        - ad-templates/index.md
-        - meta/index.md
+  # Each page's description is its first paragraph. Search engines shorten
+  # long descriptions themselves, at a word boundary.
+  - meta-descriptions:
+      trim: false
 
 markdown_extensions:
   - admonition

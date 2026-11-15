@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare generated files for MkDocs build."""
+"""Prepare generated files for the site build."""
 
 from __future__ import annotations
 
@@ -12,8 +12,11 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from catalog import (  # noqa: E402
+    BUILD_CONFIG,
     SECTIONS,
     SECTION_INTROS,
+    mkdocs_nav,
+    render_build_config,
     render_home_markdown,
     render_index_markdown,
     scan_docs,
@@ -60,9 +63,17 @@ def prepare_indexes() -> None:
         print(f"Wrote {path.relative_to(ROOT)}")
 
 
+def prepare_build_config() -> None:
+    path = ROOT / BUILD_CONFIG
+    base = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+    path.write_text(render_build_config(base, mkdocs_nav(DOCS)), encoding="utf-8")
+    print(f"Wrote {path.relative_to(ROOT)}")
+
+
 def main() -> int:
     prepare_contributing()
     prepare_indexes()
+    prepare_build_config()
     return 0
 
 

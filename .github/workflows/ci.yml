@@ -42,8 +42,8 @@ jobs:
       - uses: actions/checkout@v7
       - run: python scripts/check-public-repo-hygiene.py
 
-  mkdocs:
-    name: MkDocs build
+  site:
+    name: Site build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -55,4 +55,4 @@ jobs:
       - run: pip install -r requirements-docs.txt -c constraints-docs.txt
       - run: python -m unittest scripts.test_catalog scripts.test_check_internal_links
       - run: python scripts/prepare-mkdocs.py
-      - run: mkdocs build --strict
+      - run: zensical build --strict --config-file mkdocs.gen.yml

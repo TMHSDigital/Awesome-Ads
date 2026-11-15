@@ -25,14 +25,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install MkDocs Material
+      - name: Install Zensical
         run: pip install -r requirements-docs.txt -c constraints-docs.txt
 
-      - name: Prepare MkDocs inputs
+      - name: Generate indexes and build config
         run: python scripts/prepare-mkdocs.py
 
       - name: Build site
-        run: mkdocs build --strict
+        run: zensical build --strict --config-file mkdocs.gen.yml
 
       - uses: actions/upload-pages-artifact@v5
         with:

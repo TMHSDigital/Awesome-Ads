@@ -6,8 +6,8 @@ CI, deployment, and repository automation under `.github/`.
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
-| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint, repo hygiene, internal links, MkDocs build |
-| [workflows/pages.yml](workflows/pages.yml) | Push to `main` | Build MkDocs site and deploy to GitHub Pages |
+| [workflows/ci.yml](workflows/ci.yml) | Push/PR to `main` | Markdown lint, repo hygiene, internal links, unit tests, Zensical site build |
+| [workflows/pages.yml](workflows/pages.yml) | Push to `main` | Build the site with Zensical and deploy to GitHub Pages |
 | [workflows/link-check-scheduled.yml](workflows/link-check-scheduled.yml) | Weekly + manual | External link check via Lychee |
 | [workflows/release.yml](workflows/release.yml) | `v*.*.*` tag push + manual | Publish a GitHub release for the tag |
 
@@ -23,7 +23,7 @@ CI, deployment, and repository automation under `.github/`.
 
 - Pin actions to major version tags (e.g. `@v7`), consistent with existing files.
 - CI must stay fast: this repo is markdown-only.
-- Pages workflow runs `scripts/prepare-mkdocs.py` before building; do not commit `docs/CONTRIBUTING.md`, `docs/index.md`, or `docs/*/index.md`.
+- Pages workflow runs `scripts/prepare-mkdocs.py` before building with `zensical build --strict -f mkdocs.gen.yml`; do not commit `mkdocs.gen.yml`, `docs/CONTRIBUTING.md`, `docs/index.md`, or `docs/*/index.md`.
 - Required permissions: `contents: read` for CI; add `pages: write` and `id-token: write` for Pages deploy.
 
 ## Dependency updates

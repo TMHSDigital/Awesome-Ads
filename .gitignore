@@ -9,6 +9,7 @@ docs/channels/index.md
 docs/resources/index.md
 docs/ad-templates/index.md
 docs/meta/index.md
+mkdocs.gen.yml
 
 # Python
 __pycache__/

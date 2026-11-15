@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FORBIDDEN_TRACKED_PREFIXES = (
     "research/",
     "site/",
+    "mkdocs.gen.yml",
 )
 
 FORBIDDEN_TRACKED_SUFFIXES = (

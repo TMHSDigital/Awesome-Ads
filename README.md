@@ -70,12 +70,12 @@ Automated agents should read [AGENTS.md](AGENTS.md) before editing.
 
 ## Preview the site locally
 
-The site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed to GitHub Pages on every push to `main`.
+The site is built with [Zensical](https://zensical.org/) and deployed to GitHub Pages on every push to `main`.
 
 ```bash
 pip install -r requirements-docs.txt
 python scripts/prepare-mkdocs.py
-mkdocs serve
+zensical serve -f mkdocs.gen.yml
 ```
 
 ## License

@@ -7,11 +7,10 @@ Maintenance utilities for repository quality checks.
 | File | Purpose |
 |------|---------|
 | `catalog.py` | Scans `docs/` folders, titles, and `nav_order` comments for nav and indexes |
-| `mkdocs_hooks.py` | MkDocs `on_config` hook that sets `nav` from `catalog.py` |
 | `test_catalog.py` | Stdlib unit tests for the catalog |
 | `check-internal-links.py` | Validates that relative `markdown` links resolve to existing files |
 | `check-public-repo-hygiene.py` | Fails if local-only paths or secret-like content are tracked in git |
-| `prepare-mkdocs.py` | Generates `docs/CONTRIBUTING.md` and section/home indexes for MkDocs |
+| `prepare-mkdocs.py` | Generates `docs/CONTRIBUTING.md`, the home and section indexes, and `mkdocs.gen.yml` (the build config with the sidebar nav) |
 
 ## check-internal-links.py
 
