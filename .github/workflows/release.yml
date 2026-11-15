@@ -1,0 +1,93 @@
+name: Release
+
+# Publishes a GitHub release for a vMAJOR.MINOR.PATCH tag.
+# Two ways to cut one:
+#   - Push an annotated tag: git tag -a v1.2.0 -m "What changed" && git push origin v1.2.0
+#   - Run this workflow from the Actions tab with a version (it tags main for you).
+# The tag message becomes the top of the release notes; GitHub appends the
+# merged pull requests since the previous release.
+
+on:
+  push:
+    tags: ["v*.*.*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, for example 1.2.0"
+        required: true
+      notes:
+        description: "Summary for the top of the release notes (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Publish GitHub release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Work out the tag
+        id: tag
+        env:
+          EVENT: ${{ github.event_name }}
+          INPUT_VERSION: ${{ inputs.version }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            tag="v${INPUT_VERSION#v}"
+          else
+            tag="$REF_NAME"
+          fi
+          if ! printf '%s' "$tag" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::'$tag' is not a version tag of the form vMAJOR.MINOR.PATCH"
+            exit 1
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Tag main (manual runs)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+          NOTES: ${{ inputs.notes }}
+        run: |
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            echo "::error::Tag $TAG already exists"
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "${NOTES:-Release $TAG}" origin/main
+          git push origin "refs/tags/$TAG"
+
+      - name: Check the tag is on main
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          # actions/checkout can turn an annotated tag into a lightweight one; fetch the real object.
+          git fetch --force --quiet origin "refs/tags/$TAG:refs/tags/$TAG"
+          if ! git merge-base --is-ancestor "$TAG^{commit}" origin/main; then
+            echo "::error::$TAG points at a commit that is not on main"
+            exit 1
+          fi
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          notes=""
+          if [ "$(git cat-file -t "$TAG")" = "tag" ]; then
+            notes="$(git tag -l --format='%(contents)' "$TAG")"
+          fi
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
+            --verify-tag --generate-notes --notes "$notes"
