@@ -3,6 +3,8 @@
 
 Effective budgeting maximizes return on limited ad spend. For small businesses under **$5,000/month**, the core principle is **concentration over coverage**: feed a small number of campaigns enough conversion volume to exit algorithmic learning phases rather than spreading thinly across every channel.
 
+Terms such as CPC, CPM, CPV, CPL, and LTV are defined in the [Glossary](GLOSSARY.md).
+
 ---
 
 ## 2026 Platform Cost Benchmarks

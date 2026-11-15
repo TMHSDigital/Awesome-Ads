@@ -3,6 +3,8 @@
 
 Out-of-Home (OOH) advertising reaches consumers in physical locations during their daily activities. The channel has been transformed by **programmatic Digital OOH (DOOH)**, which allows small businesses to bid on digital screen inventory in specific contexts with flexible budgets — eliminating the traditional requirement for long-term static billboard contracts.
 
+Terms such as OOH, DOOH, DSP, and CPM are defined in the [Glossary](../resources/GLOSSARY.md).
+
 ## Types of OOH Advertising
 
 ### 1. Programmatic Digital OOH (DOOH) — Recommended for SMBs

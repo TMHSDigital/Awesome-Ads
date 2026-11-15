@@ -11,6 +11,7 @@ Cross-cutting guides that apply across multiple advertising channels. These file
 | `LEGAL.md` | Legal, regulatory, and ethical considerations |
 | `EXAMPLES.md` | Case studies and successful campaigns |
 | `FAQ.md` | Common questions and troubleshooting |
+| `GLOSSARY.md` | Plain-language definitions of advertising abbreviations |
 
 ## Content focus
 

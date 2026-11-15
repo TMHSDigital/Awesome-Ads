@@ -52,6 +52,7 @@ Then match the channel to the job. Search captures demand that already exists ([
 | [Legal and Ethical Considerations](docs/resources/LEGAL.md) | FTC rules, GDPR and app privacy changes, CAN-SPAM, and state laws. |
 | [Examples of Successful Ad Campaigns](docs/resources/EXAMPLES.md) | Patterns from well-known campaigns that still work on a small-business budget. |
 | [FAQ and Troubleshooting](docs/resources/FAQ.md) | Quick answers, plus fixes for low click-through rates, high costs, and other common problems. |
+| [Glossary](docs/resources/GLOSSARY.md) | Plain definitions of CPC, CPM, CTV, DOOH, ROAS, and the other abbreviations the guides use. |
 
 ### Creative
 

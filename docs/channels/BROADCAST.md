@@ -3,6 +3,8 @@
 
 Broadcast advertising covers television and radio. Linear broadcast has seen persistent budget redirection as small businesses shift toward measurable, programmatic alternatives. The most important development for SMBs: **Connected TV (CTV) has become a performance channel accessible from $50**, fundamentally changing what "TV advertising" means for small businesses.
 
+Terms such as CTV and CPM are defined in the [Glossary](../resources/GLOSSARY.md).
+
 ## The State of Linear Broadcast in 2026
 
 Approximately **24% of SMB advertisers** plan to decrease traditional media investments in 2026. Linear broadcast TV and traditional radio require long-term contracts and high minimum buys, making them increasingly inefficient compared to programmatic connected alternatives. For most small businesses, linear broadcast is not a viable primary channel.

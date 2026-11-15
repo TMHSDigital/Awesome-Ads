@@ -3,6 +3,8 @@
 
 Social media advertising leverages various platforms to target specific audiences with tailored ads. The landscape has shifted from detailed interest-based targeting to autonomous AI optimization driven by conversion signals.
 
+Terms such as CTR, CPM, CPC, and CAPI are defined in the [Glossary](../resources/GLOSSARY.md).
+
 ## 2026 Platform Benchmarks
 
 | Platform | Avg. CTR | Avg. CPM | Avg. CPC | Best Fit |
