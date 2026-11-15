@@ -28,11 +28,11 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
    ```bash
    git checkout -b your-branch-name
    ```
-4. **Make your changes** — follow existing markdown style; keep links relative.
+4. **Make your changes** — follow existing markdown style; keep links relative. Stage new Markdown files so the link checker includes them.
 5. **Verify locally**
    ```bash
    npx markdownlint-cli2 "**/*.md"
-   python -m unittest scripts.test_catalog
+   python -m unittest scripts.test_catalog scripts.test_check_internal_links
    python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py
    python scripts/prepare-mkdocs.py
