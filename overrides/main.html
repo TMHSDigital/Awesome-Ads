@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{#- Social preview tags. Descriptions come from scripts/mkdocs_hooks.py. -#}
+{% block extrahead %}
+  {%- set og_title = config.site_name -%}
+  {%- if page and page.title and not page.is_homepage -%}
+    {%- set og_title = page.title ~ " - " ~ config.site_name -%}
+  {%- endif -%}
+  {%- set og_description = config.site_description -%}
+  {%- if page and page.meta and page.meta.description -%}
+    {%- set og_description = page.meta.description -%}
+  {%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ og_description }}">
+  {%- if page and page.canonical_url %}
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ og_title }}">
+  <meta name="twitter:description" content="{{ og_description }}">
+{% endblock %}

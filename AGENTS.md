@@ -16,6 +16,7 @@ docs/
 └── meta/         # Repo documentation and community policy
 .github/          # CI workflows, issue/PR templates
 scripts/          # Maintenance scripts (internal link checker)
+overrides/        # MkDocs Material template overrides (social preview tags)
 ```
 
 Each directory has its own `AGENTS.md` with scope-specific rules. Read the nearest `AGENTS.md` to the files you are editing.

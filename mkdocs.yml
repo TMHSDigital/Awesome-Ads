@@ -15,6 +15,7 @@ exclude_docs: |
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: slate
       primary: indigo
