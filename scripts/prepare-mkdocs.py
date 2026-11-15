@@ -24,15 +24,18 @@ CONTRIBUTING_DST = ROOT / "docs" / "CONTRIBUTING.md"
 DOCS = ROOT / "docs"
 
 
-def prepare_contributing() -> None:
-    text = CONTRIBUTING_SRC.read_text(encoding="utf-8")
+def rewrite_contributing(text: str) -> str:
+    """Rewrite root-relative links in CONTRIBUTING.md for its place in docs/."""
     text = text.replace("](docs/README.md)", "](index.md)")
     text = text.replace("](docs/meta/", "](meta/")
-    text = text.replace(
+    return text.replace(
         "](README.md)",
         "](https://github.com/TMHSDigital/Awesome-Ads/blob/main/README.md)",
     )
-    text = text.replace("templates/", "ad-templates/")
+
+
+def prepare_contributing() -> None:
+    text = rewrite_contributing(CONTRIBUTING_SRC.read_text(encoding="utf-8"))
     CONTRIBUTING_DST.write_text(text, encoding="utf-8")
     print(f"Wrote {CONTRIBUTING_DST.relative_to(ROOT)}")
 
