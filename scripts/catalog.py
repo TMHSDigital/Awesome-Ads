@@ -53,6 +53,39 @@ def parse_page(path: Path, docs: Path) -> Page:
     return Page(rel=rel, title=heading.group(1).strip(), nav_order=nav_order, stem=path.stem)
 
 
+_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+_FRONT_MATTER_RE = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
+_LINK_RE = re.compile(r"!?\[([^\]]*)\]\([^)]*\)")
+_EMPHASIS_RE = re.compile(r"(\*\*|__|\*|`)")
+_PROSE_START_RE = re.compile(r"^[A-Za-z0-9*_\[\"']")
+
+
+def first_paragraph(markdown: str) -> str:
+    """Return the first prose paragraph as plain text, or an empty string."""
+    text = _FRONT_MATTER_RE.sub("", markdown.replace("\r\n", "\n"))
+    text = _COMMENT_RE.sub("", text)
+    for block in re.split(r"\n\s*\n", text):
+        block = block.strip()
+        if not block or not _PROSE_START_RE.match(block):
+            continue
+        plain = _LINK_RE.sub(r"\1", block)
+        plain = _EMPHASIS_RE.sub("", plain)
+        return " ".join(plain.split())
+    return ""
+
+
+def summarize(markdown: str, limit: int = 155) -> str:
+    """First paragraph, cut at a word boundary to at most `limit` characters."""
+    text = first_paragraph(markdown)
+    if len(text) <= limit:
+        return text
+    sentence_end = text.rfind(". ", 0, limit)
+    if sentence_end >= limit // 2:
+        return text[: sentence_end + 1]
+    cut = text.rfind(" ", 0, limit - 3)
+    return text[: cut if cut > 0 else limit - 3].rstrip(",;:") + "..."
+
+
 def _sort_key(page: Page) -> tuple[bool, int, str]:
     return (page.nav_order is None, page.nav_order or 0, page.title.lower())
 
