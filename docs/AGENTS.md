@@ -38,6 +38,7 @@ Links from the root [README.md](../README.md) use the `docs/` prefix (e.g. `docs
 - End every file with a single trailing newline.
 - External tool links (Google Ads, Meta, etc.) are welcome in "Tools and Resources" sections.
 - Do not duplicate large blocks across files; cross-link instead.
+- Publish a statistic, price, or benchmark only with a primary source (the platform, a regulator or the law, a company filing, or a dated report with a stated method), linked next to the figure with its date. If no primary source exists, give the guidance in words without a number. Put cost benchmarks in the table in `docs/resources/BUDGETING.md` and link to it.
 
 ## Parent context
 

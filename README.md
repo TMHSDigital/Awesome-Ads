@@ -1,5 +1,8 @@
 # Awesome Ads
 
+[![Awesome Ads: a practical advertising playbook for small businesses. Free guides to search, social, video, email, print, out-of-home, budgeting, analytics, and ad law.](docs/assets/social-card.png)](https://tmhsdigital.github.io/Awesome-Ads/)
+
+[![Latest release](https://img.shields.io/github/v/release/TMHSDigital/Awesome-Ads?label=release)](https://github.com/TMHSDigital/Awesome-Ads/releases/latest)
 [![CI](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/ci.yml/badge.svg)](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/ci.yml)
 [![Deploy GitHub Pages](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/pages.yml/badge.svg)](https://github.com/TMHSDigital/Awesome-Ads/actions/workflows/pages.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
@@ -11,6 +14,12 @@ Free, open guides for planning, buying, and measuring ads across digital and tra
 **[Read the guides on the web](https://tmhsdigital.github.io/Awesome-Ads/)**, or browse the Markdown in [docs/](docs/).
 
 This is not a click-by-click manual for each ad platform. Platform screens change too often for that. The guides cover the decisions, and point you to each platform's official help center for the buttons.
+
+## How the numbers are sourced
+
+Ad advice is full of statistics that nobody can trace. These guides publish a number only when it is confirmed on a primary source: the platform's own documentation, a regulator or the law itself, a company's financial results, or a benchmark report that states its method and date. Each figure links to its source, directly or through the Budgeting cost table, with the date it was published or checked.
+
+When no primary source exists, the guide gives the advice in words instead of inventing a number. For example, the [Budgeting](docs/resources/BUDGETING.md#platform-cost-benchmarks) cost table lists sourced search and Facebook benchmarks and TikTok's minimum budgets, and it names the channels that have no reliable public figure. If you find a newer report or a figure that has changed, [open a content issue](https://github.com/TMHSDigital/Awesome-Ads/issues/new/choose).
 
 ## Where to start
 
@@ -32,7 +41,7 @@ Then match the channel to the job. Search captures demand that already exists ([
 | [Social Media Advertising](docs/channels/SOCIAL.md) | Which platform fits which audience, ad types for each, and how to set up campaigns. |
 | [Display Advertising](docs/channels/DISPLAY.md) | Display formats, targeting approaches, and how display is priced. |
 | [Video Advertising](docs/channels/VIDEO.md) | Video ad types across streaming, social, and connected TV, and how to set them up. |
-| [Amazon Ads](docs/channels/AMAZON.md) | Sponsored ad types, listing and search hygiene, and what Amazon ads cost in 2026. |
+| [Amazon Ads](docs/channels/AMAZON.md) | Sponsored ad types, listing and search hygiene, and how to keep Amazon ad costs in check. |
 | [Email Marketing](docs/channels/EMAIL.md) | Email program types, consent, and the list hygiene that keeps you out of spam folders. |
 | [Native Advertising](docs/channels/NATIVE.md) | Native ad formats and the disclosure rules that keep them legal. |
 | [Affiliate Marketing](docs/channels/AFFILIATE.md) | Commission models, shrinking cookie windows, and affiliate compliance. |
@@ -68,15 +77,21 @@ To edit a guide or add one, read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Com
 
 Automated agents should read [AGENTS.md](AGENTS.md) before editing.
 
+## Releases
+
+Each [release](https://github.com/TMHSDigital/Awesome-Ads/releases) lists what changed in the guides and the site since the previous one. Watch the repository and choose "Releases only" to get them without the rest of the activity.
+
 ## Preview the site locally
 
 The site is built with [Zensical](https://zensical.org/) and deployed to GitHub Pages on every push to `main`.
 
 ```bash
-pip install -r requirements-docs.txt
+pip install -r requirements-docs.txt -c constraints-docs.txt
 python scripts/prepare-mkdocs.py
 zensical serve -f mkdocs.gen.yml
 ```
+
+`prepare-mkdocs.py` writes the home and section pages and the build config with the sidebar, so run it again after you add or rename a guide. [CONTRIBUTING.md](CONTRIBUTING.md) lists the full set of checks CI runs.
 
 ## License
 

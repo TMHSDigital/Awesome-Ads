@@ -69,6 +69,7 @@ Open the local URL printed by `zensical serve` (typically port 8000). Run `prepa
 ## Standards
 
 - Write clear, accurate prose aimed at small-business readers.
+- Publish a statistic, price, or benchmark only with a primary source (the platform, a regulator or the law, a company filing, or a dated report with a stated method), linked next to the figure with its date. If no primary source exists, give the guidance in words without a number. Put cost benchmarks in the table in `docs/resources/BUDGETING.md` and link to it.
 - Use relative links so pages work on GitHub and GitHub Pages.
 - End markdown files with a single trailing newline.
 - The published site catalog is generated from the docs folders. Do not maintain another page list. The one exception is the guide tables in the root README, which a unit test keeps in sync: add a row there when you add a guide.
