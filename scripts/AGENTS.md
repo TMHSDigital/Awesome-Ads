@@ -15,8 +15,9 @@ Maintenance utilities for repository quality checks.
 
 ## check-internal-links.py
 
-- Scans all `*.md` files under the repo root (skips `.git`).
+- Scans the `*.md` files tracked by git plus the generated pages under `docs/`; falls back to walking the tree when git is unavailable. Gitignored drafts such as `research/` are not checked.
 - Resolves relative link targets from the containing file's directory.
+- Accepts link titles (`SEA.md "Search ads"`) and `<...>` targets; anchors and query strings are dropped.
 - Skips `http://`, `https://`, `mailto:`, `#`, and `ftp://` URLs.
 - Exit code `0` on success, `1` when broken links are found.
 - Runs `prepare-mkdocs.py` first so generated files such as `docs/CONTRIBUTING.md` and section indexes exist before link resolution.
