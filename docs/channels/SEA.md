@@ -7,10 +7,10 @@ Search Engine Advertising (SEA) involves placing ads on search engine results pa
 
 ### 1. Google Ads
 
-- **Search Ads / AI Max:** Text ads on Google SERPs. Google is phasing out Dynamic Search Ads (DSA) in favor of the **AI Max** framework, which combines broad match, keywordless matching, and Gemini-powered creative customization to expand query capture and dynamically generate headlines from landing page content. Auto-migration of DSA campaigns is scheduled for February 2027.
+- **Search Ads / AI Max:** Text ads on Google SERPs. Google is replacing Dynamic Search Ads (DSA) with **AI Max**, which combines broad match, keywordless matching, and AI-written text customization to reach more searches and build headlines from your landing pages. Remaining DSA campaigns are scheduled to be upgraded automatically in February 2027 ([Google Ads Developer Blog](https://developers.google.com/ads/blog/posts/2026/06/dynamic-search-ads-dsa-automigration), June 2026).
 - **Display Ads:** Banner ads on the Google Display Network (GDN). Transitioning toward contextual and first-party audience targeting as third-party cookie signals weaken.
 - **Shopping Ads:** Product listings on Google SERPs.
-- **Performance Max (PMax):** Automated campaign type running across all Google surfaces — Search, Display, YouTube, Gmail, Maps, and Discover — within a single campaign.
+- **Performance Max (PMax):** Automated campaign type that runs across Google's surfaces (Search, Display, YouTube, Gmail, Maps, and Discover) from a single campaign.
 - **Local Service Ads:** Pay-per-lead ads for local service businesses (plumbers, lawyers, cleaners, etc.).
 - **Video Ads:** Ads served on YouTube (see [Video Advertising](VIDEO.md)).
 
@@ -18,16 +18,16 @@ Search Engine Advertising (SEA) involves placing ads on search engine results pa
 
 AI Max achieves efficiency through three coordinated layers:
 
-1. **Search term matching** — analyzes site content, historical keywords, and creative assets to capture queries beyond standard keyword lists.
-2. **Asset optimization** — uses Gemini-generated text to customize headlines and descriptions per ad group contextually.
-3. **Final URL Expansion** — routes users to the landing page on your domain predicted to perform best, based on real-time intent signals.
+1. **Search term matching:** Uses your site content, keywords, and ads to match searches beyond your keyword list.
+2. **Text customization:** Writes variations of your headlines and descriptions with Google's AI.
+3. **Final URL expansion:** Sends each visitor to the page on your site that Google predicts will perform best.
 
-> **Tracking warning:** Tracking templates that do not use standard `{lpurl}` parameters (e.g., `{lpurl}?`, `{lpurl}&`) can conflict with Final URL Expansion, causing tracking failure or 404 redirect errors. Audit templates before opting into AI Max.
+> **Tracking check:** Before you turn on AI Max, make sure your tracking templates build URLs from the `{lpurl}` parameter, so tracking still works when visitors land on pages other than your final URL.
 
 ### 2. Microsoft Advertising (Bing Ads)
 
 - **Search Ads:** Text ads on Bing, Yahoo, and DuckDuckGo networks.
-- **Performance Max:** Self-serve negative keyword lists (up to 5,000 terms per campaign or account) now available, resolving the previous "black-box" targeting limitation. Supports New Customer Acquisition (NCA) settings for bidding exclusively toward net-new buyers.
+- **Performance Max:** Supports negative keywords and a new customer acquisition goal, so you can bid higher for, or only for, people who have not bought from you before.
 - **LinkedIn Profile Targeting:** Unique to Microsoft — layer company name, industry, or job function data over high-intent keywords for precise B2B reach.
 - **Import from Google Ads:** Microsoft supports importing Google PMax campaigns with NCA settings, automatically converting audience lists into equivalent rule-based remarketing assets.
 

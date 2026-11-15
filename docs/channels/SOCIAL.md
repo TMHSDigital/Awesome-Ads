@@ -25,9 +25,9 @@ Sourced cost figures for Facebook and TikTok's minimum budgets are in [Ad Budget
 
 ### 1. Meta Ads (Facebook and Instagram)
 
-Meta has established **Advantage+** as its default ad operations engine. All campaign types now run through this autonomous framework.
+Meta now sets up most campaigns with **Advantage+** automation by default, which handles audience, placement, and budget decisions.
 
-- **Advantage+ Sales Campaigns (ASC):** Formerly "Advantage+ Shopping Campaigns," now expanded to support lead generation and app installs alongside e-commerce catalogs. Budget allocation shifts dynamically between ad sets to maximize conversion probability in real time.
+- **Advantage+ Sales Campaigns:** Formerly "Advantage+ Shopping Campaigns." Meta moves budget automatically toward the audiences and placements that produce sales.
 - **Photo/Video Ads:** Single images or videos in feed.
 - **Carousel Ads:** Multiple images or videos in a swipeable format.
 - **Stories Ads:** Full-screen vertical ads.
@@ -37,7 +37,7 @@ Meta has established **Advantage+** as its default ad operations engine. All cam
 
 #### Advantage+ Best Practices
 
-- Maintain at least **15 active creative combinations** per campaign to prevent creative fatigue.
+- Give each campaign several images, videos, and text variations so the system can rotate them and avoid creative fatigue.
 - Set existing customer budget caps at **20–30%** to prevent over-allocation to prior buyers.
 - Upload brand kits (logos, fonts, hex colors) to keep AI-generated creative variations on-brand.
 - Use Meta's **Image-to-Video** tool to convert static product photos into animated video assets.
@@ -49,9 +49,9 @@ TikTok has expanded its ad suite to capture high-impact visual real estate and i
 
 - **In-Feed Ads:** Appear natively in the For You feed.
 - **Spark Ads:** Boost organic creator or brand posts, preserving social proof. Because they run from a real account, they keep the post's likes and comments.
-- **TopReach:** Combined app-open and top-feed placement for maximum one-day reach.
-- **Prime Time:** Sequential storytelling format delivering up to three ads from one advertiser to the same user within a 15-minute window.
-- **TikTok Search Ads:** Sponsored videos at the top of search results, capturing younger demographics who use TikTok as their primary search engine.
+- **TopReach:** One buy that combines TopView (the first ad on app open) and TopFeed (the first in-feed ad) for maximum one-day reach.
+- **Prime Time:** A sequence of up to three ads from one advertiser shown to the same person within 15 minutes, for live events and big moments ([TikTok Newsroom](https://newsroom.tiktok.com/newfronts-26-tiktok-unveils-new-high-impact-ad-solutions?lang=en), March 2026). TopReach and Prime Time are premium buys aimed at larger budgets.
+- **TikTok Search Ads:** Sponsored videos in TikTok's search results, for people who search for products inside the app.
 - **Branded Hashtag Challenges:** Encourage user-generated participation.
 - **TopView Ads:** Full-screen takeover on app open.
 - **Branded Effects:** Custom AR filters and effects.
@@ -61,7 +61,7 @@ Daily budgets must exceed **$50 per campaign** and **$20 per ad group** ([TikTok
 
 ### 3. LinkedIn Ads
 
-LinkedIn has pivoted to an **account-influence model** targeting entire buying groups within high-value companies — not just individual contacts.
+LinkedIn's ad tools increasingly target **buying groups**, the several people inside one company who decide on a purchase, not just individual contacts.
 
 - **Sponsored Content:** Promoted posts in the feed.
 - **Document Ads:** Gated PDFs read natively in-feed. Useful for B2B lead generation because readers never leave LinkedIn.
@@ -75,21 +75,18 @@ LinkedIn has pivoted to an **account-influence model** targeting entire buying g
 Pinterest operates as a **hybrid social and visual search** platform.
 
 - **Promoted Pins:** Boost standard pin visibility.
-- **Idea Ads:** Now support direct outbound links, paid influencer placements, and "Shop the Look" product tags.
-- **Try On Product Pins:** AR-powered virtual product testing for beauty and home decor (`.USDZ` for iOS, `.GLB` for Android).
+- **Try On Product Pins:** Augmented reality try-on for selected beauty and home decor products.
 - **Promoted Carousels:** Multiple images in a swipeable format.
 - **Promoted Video Pins:** Video content in feed.
 - **Promoted App Pins:** Drive directly to app store installs.
 
 ### 5. X (formerly Twitter) Ads
 
-X rebuilt its ad delivery system in partnership with xAI and AWS, using real-time semantic processing to align creatives with active trends and discussions rather than static user profiles.
-
 - **Promoted Tweets / Posts:** Boost individual posts into targeted feeds.
 - **Promoted Accounts:** Grow follower counts.
 - **Promoted Trends:** Feature in trending topics.
 
-> **Note:** X updated its adult content policy in 2026, requiring age verification and enforcing moderate brand-safety adjacency controls by default. Advertisers should review brand safety settings before launching campaigns.
+> **Note:** X allows a wider range of content than most ad platforms. Review its brand safety and adjacency controls before you launch.
 
 ### 6. Reddit Ads
 
@@ -97,11 +94,11 @@ Reddit has become a place where people research purchases before they buy, and a
 
 - **Promoted Posts:** Native ads appearing in subreddit feeds.
 - **Collection Ads:** Lifestyle imagery paired with interactive, shoppable product tiles.
-- **Conversation Overlay Ads:** Allow brands to feature community validation tags (e.g., "Redditors' Top Pick") directly on ad creatives.
+- **Conversation Summary Add-ons:** Show positive Reddit comments about your product beneath the ad. Announced in June 2025 and first tested with selected advertisers, so check whether your account has it.
 
 ### 7. Bluesky
 
-Bluesky surpassed 41 million users in 2025 but **does not support paid advertising**. Built on the open AT Protocol with a chronological feed, the platform rewards organic brand building and authentic community engagement. Suitable for earned presence only.
+Bluesky grew quickly in 2024 and 2025 but **does not sell advertising**. It is built on the open AT Protocol, and people choose which feeds they follow, so brands can only build a presence there organically.
 
 ---
 

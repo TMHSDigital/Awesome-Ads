@@ -12,13 +12,13 @@ YouTube campaigns operate on a human–AI partnership model: AI handles placemen
 - **Skippable In-Stream Ads:** Play before, during, or after videos. Viewers can skip after 5 seconds. Deliver your hook within the first 5 seconds. Usually priced per view (CPV).
 - **Non-Skippable In-Stream Ads:** Up to 15 seconds. Guaranteed completion; priced on CPM.
 - **Bumper Ads:** 6-second non-skippable. High-frequency recall format; best used as remarketing follow-ups to in-stream viewers.
-- **YouTube Shorts Ads:** Vertical, full-screen ads in the Shorts feed. Growing inventory as Shorts views surpassed traditional in-stream in time-on-platform.
+- **YouTube Shorts Ads:** Vertical, full-screen ads in the Shorts feed.
 - **Discovery / In-Feed Ads:** Appear in YouTube search results and the homepage feed.
-- **Shoppable CTV Ads:** 15-second non-skippable ads on smart TVs overlay an interactive product carousel. Viewers browse with their remote or scan a QR code to purchase on mobile — converting awareness placements into direct-response channels.
+- **Shoppable CTV Ads:** Ads on TV screens with a browsable product feed from your Google Merchant Center catalog, so viewers can look at products during the ad (announced at Brandcast, May 2025).
 
 #### Peak Points
 
-Google's **Peak Points** feature uses Gemini models to analyze the emotional arc of a video and dynamically serve ads during peak emotional transitions, when viewer attention is highest. Replaces rigid time-interval ad insertion with intent-aware placement.
+Google announced **Peak Points** at Brandcast in May 2025. It uses Gemini to find the moments in a video that hold the most attention and places an ad right after them, instead of at fixed intervals. Check availability in your account, since rollout details were not published with the announcement.
 
 #### How YouTube Formats Are Priced
 
