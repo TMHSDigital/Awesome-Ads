@@ -30,6 +30,17 @@ HOME_INTRO = """**A practical advertising playbook for small businesses.**
 
 Awesome Ads is an open reference for planning, launching, and refining campaigns across digital and traditional channels. Each guide stands on its own: read cover to cover or jump straight to the channel you need."""
 
+HOME_START = """## Where to start
+
+New to paid advertising? Read three guides before you pick a channel:
+
+1. [Budgeting](resources/BUDGETING.md): how much to spend and how to split it when you have less than $5,000 a month.
+2. [Analytics](resources/ANALYTICS.md): the metrics and tracking setup that tell you whether an ad paid for itself.
+3. [Legal](resources/LEGAL.md): FTC endorsement and review rules, privacy laws, and CAN-SPAM, so your ads do not create a problem later.
+
+Then choose one or two channels below and give them time to learn before you add more."""
+
+
 LICENSE_URL = "https://github.com/TMHSDigital/Awesome-Ads/blob/main/LICENSE"
 AGENTS_URL = "https://github.com/TMHSDigital/Awesome-Ads/blob/main/AGENTS.md"
 
@@ -40,6 +51,7 @@ class Page:
     title: str
     nav_order: int | None
     stem: str
+    summary: str = ""
 
 
 def parse_page(path: Path, docs: Path) -> Page:
@@ -50,7 +62,19 @@ def parse_page(path: Path, docs: Path) -> Page:
     order_match = NAV_ORDER_RE.search(text)
     nav_order = int(order_match.group(1)) if order_match else None
     rel = path.relative_to(docs).as_posix()
-    return Page(rel=rel, title=heading.group(1).strip(), nav_order=nav_order, stem=path.stem)
+    return Page(
+        rel=rel,
+        title=heading.group(1).strip(),
+        nav_order=nav_order,
+        stem=path.stem,
+        summary=first_sentence(text),
+    )
+
+
+def _guide_line(page: Page, href: str) -> str:
+    if page.summary:
+        return f"- [{page.title}]({href}): {page.summary}"
+    return f"- [{page.title}]({href})"
 
 
 _COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -72,6 +96,14 @@ def first_paragraph(markdown: str) -> str:
         plain = _EMPHASIS_RE.sub("", plain)
         return " ".join(plain.split())
     return ""
+
+
+_SENTENCE_END_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
+
+
+def first_sentence(markdown: str) -> str:
+    """First sentence of the first prose paragraph."""
+    return _SENTENCE_END_RE.split(first_paragraph(markdown), maxsplit=1)[0]
 
 
 def summarize(markdown: str, limit: int = 155) -> str:
@@ -120,13 +152,11 @@ def render_index_markdown(
         "",
         intro,
         "",
-        "| Guide |",
-        "| --- |",
     ]
     for page in pages:
         filename = Path(page.rel).name
         href = f"{link_prefix}{filename}" if link_prefix else filename
-        lines.append(f"| [{page.title}]({href}) |")
+        lines.append(_guide_line(page, href))
     lines.append("")
     return "\n".join(lines)
 
@@ -140,6 +170,8 @@ def render_home_markdown(docs: Path) -> str:
         "",
         HOME_INTRO,
         "",
+        HOME_START,
+        "",
     ]
     for folder, title in SECTIONS:
         pages = scanned[folder]
@@ -147,10 +179,8 @@ def render_home_markdown(docs: Path) -> str:
         lines.append("")
         lines.append(SECTION_INTROS[folder])
         lines.append("")
-        lines.append("| Guide |")
-        lines.append("| --- |")
         for page in pages:
-            lines.append(f"| [{page.title}]({page.rel}) |")
+            lines.append(_guide_line(page, page.rel))
         lines.append("")
     lines.extend(
         [
