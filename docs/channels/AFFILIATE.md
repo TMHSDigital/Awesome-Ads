@@ -29,7 +29,7 @@ Traditional 30-day last-click attribution relied on browser cookies to credit th
 
 **Impact:** Affiliates with long consideration cycles (editorial reviewers, comparison sites) are being undercredited, while coupon and cashback browser extensions that intercept buyers at checkout are being over-credited.
 
-**Solution: tiered commissions.** Modern networks like [Impact](https://impact.com/) and [Awin](https://www.awin.com/) (ShareASale now redirects here) support tiered commission structures. Reward mid-funnel creators who drive consideration at a higher rate and reduce payouts to last-touch coupon interceptors.
+**Solution: tiered commissions.** Modern networks like [Impact](https://impact.com/) and [Awin](https://www.awin.com/) (ShareASale moved its customers to Awin and [closed in October 2025](https://www.awin.com/us/news-and-events/awin-news/shareasale-to-awin-upgrade)) support tiered commission structures. Reward mid-funnel creators who drive consideration at a higher rate and reduce payouts to last-touch coupon interceptors.
 
 ---
 

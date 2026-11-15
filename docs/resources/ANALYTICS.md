@@ -1,7 +1,7 @@
 # Analytics and Reporting
 <!-- nav_order: 10 -->
 
-Accurate measurement is the foundation of every advertising decision. The collapse of third-party cookie-based tracking has forced a structural split in web analytics: **GA4 remains the default for Google-integrated stacks**, while a growing set of **cookieless, privacy-first alternatives** counts visitors without relying on browser cookies.
+Accurate measurement is the foundation of every advertising decision. Third-party cookie tracking keeps weakening (Safari and Firefox block it by default, and many users block it themselves), which has split web analytics in two: **GA4 remains the default for Google-integrated stacks**, while a growing set of **cookieless, privacy-first alternatives** counts visitors without relying on browser cookies.
 
 ---
 

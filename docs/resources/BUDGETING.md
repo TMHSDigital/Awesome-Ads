@@ -111,7 +111,7 @@ Review competitors' ad activity via Meta Ad Library, Google's Ads Transparency C
 ## Advanced Strategies
 
 ### Bid Optimization
-Let AI Max (Google) and Advantage+ (Meta) manage bidding once conversion volume is sufficient. Manual bidding is only advisable when you have specific constraints the algorithm can't handle.
+Let Smart Bidding (Google) and Advantage+ (Meta) manage bidding once conversion volume is sufficient. Manual bidding is only advisable when you have specific constraints the algorithm can't handle.
 
 ### Cross-Channel Attribution
 Use GA4, a server-side tagging setup, or a third-party attribution tool (Northbeam, Triple Whale) to understand how channels interact. Single-touch attribution models (last-click) systematically undervalue awareness and mid-funnel channels.

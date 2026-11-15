@@ -9,7 +9,7 @@ Direct mail involves sending physical promotional materials to potential or exis
 
 Programmatic direct mail automatically triggers physical mail drops based on real-time digital actions:
 
-- A website visitor abandons a cart → a personalized postcard arrives at their home within **48 hours**.
+- A website visitor abandons a cart → a personalized postcard arrives at their home a few days later.
 - A visitor exits a high-ticket quote form → a letter with a tailored offer is triggered automatically.
 - A lapsed customer passes a re-engagement threshold in your CRM → a win-back mailer is dispatched.
 
