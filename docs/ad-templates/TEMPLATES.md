@@ -53,6 +53,13 @@ High-quality templates and design tools speed up ad production without requiring
 - **Brand colors and fonts:** Reuse the same kit across channels.
 - **Layout consistency:** Same structure, swapped offers.
 
+### Review Product Accuracy Before Export
+
+- **Keep a reference:** Compare each product image with one approved photograph, including its shape, material, labels, and functional details.
+- **Separate product and scene edits:** A new background or crop should not quietly change the item being advertised.
+- **Record a decision:** Mark each candidate as held, needing revision, approved for a named use, or rejected, with a specific reason.
+- **Recheck every format:** A crop can hide a changed label or cut through a handle. Keep rejected versions out of the final delivery folder.
+
 ### Mobile Optimization
 - **Responsive design:** Check every size the platform actually serves.
 - **Fast loading:** Compress images and keep video under platform file limits.
