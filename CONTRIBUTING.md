@@ -11,10 +11,19 @@ We welcome contributions from the community! Follow these guidelines to help us 
 │   ├── ad-templates/    # Template and design resources
 │   └── meta/         # Repo documentation
 ├── .github/          # CI, issue/PR templates
-└── scripts/          # Maintenance scripts (link checker)
+└── scripts/          # Build and validation scripts
 ```
 
 Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. The site nav is generated at build time from those folders. Start each page with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
+
+## Prerequisites
+
+To run the checks in step 5 you need:
+
+- Python 3.12 (the version CI uses)
+- Node.js, for `npx markdownlint-cli2`
+- The site build tools: `pip install -r requirements-docs.txt`
+- Git, because the link checker reads the list of tracked files
 
 ## How to contribute
 
@@ -29,7 +38,7 @@ Add new channel guides under `docs/channels/`. Add cross-cutting topics under `d
    git checkout -b your-branch-name
    ```
 4. **Make your changes** — follow existing markdown style; keep links relative.
-5. **Verify locally**
+5. **Verify locally.** These are the same checks CI runs on your pull request. See [Prerequisites](#prerequisites) if a command is missing.
    ```bash
    npx markdownlint-cli2 "**/*.md"
    python -m unittest scripts.test_catalog scripts.test_check_internal_links

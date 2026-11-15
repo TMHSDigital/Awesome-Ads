@@ -6,6 +6,11 @@
 
 ## Checklist
 
-- [ ] Links are relative and resolve (`python scripts/check-internal-links.py`)
+CI runs every check below. Running them first saves a round trip (see Prerequisites in CONTRIBUTING.md).
+
 - [ ] Markdown lint passes (`npx markdownlint-cli2 "**/*.md"`)
-- [ ] New pages have an H1 (optional `nav_order` comment). Do not edit `mkdocs.yml` nav.
+- [ ] Unit tests pass (`python -m unittest scripts.test_catalog scripts.test_check_internal_links`)
+- [ ] Repo hygiene check passes (`python scripts/check-public-repo-hygiene.py`)
+- [ ] Links are relative and resolve (`python scripts/check-internal-links.py`)
+- [ ] Site builds (`python scripts/prepare-mkdocs.py` then `mkdocs build --strict`)
+- [ ] New pages have an H1 (optional `nav_order` comment) and a row in the README guide tables. Do not edit `mkdocs.yml` nav.
