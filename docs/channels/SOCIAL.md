@@ -117,7 +117,7 @@ Bluesky surpassed 41 million users in 2025 but **does not support paid advertisi
 - [Meta Ads Manager](https://www.facebook.com/business/ads)
 - [TikTok Ads](https://www.tiktok.com/business/en-US/ads)
 - [LinkedIn Campaign Manager](https://business.linkedin.com/advertise/ads)
-- [Pinterest Ads](https://business.pinterest.com/ads/)
+- [Pinterest Ads](https://business.pinterest.com/advertise/)
 - [X Ads](https://ads.x.com/)
 - [Reddit Ads](https://www.reddit.com/advertising/)
 

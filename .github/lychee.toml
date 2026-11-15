@@ -6,7 +6,17 @@ max_concurrency = 8
 timeout = 20
 user_agent = "Awesome-Ads-Link-Checker/1.0"
 
+# Several ad platforms and publishers (x.com, adage.com, marketingweek.com,
+# skeepers.io) answer automated clients with 403 or 429 even when the page
+# exists. Treat those as reachable so real 404s stand out.
+accept = ["200..=299", "403", "429"]
+
 exclude = [
+  # ftc.gov returns 404 to every non-browser client, including its home page.
+  # Its links were checked by hand in a browser on 2026-11-15.
+  '^https://www\.ftc\.gov/',
+  # This repo's own pages are covered by scripts/check-internal-links.py.
+  '^https://github\.com/TMHSDigital/Awesome-Ads/',
   "https://adespresso.com/wp-content/*",
   "https://upload.wikimedia.org/*",
   "https://www.canva.com/*",
