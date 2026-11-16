@@ -9,7 +9,7 @@ import json
 import sys
 import tempfile
 import unittest
-from contextlib import redirect_stderr
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -21,6 +21,7 @@ from catalog import (
     first_paragraph,
     first_sentence,
     generated_doc_paths,
+    generated_front_matter,
     mkdocs_nav,
     parse_page,
     render_build_config,
@@ -163,6 +164,43 @@ class GuideListTests(unittest.TestCase):
             self.assertIn("## Where to start", home)
             self.assertIn("- [Legal](resources/LEGAL.md): Rules to follow.", home)
             self.assertLess(home.index("## Where to start"), home.index("## Channels"))
+
+
+class GeneratedFrontMatterTests(unittest.TestCase):
+    """overrides/partials/actions.html hides or redirects edit links using this."""
+
+    def test_home_and_indexes_are_marked_generated(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = _docs_tree(Path(tmp))
+            _write(docs / "channels" / "SEA.md", "# Search\n\nAds.\n")
+            pages = scan_docs(docs)["channels"]
+            for rendered in (
+                render_home_markdown(docs),
+                render_index_markdown("Channels", "Intro.", pages, ""),
+            ):
+                self.assertTrue(rendered.startswith("---\ngenerated: true\n---\n"))
+                self.assertNotIn("source:", rendered)
+
+    def test_contributing_copy_points_at_root_file(self) -> None:
+        prepare = _load_script("prepare-mkdocs.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            src = Path(tmp) / "CONTRIBUTING.md"
+            dst = Path(tmp) / "docs" / "CONTRIBUTING.md"
+            _write(src, "# Contributing\n")
+            dst.parent.mkdir()
+            with patch.object(prepare, "CONTRIBUTING_SRC", src), patch.object(
+                prepare, "CONTRIBUTING_DST", dst
+            ), patch.object(prepare, "ROOT", Path(tmp)), redirect_stdout(io.StringIO()):
+                prepare.prepare_contributing()
+            self.assertTrue(
+                dst.read_text(encoding="utf-8").startswith(
+                    "---\ngenerated: true\nsource: CONTRIBUTING.md\n---\n# Contributing"
+                )
+            )
+
+    def test_generated_pages_still_have_summaries(self) -> None:
+        text = generated_front_matter() + "# Title\n\nFirst line.\n"
+        self.assertEqual(first_paragraph(text), "First line.")
 
 
 class ReadmeTests(unittest.TestCase):
