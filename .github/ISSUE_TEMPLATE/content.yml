@@ -4,6 +4,18 @@ description: Report incorrect, outdated, or missing documentation
 title: "[Content]: "
 labels: ["documentation"]
 body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - Wrong or outdated figure (cost, statistic, benchmark)
+        - Outdated platform feature or policy
+        - Broken link
+        - Missing topic
+        - Other
+    validations:
+      required: false
   - type: textarea
     id: description
     attributes:
@@ -11,6 +23,19 @@ body:
       description: Describe the issue and where it appears (file path or URL).
     validations:
       required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Primary source
+      description: >-
+        For a figure or a platform change, link the primary source (the platform,
+        a regulator or the law, a company filing, or a dated report with a stated
+        method) and its date. Figures are published only with one; see the
+        sourcing rule in CONTRIBUTING.md:
+        https://github.com/TMHSDigital/Awesome-Ads/blob/main/CONTRIBUTING.md
+      placeholder: "https://... (published or checked 2026-11-15)"
+    validations:
+      required: false
   - type: textarea
     id: suggestion
     attributes:
