@@ -11,7 +11,11 @@ docs/
 ├── channels/     # Per-channel advertising guides
 ├── resources/    # Cross-cutting topics (analytics, legal, FAQ)
 ├── ad-templates/    # Ad template and design resources
-└── meta/         # Repo documentation
+├── meta/         # Repo documentation
+├──assets/        # Social card and site assets
+└──stylesheets/  # Site theme styles
+overrides/        # Theme template overrides
+scripts/          # Build and validation scripts
 ```
 
 Each user-facing guide is a markdown file in one of those folders. `AGENTS.md` files are agent instructions and are excluded from the site.

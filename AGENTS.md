@@ -12,8 +12,10 @@ This repository is a **markdown documentation project**. There is no application
 docs/
 ├── channels/     # One guide per advertising channel (SEA, SOCIAL, …)
 ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
-├── ad-templates/    # Template and design resources
-└── meta/         # Repo documentation and community policy
+├── ad-templates/ # Template and design resources
+├── meta/         # Repo documentation and community policy
+├── assets/       # Social card and site assets
+└── stylesheets/  # Site theme styles
 .github/          # CI workflows, issue/PR templates
 scripts/          # Build and validation scripts
 overrides/        # Theme template overrides (social preview tags)
