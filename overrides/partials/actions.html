@@ -1,0 +1,39 @@
+{#-
+  Copy of the theme's partials/actions.html with one change: pages that
+  scripts/prepare-mkdocs.py generates are not in the repo, so their default
+  edit and view links would 404. Front matter `source` points the buttons at
+  the real file; other generated pages (home, section indexes) show none.
+-#}
+{% if "content.action.copy" in features and page.markdown_url %}
+  <button type="button" title="{{ lang.t('action.copy') }}" aria-label="{{ lang.t('action.copy') }}" class="md-content__button md-icon" data-md-copy-url="{{ page.markdown_url | url }}">
+    {% set icon = config.theme.icon.copy or "material/content-copy" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </button>
+{% endif %}
+{% set edit_url = page.edit_url %}
+{% if page.meta and page.meta.generated %}
+  {% if page.meta.source %}
+    {% set edit_url = config.repo_url ~ "/edit/main/" ~ page.meta.source %}
+  {% else %}
+    {% set edit_url = none %}
+  {% endif %}
+{% endif %}
+{% if edit_url %}
+  {% if "content.action.edit" in features %}
+    <a href="{{ edit_url }}" title="{{ lang.t('action.edit') }}" class="md-content__button md-icon" rel="edit">
+      {% set icon = config.theme.icon.edit or "material/file-edit-outline" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </a>
+  {% endif %}
+  {% if "content.action.view" in features %}
+    {% if "/blob/" in edit_url %}
+      {% set part = "/blob/" %}
+    {% else %}
+      {% set part = "/edit/" %}
+    {% endif %}
+    <a href="{{ edit_url | replace(part, '/raw/') }}" title="{{ lang.t('action.view') }}" class="md-content__button md-icon">
+      {% set icon = config.theme.icon.view or "material/file-eye-outline" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </a>
+  {% endif %}
+{% endif %}

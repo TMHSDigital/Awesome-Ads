@@ -9,19 +9,24 @@ Overview of how documentation is laid out and how the published site is generate
 ```
 docs/
 ├── channels/     # Per-channel advertising guides
-├── resources/    # Cross-cutting topics (analytics, legal, FAQ)
-├── ad-templates/    # Ad template and design resources
-└── meta/         # Repo documentation
+├── resources/    # Cross-cutting topics (analytics, legal, FAQ, glossary)
+├── ad-templates/ # Ad template and design resources
+├── meta/         # Repo documentation
+├── assets/       # Social preview card
+└── stylesheets/  # Site theme (extra.css)
+overrides/        # Theme template overrides
+scripts/          # Site generation and validation scripts
 ```
 
-Each user-facing guide is a markdown file in one of those folders. `AGENTS.md` files are agent instructions and are excluded from the site.
+Each user-facing guide is a markdown file in one of the first four folders. `AGENTS.md` files are agent instructions and are excluded from the site.
 
 ## How the site catalog is built
 
 The site is built with [Zensical](https://zensical.org/), and there is no handwritten page list. Before each build, `scripts/prepare-mkdocs.py` scans the folders above and writes:
 
 1. The home and section index pages.
-2. `mkdocs.gen.yml`, which is `mkdocs.yml` plus the sidebar built from the same scan. The build reads this file.
+2. `docs/CONTRIBUTING.md`, a copy of the root `CONTRIBUTING.md` with its links adjusted for the site.
+3. `mkdocs.gen.yml`, which is `mkdocs.yml` plus the sidebar built from the same scan. The build reads this file.
 
 Title comes from the first H1. Optional `<!-- nav_order: 20 -->` on the line after the H1 controls order. Files without `nav_order` sort last, then by title.
 

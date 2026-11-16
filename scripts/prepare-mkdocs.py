@@ -16,6 +16,7 @@ from catalog import (  # noqa: E402
     BUILD_CONFIG,
     SECTIONS,
     SECTION_INTROS,
+    generated_front_matter,
     mkdocs_nav,
     render_build_config,
     render_home_markdown,
@@ -41,7 +42,8 @@ def rewrite_contributing(text: str) -> str:
 
 def prepare_contributing() -> None:
     text = rewrite_contributing(CONTRIBUTING_SRC.read_text(encoding="utf-8"))
-    CONTRIBUTING_DST.write_text(text, encoding="utf-8")
+    front_matter = generated_front_matter(source=CONTRIBUTING_SRC.name)
+    CONTRIBUTING_DST.write_text(front_matter + text, encoding="utf-8")
     print(f"Wrote {CONTRIBUTING_DST.relative_to(ROOT)}")
 
 

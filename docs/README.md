@@ -5,6 +5,6 @@ Source files for the published site live in the subfolders of this directory. Th
 Browse the guides at [tmhsdigital.github.io/Awesome-Ads](https://tmhsdigital.github.io/Awesome-Ads/).
 
 - [channels/](channels/) — one guide per advertising channel
-- [resources/](resources/) — analytics, budgeting, legal, examples, FAQ
+- [resources/](resources/) — analytics, budgeting, legal, examples, FAQ, glossary
 - [ad-templates/](ad-templates/) — templates and design resources
 - [meta/](meta/) — repository outline and community guidelines
