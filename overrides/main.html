@@ -9,6 +9,18 @@
   {%- endif -%}
 {% endblock %}
 
+{% block content %}
+  {{ super() }}
+  {% if page and page.url and config.extra.reviewed_dates %}
+    {# Zensical supplies the relative page URL but no page.file in this theme. #}
+    {% set source = page.url | trim("/") | replace(".html", "") ~ ".md" %}
+    {% if source in config.extra.reviewed_dates %}
+      {% set reviewed = config.extra.reviewed_dates[source] %}
+      <p>Last reviewed <time datetime="{{ reviewed }}">{{ reviewed }}</time></p>
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
 {#- Social preview tags. Descriptions come from the meta-descriptions plugin. -#}
 {#- Zensical does not set page.is_homepage; the home page is the one with an empty url. -#}
 {% block extrahead %}

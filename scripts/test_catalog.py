@@ -10,6 +10,7 @@ import sys
 import tempfile
 import unittest
 from contextlib import redirect_stderr
+from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 
@@ -26,6 +27,7 @@ from catalog import (
     render_build_config,
     render_home_markdown,
     render_index_markdown,
+    review_status,
     scan_docs,
 )
 
@@ -100,6 +102,49 @@ class CatalogTests(unittest.TestCase):
             with self.assertRaises(ValueError) as ctx:
                 parse_page(path, docs)
             self.assertIn(str(path), str(ctx.exception))
+
+    def test_review_date_is_optional_header_metadata(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = _docs_tree(Path(tmp))
+            guide = docs / "channels" / "SEA.md"
+            _write(guide, "# Search\n<!-- nav_order: 20 -->\n<!-- reviewed: 2024-02-29 -->\n\nBody.\n")
+            page = parse_page(guide, docs)
+            self.assertEqual(page.reviewed_on, date(2024, 2, 29))
+            self.assertEqual(page.nav_order, 20)
+            for text in (
+                "# Search\n",
+                "# Search\n<!-- reviewed: 2023-02-29 -->\n",
+                "# Search\n\nBody.\n\n<!-- reviewed: 2024-02-29 -->\n",
+            ):
+                with self.subTest(text=text):
+                    _write(guide, text)
+                    self.assertIsNone(parse_page(guide, docs).reviewed_on)
+
+    def test_review_warnings_use_calendar_anniversary(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = _docs_tree(Path(tmp))
+            for filename, marker in (
+                ("fresh", "<!-- reviewed: 2025-11-16 -->"),
+                ("stale", "<!-- reviewed: 2025-11-15 -->"),
+                ("future", "<!-- reviewed: 2026-11-17 -->"),
+                ("missing", ""),
+            ):
+                _write(docs / "resources" / f"{filename}.md", f"# {filename}\n{marker}\n")
+            _write(docs / "meta" / "POLICY.md", "# Policy\n")
+            dates, notices = review_status(scan_docs(docs), date(2026, 11, 16))
+            self.assertEqual(dates, {"resources/fresh.md": "2025-11-16", "resources/stale.md": "2025-11-15"})
+            self.assertEqual(notices, [
+                "resources/future.md has a future review date",
+                "resources/missing.md has no valid review date",
+                "resources/stale.md has not been reviewed in the past 12 months",
+            ])
+
+    def test_review_anniversary_on_leap_day(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = _docs_tree(Path(tmp))
+            _write(docs / "channels" / "SEA.md", "# Search\n<!-- reviewed: 2023-02-28 -->\n")
+            _dates, notices = review_status(scan_docs(docs), date(2024, 2, 29))
+            self.assertEqual(notices, [])
 
     def test_mkdocs_nav_shape(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -267,6 +312,12 @@ class BuildConfigTests(unittest.TestCase):
         nav_line = rendered.strip().splitlines()[-1]
         self.assertTrue(nav_line.startswith("nav: "))
         self.assertEqual(json.loads(nav_line.removeprefix("nav: ")), nav)
+
+    def test_build_config_adds_review_dates_by_source_path(self) -> None:
+        dates = {"channels/SEA.md": "2026-11-16", "resources/LEGAL.md": "2026-05-01"}
+        rendered = render_build_config("site_name: Awesome Ads\n", [], dates)
+        extra_line = next(line for line in rendered.splitlines() if line.startswith("extra: "))
+        self.assertEqual(json.loads(extra_line.removeprefix("extra: ")), {"reviewed_dates": dates})
 
     def test_base_config_has_no_hooks_or_nav(self) -> None:
         root = Path(__file__).resolve().parent.parent

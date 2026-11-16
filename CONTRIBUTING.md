@@ -16,6 +16,8 @@ We welcome contributions from the community! Follow these guidelines to help us 
 
 Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. The site nav is generated at build time from those folders. Start each page with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
 
+After reviewing a guide and its sources, add or update `<!-- reviewed: YYYY-MM-DD -->` on a separate line after the H1, beside any `nav_order` comment. The site shows that date as “Last reviewed.” Missing, invalid, future and more-than-12-month-old review dates produce build preparation warnings.
+
 ## Prerequisites
 
 To run the checks in step 5 you need:
