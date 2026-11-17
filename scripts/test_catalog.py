@@ -357,10 +357,17 @@ class BuildConfigTests(unittest.TestCase):
         extra_line = next(line for line in rendered.splitlines() if line.startswith("extra: "))
         self.assertEqual(json.loads(extra_line.removeprefix("extra: ")), {"reviewed_dates": dates})
 
-    def test_base_config_has_no_hooks_or_nav(self) -> None:
+    def test_build_config_rejects_base_extra(self) -> None:
+        for dates in ({"channels/SEA.md": "2026-11-16"}, {}):
+            with self.subTest(dates=dates), self.assertRaisesRegex(ValueError, "extra"):
+                render_build_config("site_name: X\nextra:\n  generator: false\n", [], dates)
+
+    def test_base_config_has_no_hooks_nav_or_extra(self) -> None:
         root = Path(__file__).resolve().parent.parent
         base = (root / "mkdocs.yml").read_text(encoding="utf-8")
-        self.assertNotRegex(base, r"(?m)^(hooks|nav):", "mkdocs.yml must not set hooks or nav")
+        self.assertNotRegex(
+            base, r"(?m)^(hooks|nav|extra):", "mkdocs.yml must not set hooks, nav, or extra"
+        )
 
     def test_build_config_is_ignored_and_rejected(self) -> None:
         root = Path(__file__).resolve().parent.parent
