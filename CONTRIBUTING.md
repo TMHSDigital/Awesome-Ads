@@ -45,7 +45,7 @@ To run the checks in step 5 you need:
 4. **Make your changes** — follow existing markdown style; keep links relative.
 5. **Verify locally.** These are the same checks CI runs on your pull request. See [Prerequisites](#prerequisites) if a command is missing.
    ```bash
-   npx markdownlint-cli2 "**/*.md"
+   npx markdownlint-cli2@0.24.0 "**/*.md"
    python -m unittest scripts.test_catalog scripts.test_check_internal_links
    python scripts/check-public-repo-hygiene.py
    python scripts/check-internal-links.py

@@ -30,6 +30,8 @@ CI, deployment, and repository automation under `.github/`.
 
 Dependabot is turned off. Update pinned actions and `requirements-docs.txt` by hand, then run the validation checks before opening a PR. After changing `requirements-docs.txt`, regenerate `constraints-docs.txt` from a clean Python 3.12 venv (the steps are in the file header); CI and the Pages deploy install with `-c constraints-docs.txt`.
 
+The local lint command pins `markdownlint-cli2@0.24.0`, the version bundled with `DavidAnson/markdownlint-cli2-action@v25`. When you bump the action, read the `markdownlint-cli2` version from its `package.json` and update the command in `AGENTS.md`, `CONTRIBUTING.md`, and `.github/PULL_REQUEST_TEMPLATE.md`.
+
 ## Releases
 
 Releases are cut by maintainers only, from `main`, with [workflows/release.yml](workflows/release.yml). Either push an annotated tag (`git tag -a v1.2.0 -m "What changed" && git push origin v1.2.0`) or run the Release workflow from the Actions tab with a version. The tag message is the top of the release notes; GitHub appends the pull requests merged since the last release.

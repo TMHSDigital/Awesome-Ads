@@ -43,7 +43,7 @@ Each directory has its own `AGENTS.md` with scope-specific rules. Read the neare
 Run before opening a PR:
 
 ```bash
-npx markdownlint-cli2 "**/*.md"
+npx markdownlint-cli2@0.24.0 "**/*.md"
 python -m unittest scripts.test_catalog scripts.test_check_internal_links
 python scripts/check-public-repo-hygiene.py
 python scripts/check-internal-links.py

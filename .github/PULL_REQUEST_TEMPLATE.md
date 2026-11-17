@@ -8,7 +8,7 @@
 
 CI runs every check below. Running them first saves a round trip (see Prerequisites in CONTRIBUTING.md).
 
-- [ ] Markdown lint passes (`npx markdownlint-cli2 "**/*.md"`)
+- [ ] Markdown lint passes (`npx markdownlint-cli2@0.24.0 "**/*.md"`)
 - [ ] Unit tests pass (`python -m unittest scripts.test_catalog scripts.test_check_internal_links`)
 - [ ] Repo hygiene check passes (`python scripts/check-public-repo-hygiene.py`)
 - [ ] Links are relative and resolve (`python scripts/check-internal-links.py`)
