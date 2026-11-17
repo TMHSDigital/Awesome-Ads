@@ -12,9 +12,6 @@ jobs:
   link-check:
     name: External links
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -28,8 +25,18 @@ jobs:
           jobSummary: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Only this job can write issues, so the third-party link checker never
+  # receives a token with that permission.
+  report:
+    name: Report broken links
+    needs: link-check
+    if: failure() && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
       - name: Open or update an issue when links break
-        if: failure() && github.event_name == 'schedule'
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
