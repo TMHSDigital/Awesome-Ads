@@ -1,8 +1,7 @@
 /* Awesome Ads site theme ("field guide").
    Ink header, one warm accent for links, Source Serif headings over
-   Source Sans text, and a reading column sized for long guides. */
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
+   Source Sans text, and a reading column sized for long guides.
+   The Source Serif 4 font is linked from overrides/main.html (extrahead). */
 
 :root {
   --aa-ink: #1f2a44;
