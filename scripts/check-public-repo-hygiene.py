@@ -29,9 +29,12 @@ FORBIDDEN_TRACKED_SUFFIXES = (
 SENSITIVE_CONTENT_PATTERNS = (
     re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----"),
     re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
-    re.compile(r"\bghp_[A-Za-z0-9]{20,}\b"),
+    # GitHub personal, OAuth, user-to-server, app, and refresh tokens.
+    re.compile(r"\bgh[pousr]_[A-Za-z0-9]{20,}\b"),
     re.compile(r"\bgithub_pat_[A-Za-z0-9_]{20,}\b"),
     re.compile(r"\bsk_(?:live|test)_[A-Za-z0-9]{10,}\b"),
+    re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{10,}"),
+    re.compile(r"\bAIza[0-9A-Za-z_-]{35}"),
 )
 
 

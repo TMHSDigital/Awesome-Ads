@@ -323,6 +323,40 @@ class GeneratedDocsTests(unittest.TestCase):
         self.assertEqual(result, 1)
         self.assertIn(index, stderr.getvalue())
 
+
+class HygieneSecretPatternTests(unittest.TestCase):
+    # Samples are built at runtime so this file does not trip the scan itself.
+    SAMPLES = {
+        "github personal": "ghp" + "_" + "a1" * 18,
+        "github oauth": "gho" + "_" + "b2" * 18,
+        "github user-to-server": "ghu" + "_" + "c3" * 18,
+        "github app": "ghs" + "_" + "d4" * 18,
+        "github refresh": "ghr" + "_" + "e5" * 18,
+        "github fine-grained": "github" + "_pat_" + "f6" * 12,
+        "aws": "AKIA" + "ABCDEFGH" * 2,
+        "slack": "xoxb" + "-" + "1234567890-abc",
+        "google": "AIza" + "x" * 35,
+        "stripe": "sk" + "_live_" + "g7" * 10,
+        "private key": "-----BEGIN " + "PRIVATE KEY-----",
+    }
+
+    def _scan(self, content: str) -> int:
+        hygiene = _load_script("check-public-repo-hygiene.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "notes.md").write_text(f"value: {content}\n", encoding="utf-8")
+            with patch.object(hygiene, "ROOT", Path(tmp)), patch.object(
+                hygiene, "tracked_files", return_value=["notes.md"]
+            ), redirect_stderr(io.StringIO()), redirect_stdout(io.StringIO()):
+                return hygiene.main()
+
+    def test_each_secret_kind_fails_the_check(self) -> None:
+        for kind, sample in self.SAMPLES.items():
+            with self.subTest(kind=kind):
+                self.assertEqual(self._scan(sample), 1)
+
+    def test_ordinary_text_passes(self) -> None:
+        self.assertEqual(self._scan("ghp is not a token; AIza alone is not a key"), 0)
+
     def test_configs_exclude_generated_docs(self) -> None:
         root = Path(__file__).resolve().parent.parent
         gitignore = (root / ".gitignore").read_text(encoding="utf-8")
