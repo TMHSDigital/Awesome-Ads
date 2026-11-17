@@ -58,7 +58,6 @@ plugins:
       trim: false
 
 markdown_extensions:
-  - admonition
   - attr_list
   - def_list
   - tables
@@ -66,13 +65,5 @@ markdown_extensions:
       permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.inlinehilite
-  - pymdownx.snippets
