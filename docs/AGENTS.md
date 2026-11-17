@@ -29,7 +29,7 @@ Links from the root [README.md](../README.md) use the `docs/` prefix (e.g. `docs
 
 1. Place the file in the correct subdirectory (`channels/`, `resources/`, or `ad-templates/`).
 2. Start the file with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
-   Put an optional `<!-- reviewed: YYYY-MM-DD -->` on its own line beside it after reviewing the guide and its sources. A date older than 12 months produces a warning during build preparation.
+   After reviewing the guide and its sources, put `<!-- reviewed: YYYY-MM-DD -->` on its own line beside it. The site shows it as "Last reviewed." A missing, invalid, future, or more-than-12-month-old review date produces a warning during build preparation.
 3. Run validation from the repo root (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## Content standards
