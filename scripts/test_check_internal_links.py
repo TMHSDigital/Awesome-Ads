@@ -70,11 +70,50 @@ class CollectErrorsTests(unittest.TestCase):
             _write(root / "docs" / "SEA.md", "sea\n")
             self.assertEqual(check_internal_links.collect_errors(root), [])
 
-    def test_anchor_only_link_is_skipped(self) -> None:
+    def test_same_page_anchor_resolves(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            _write(root / "docs" / "page.md", "[Top](#top)\n")
+            _write(root / "docs" / "page.md", "# Page\n\n## Top tips\n\n[Top](#top-tips)\n")
             self.assertEqual(check_internal_links.collect_errors(root), [])
+
+    def test_broken_same_page_anchor(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write(root / "docs" / "page.md", "# Page\n\n[Top](#top)\n")
+            errors = check_internal_links.collect_errors(root)
+            self.assertEqual(len(errors), 1)
+            self.assertIn("missing anchor", errors[0])
+
+    def test_anchor_in_other_page_resolves(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write(
+                root / "docs" / "page.md",
+                "[Costs](BUDGET.md#platform-cost-benchmarks) [Ads](BUDGET.md#ads-search-display)\n",
+            )
+            _write(
+                root / "docs" / "BUDGET.md",
+                "# Budget\n\n## Platform cost **benchmarks**\n\n### Ads: [search](page.md) & display\n",
+            )
+            self.assertEqual(check_internal_links.collect_errors(root), [])
+
+    def test_broken_anchor_in_other_page(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write(root / "docs" / "page.md", "[Costs](BUDGET.md#old-heading)\n")
+            _write(root / "docs" / "BUDGET.md", "# Budget\n\n## New heading\n")
+            errors = check_internal_links.collect_errors(root)
+            self.assertEqual(len(errors), 1)
+            self.assertIn("missing anchor", errors[0])
+            self.assertIn("old-heading", errors[0])
+
+    def test_heading_ids_follow_toc_rules(self) -> None:
+        text = (
+            "# Title\n\n## FAQ\n\n## FAQ\n\n## Custom {#my-id}\n\n"
+            "```text\n# not a heading\n```\n"
+        )
+        ids = check_internal_links.heading_ids(text)
+        self.assertEqual(ids, {"title", "faq", "faq_1", "my-id"})
 
     def test_query_link_resolves(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
