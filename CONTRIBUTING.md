@@ -8,10 +8,13 @@ We welcome contributions from the community! Follow these guidelines to help us 
 ├── docs/
 │   ├── channels/     # One guide per advertising channel
 │   ├── resources/    # Cross-cutting topics (analytics, legal, FAQ, …)
-│   ├── ad-templates/    # Template and design resources
-│   └── meta/         # Repo documentation
+│   ├── ad-templates/ # Template and design resources
+│   ├── meta/         # Repo documentation and community policy
+│   ├── assets/       # Social preview card
+│   └── stylesheets/  # Site theme (extra.css)
 ├── .github/          # CI, issue/PR templates
-└── scripts/          # Build and validation scripts
+├── scripts/          # Build and validation scripts
+└── overrides/        # Theme template overrides (social tags, page actions)
 ```
 
 Add new channel guides under `docs/channels/`. Add cross-cutting topics under `docs/resources/`. The site nav is generated at build time from those folders. Start each page with an H1. Optional `<!-- nav_order: 20 -->` on the next line controls sidebar order.
@@ -24,7 +27,7 @@ To run the checks in step 5 you need:
 
 - Python 3.12 (the version CI uses)
 - Node.js, for `npx markdownlint-cli2`
-- The site build tools: `pip install -r requirements-docs.txt`
+- The site build tools: `pip install -r requirements-docs.txt -c constraints-docs.txt`
 - Git, because the link checker reads the list of tracked files
 
 ## How to contribute
